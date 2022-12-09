@@ -1,0 +1,349 @@
+{
+    "amm_pools": [
+        {
+            "id": "1",
+            "token_0": "ATOM",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "9",
+            "token_0": "CRO",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "497",
+            "token_0": "JUNO",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "584",
+            "token_0": "SCRT",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "604",
+            "token_0": "STARS",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "678",
+            "token_0": "OSMO",
+            "token_1": "USDC"
+        },
+        {
+            "id": "704",
+            "token_0": "WETH",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "712",
+            "token_0": "WBTC",
+            "token_1": "OSMO"
+        },
+        {
+            "id": "722",
+            "token_0": "EVMOS",
+            "token_1": "OSMO"
+        }
+    ],
+    "currencies": {
+        "NLS": {
+            "name": "Nolus",
+            "symbol": "unls",
+            "decimal_digits": "6",
+            "ibc_route": [],
+            "groups": [
+                "Payment"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "TBD <id of (NLS, OSMO)>",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "USDC": {
+            "name": "Usdc",
+            "symbol": "uusdc",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0",
+                "channel-208"
+            ],
+            "groups": [
+                "Lpn"
+            ],
+            "swap_routes": []
+        },
+        "ATOM": {
+            "name": "Cosmos Hub ATOM",
+            "symbol": "uatom",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0",
+                "channel-0"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "1",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "OSMO": {
+            "name": "Osmosis OSMO",
+            "symbol": "uosmo",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "WETH": {
+            "name": "Ethereum WETH",
+            "symbol": "weth-wei",
+            "decimal_digits": "18",
+            "ibc_route": [
+                "channel-0",
+                "channel-208"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "704",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "WBTC": {
+            "name": "Bitcoin WBTC",
+            "symbol": "wbtc-satoshi",
+            "decimal_digits": "8",
+            "ibc_route": [
+                "channel-0",
+                "channel-208"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "712",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "EVMOS": {
+            "name": "Evmos",
+            "symbol": "aevmos",
+            "decimal_digits": "18",
+            "ibc_route": [
+                "channel-0",
+                "channel-204"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "722",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "JUNO": {
+            "name": "Juno",
+            "symbol": "ujuno",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0",
+                "channel-42"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "497",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "STARS": {
+            "name": "Stargaze",
+            "symbol": "ustars",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0",
+                "channel-75"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "604",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "CRO": {
+            "name": "Crypto.org CRO",
+            "symbol": "basecro",
+            "decimal_digits": "8",
+            "ibc_route": [
+                "channel-0",
+                "channel-5"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "9",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        },
+        "SCRT": {
+            "name": "Secret SCRT",
+            "symbol": "uscrt",
+            "decimal_digits": "6",
+            "ibc_route": [
+                "channel-0",
+                "channel-88"
+            ],
+            "groups": [
+                "Lease"
+            ],
+            "swap_routes": [
+                [
+                    {
+                        "pool_id": "584",
+                        "pool_token": "OSMO"
+                    },
+                    {
+                        "pool_id": "678",
+                        "pool_token": "USDC"
+                    }
+                ]
+            ]
+        }
+    },
+    "definitions": [
+        "Each currency is identified by its 'ticker'. A currency with ticker NLS is required.",
+        "The currencies map indexes the currencies by their ticker",
+        "",
+        "The 'name' is a human-readable description of the currency",
+        "",
+        "The 'symbol' is the base denomination of the currency at its native chain.",
+        "",
+        "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
+        "For example, '8' for WBTC means 10^8 units of its base denomination wbtc-satoshi are equal to 1 WBTC",
+        "",
+        "The 'ibc_route' array tracks the channels back to the currency's native chain. The channel identifiers ",
+        "are the channel endpoint ids at the mining side.",
+        "",
+        "The currency symbol at Nolus is either equal to the currency 'symbol' if its 'ibc_route' == [], or ",
+        "'ibc/' + sha256('transfer' + '/' + ibc_route[0] + '/' + ... + 'transfer' + '/' + ibc_route[n-1] + '/' + symbol) otherwise.",
+        "",
+        "The currency symbol at the network Nolus interoperates with, e.g. Osmosis, is either ",
+        "'ibc/' + sha256('transfer' + '/' + channel-Osm + '/' + symbol) if 'ibc_route' == [], or ",
+        "symbol if 'ibc_route' == ['channel-0'], or ",
+        "'ibc/' + sha256('transfer' + '/' + ibc_route[1] + '/' + ... + 'transfer' + '/' + ibc_route[n-1] + '/' + symbol) otherwise, ",
+        "where 'n' = length(ibc_route), ",
+        "channel-0sm refers to the id of the channel between Osmosis and Nolus at the Osmosis endpoint, and ",
+        "channel-0 should be the id of the channel between Osmosis and Nolus at the Nolus endpoint",
+        "",
+        "more info https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19",
+        "",
+        "The supported groups are Lpn|Lease|Payment.",
+        "Lpn contains the Lpp currencies.",
+        "Lease currencies are the ones customers may open lease in.",
+        "Payment defines the currencies customers may repay their leases in.",
+        "All members of Lpn are members of Payments.",
+        "All members of Lease are members of Payments.",
+        "Lpn and Lease groups do not intersect.",
+        "",
+        "'amm_pools' list all Osmosis pools Nolus use to obtain prices and order swap transactions.",
+        "The pools at Osmosis are not limited to operate only on two currencies, therefore Osmosis APIs and",
+        "Nolus swapping routes always specify the target currency within the pool.",
+        "",
+        "'swap_routes' is a collection of paths throughout the 'amm_pools' that define the routes to swap",
+        "amounts of the currency they are defined at to an Lpn currency.",
+        "The elements of a path are called swap targets. Each swap target is defined by an identifier of a pool and ",
+        "the target token from that pool. A swap target defines the pool and the token to which to convert the target token",
+        "received from the previous target of the path. The previous target token for",
+        "the first element in the path plays the currency that route is defined for.",
+        "For example, the swap route [(\"584\", \"OSMO\"), (\"678\", \"USDC\")] defined for \"SCRT\"",
+        "means that the pool with id 584 is used to swap SCRT to OSMO, and then ",
+        "the pool with id 678 is used to swap OSMO to USDC.",
+        "",
+        "A currency of the group Payment, incl. the members of Lease and Lpn, is configured as ",
+        "a valid currency for use with leases funded with loans in an Lpn currency if and only if ",
+        "there is a swap route to the Lpn currency defined for that currency."
+    ]
+}
