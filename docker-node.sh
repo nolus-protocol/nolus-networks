@@ -14,9 +14,11 @@ if [ -f genesis.json ]; then
 fi
 
 # set persistent peers in config.toml
-if [ -f genesis.json ]; then
+if [ -f ~/.nolus/config/config.toml ]; then
    sed -i.bak -e "s~^persistent_peers *=.*~persistent_peers = \"$(cat persistent_peers.txt)\"~" ~/.nolus/config/config.toml
 fi
 
 # set the minimum gas price to 0.0025unls
-sed -i "s|0stake|0.0025unls|g" ~/.nolus/config/app.toml
+if [ -f ~/.nolus/config/app.toml ]; then
+    sed -i "s|0stake|0.0025unls|g" ~/.nolus/config/app.toml
+fi
