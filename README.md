@@ -8,3 +8,7 @@ In the future when we have more testnets, any user could specify his desired net
 1. Execute build-image.sh script to build && run a full node of testnet/nolus-rila with Docker
 
 ```./build-image.sh```
+
+## Faucets
+
+1. Testnet nolus-rila - https://faucet-rila.nolus.io/ 
