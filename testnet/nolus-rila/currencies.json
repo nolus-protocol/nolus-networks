@@ -70,11 +70,11 @@
         },
         "USDC": {
             "name": "Usdc",
-            "symbol": "uusdc",
+            "symbol": "uausdc",
             "decimal_digits": "6",
             "ibc_route": [
                 "channel-0",
-                "channel-208"
+                "channel-312"
             ],
             "groups": [
                 "Lpn"
@@ -126,74 +126,47 @@
         },
         "WETH": {
             "name": "Ethereum WETH",
-            "symbol": "weth-wei",
+            "symbol": "eth-wei",
             "decimal_digits": "18",
             "ibc_route": [
                 "channel-0",
-                "channel-208"
+                "channel-312"
             ],
             "groups": [
                 "Lease"
             ],
             "swap_routes": [
-                [
-                    {
-                        "pool_id": "704",
-                        "pool_token": "OSMO"
-                    },
-                    {
-                        "pool_id": "678",
-                        "pool_token": "USDC"
-                    }
-                ]
+                []
             ]
         },
         "WBTC": {
             "name": "Bitcoin WBTC",
-            "symbol": "wbtc-satoshi",
+            "symbol": "btc-satoshi",
             "decimal_digits": "8",
             "ibc_route": [
                 "channel-0",
-                "channel-208"
+                "channel-312"
             ],
             "groups": [
                 "Lease"
             ],
             "swap_routes": [
-                [
-                    {
-                        "pool_id": "712",
-                        "pool_token": "OSMO"
-                    },
-                    {
-                        "pool_id": "678",
-                        "pool_token": "USDC"
-                    }
-                ]
+                []
             ]
         },
         "EVMOS": {
             "name": "Evmos",
-            "symbol": "aevmos",
+            "symbol": "atevmos",
             "decimal_digits": "18",
             "ibc_route": [
                 "channel-0",
-                "channel-204"
+                "channel-227"
             ],
             "groups": [
                 "Lease"
             ],
             "swap_routes": [
-                [
-                    {
-                        "pool_id": "722",
-                        "pool_token": "OSMO"
-                    },
-                    {
-                        "pool_id": "678",
-                        "pool_token": "USDC"
-                    }
-                ]
+                []
             ]
         },
         "JUNO": {
