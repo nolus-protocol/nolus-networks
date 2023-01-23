@@ -52,9 +52,7 @@
             "symbol": "unls",
             "decimal_digits": "6",
             "ibc_route": [],
-            "groups": [
-                "Payment"
-            ],
+            "groups": [],
             "swap_routes": [
                 [
                     {
