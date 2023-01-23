@@ -68,11 +68,11 @@
         },
         "USDC": {
             "name": "Usdc",
-            "symbol": "uausdc",
+            "symbol": "udws",
             "decimal_digits": "6",
             "ibc_route": [
                 "channel-0",
-                "channel-312"
+                "channel-261"
             ],
             "groups": [
                 "Lpn"
