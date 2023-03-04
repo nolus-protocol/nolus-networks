@@ -26,7 +26,7 @@
             "token_1": "OSMO"
         },
         {
-            "id": "678",
+            "id": "766",
             "token_0": "OSMO",
             "token_1": "USDC"
         },
@@ -68,11 +68,11 @@
         },
         "USDC": {
             "name": "Usdc",
-            "symbol": "udws",
+            "symbol": "uausdc",
             "decimal_digits": "6",
             "ibc_route": [
                 "channel-0",
-                "channel-261"
+                "channel-1946"
             ],
             "groups": [
                 "Lpn"
