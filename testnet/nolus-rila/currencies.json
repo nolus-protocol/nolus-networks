@@ -60,7 +60,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -97,7 +97,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -116,7 +116,7 @@
             "swap_routes": [
                 [
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -185,7 +185,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -209,7 +209,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -233,7 +233,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -257,7 +257,7 @@
                         "pool_token": "OSMO"
                     },
                     {
-                        "pool_id": "678",
+                        "pool_id": "766",
                         "pool_token": "USDC"
                     }
                 ]
@@ -309,9 +309,9 @@
         "the target token from that pool. A swap target defines the pool and the token to which to convert the target token",
         "received from the previous target of the path. The previous target token for",
         "the first element in the path plays the currency that route is defined for.",
-        "For example, the swap route [(\"584\", \"OSMO\"), (\"678\", \"USDC\")] defined for \"SCRT\"",
+        "For example, the swap route [(\"584\", \"OSMO\"), (\"766\", \"USDC\")] defined for \"SCRT\"",
         "means that the pool with id 584 is used to swap SCRT to OSMO, and then ",
-        "the pool with id 678 is used to swap OSMO to USDC.",
+        "the pool with id 766 is used to swap OSMO to USDC.",
         "",
         "A currency of the group Payment, incl. the members of Lease and Lpn, is configured as ",
         "a valid currency for use with leases funded with loans in an Lpn currency if and only if ",
