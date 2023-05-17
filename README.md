@@ -1,14 +1,11 @@
-# nolus-networks
+# Nolus-networks
 
-## Build && Run node with docker
+This repo contains instructions for genesis validators to create genesis
+staking transactions (gentxs) to start the Nolus network.
 
-Executing the build-image.sh script will build and run a node in docker for testnet/nolus-rila network.
-In the future when we have more testnets, any user could specify his desired network via --network flag passed to the build-image.sh script
+The relevant instructions can be found in
+[genesis-validators.md](genesis-validators.md)
 
-1. Execute build-image.sh script to build && run a full node of testnet/nolus-rila with Docker
+Further instructions will be added after May 19th, the final day to
+submit gentxs.
 
-```./build-image.sh```
-
-## Faucets
-
-1. Testnet nolus-rila - https://faucet-rila.nolus.io/ 

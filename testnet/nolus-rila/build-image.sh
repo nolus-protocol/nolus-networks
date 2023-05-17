@@ -32,7 +32,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-VERSION=$(cat "$NETWORK"/version.md)
+VERSION=$(cat version.md)
 IMAGE_NAME="nolus-image-$VERSION"
 
 docker build \
