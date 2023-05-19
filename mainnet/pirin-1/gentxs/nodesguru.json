@@ -24,7 +24,7 @@
         },
         "value": {
           "denom": "unls",
-          "amount": "5000000"
+          "amount": "1000000"
         }
       }
     ],
@@ -56,6 +56,6 @@
     }
   },
   "signatures": [
-    "cK18gmwF7loPrndD5ev1bqH8HloE2kpf7KHxWKrTsJYlteGIEXKi1RmCWBFRUVlP9jYuG3SdcnGdYaowIFYdBQ=="
+    "yLm0I3oP8zoeqfdQY4RISZTthL5hXf6MdKQf5toxHuJwsLph9+rxoZZLflE31jIdDCavukue4hX3QvGoYFBjrg=="
   ]
 }
