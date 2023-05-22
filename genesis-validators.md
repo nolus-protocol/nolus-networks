@@ -131,7 +131,7 @@ and follow any prompts.
 Since you are using an empty generated genesis.json and not a pregenesis.json containing the balances, you'd need to add some tokens to the wallet such that the gentx does not fail:
 ​
 ``` {.sh}
-nolusd add-genesis-account <wallet-address-of-the-imported-key-previously> 10000000unls
+nolusd add-genesis-account <wallet-address-of-the-imported-key-previously> 1000000unls
 ```
 ​
 ### Create GenTx
@@ -152,7 +152,7 @@ An example genesis command would thus look like:
 nolusd gentx <key-name> 1000000unls \
 --chain-id pirin-1 \
 --moniker="<moniker>" \
---identity="<keybaseio-id>"
+--identity="<keybaseio-id>" \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=0.20 \
 --commission-rate=0.05 \
