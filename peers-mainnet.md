@@ -18,3 +18,6 @@
 
 ## P-OPS Team
 aeb6c84798c3528b20ee02985208eb72ed794742@val02-nls-m.pops.one:26666
+
+## Lavender.Five Nodes
+18845b356886a99ee704f7a06de79fc8208b47d1@57.128.96.155:19756
