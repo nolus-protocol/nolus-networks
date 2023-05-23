@@ -15,3 +15,6 @@
 
 ## Architect Nodes
 7740f125a480d1329fa1015e7ea97f09ee4eded7@107.135.15.66:26746
+
+## P-OPS Team
+aeb6c84798c3528b20ee02985208eb72ed794742@val02-nls-m.pops.one:26666
