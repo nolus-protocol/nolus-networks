@@ -9,3 +9,7 @@ The relevant instructions can be found in
 Further instructions will be added after May 19th, the final day to
 submit gentxs.
 
+
+## May 23rd 2023
+
+pirin-1 genesis.json is now available on mainnet/pirin-1/genesis.json
