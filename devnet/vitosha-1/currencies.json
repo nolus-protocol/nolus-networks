@@ -1,11 +1,29 @@
 {
     "networks": {
-        "list": [
-            "NOLUS",
-            "OSMOSIS",
-            "AXELAR",
-            "COSMOS_HUB"
-        ],
+        "list": {
+            "NOLUS": {},
+            "OSMOSIS": {
+                "amm_pools": [
+                    {
+                        "id": "12",
+                        "token_0": "ATOM",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "5",
+                        "token_0": "OSMO",
+                        "token_1": "USDC"
+                    },
+                    {
+                        "id": "41",
+                        "token_0": "NLS",
+                        "token_1": "USDC"
+                    }
+                ]
+            },
+            "AXELAR": {},
+            "COSMOS_HUB": {}
+        },
         "channels": [
             {
                 "a": {
@@ -39,23 +57,6 @@
             }
         ]
     },
-    "amm_pools": [
-        {
-            "id": "12",
-            "token_0": "ATOM",
-            "token_1": "OSMO"
-        },
-        {
-            "id": "5",
-            "token_0": "OSMO",
-            "token_1": "USDC"
-        },
-        {
-            "id": "41",
-            "token_0": "NLS",
-            "token_1": "USDC"
-        }
-    ],
     "currencies": {
         "NLS": {
             "name": "Nolus",
