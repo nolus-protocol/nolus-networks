@@ -1,4 +1,44 @@
 {
+    "networks": {
+        "list": [
+            "NOLUS",
+            "OSMOSIS",
+            "AXELAR",
+            "COSMOS_HUB"
+        ],
+        "channels": [
+            {
+                "a": {
+                    "network": "NOLUS",
+                    "ch": "channel-0"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-109"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-3"
+                },
+                "b": {
+                    "network": "AXELAR",
+                    "ch": "channel-227"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-12"
+                },
+                "b": {
+                    "network": "COSMOS_HUB",
+                    "ch": "channel-2500"
+                }
+            }
+        ]
+    },
     "amm_pools": [
         {
             "id": "12",
@@ -21,7 +61,7 @@
             "name": "Nolus",
             "symbol": "unls",
             "decimal_digits": "6",
-            "ibc_route": [],
+            "network": "NOLUS",
             "groups": [],
             "swap_routes": [
                 [
@@ -36,10 +76,7 @@
             "name": "Usdc",
             "symbol": "uausdc",
             "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0",
-                "channel-3"
-            ],
+            "network": "AXELAR",
             "groups": [
                 "Lpn"
             ],
@@ -49,10 +86,7 @@
             "name": "Cosmos Hub ATOM",
             "symbol": "uatom",
             "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0",
-                "channel-12"
-            ],
+            "network": "COSMOS_HUB",
             "groups": [
                 "Lease"
             ],
@@ -73,9 +107,7 @@
             "name": "Osmosis OSMO",
             "symbol": "uosmo",
             "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0"
-            ],
+            "network": "OSMOSIS",
             "groups": [
                 "Lease"
             ],
