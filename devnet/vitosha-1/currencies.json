@@ -8,25 +8,29 @@
                             "name": "Nolus",
                             "symbol": "unls",
                             "decimal_digits": "6"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "ATOM": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
                     },
                     "OSMO": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "OSMO"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
                     }
                 }
             },
