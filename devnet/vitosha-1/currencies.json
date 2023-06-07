@@ -1,8 +1,63 @@
 {
     "networks": {
         "list": {
-            "NOLUS": {},
+            "NOLUS": {
+                "currencies": {
+                    "NLS": {
+                        "native": {
+                            "name": "Nolus",
+                            "symbol": "unls",
+                            "decimal_digits": "6"
+                        }
+                    },
+                    "USDC_AXELAR": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "USDC_AXELAR"
+                        }
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "ATOM"
+                        }
+                    },
+                    "OSMO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "OSMO"
+                        }
+                    }
+                }
+            },
             "OSMOSIS": {
+                "currencies": {
+                    "OSMO": {
+                        "native": {
+                            "name": "Osmosis OSMO",
+                            "symbol": "uosmo",
+                            "decimal_digits": "6"
+                        }
+                    },
+                    "USDC_AXELAR": {
+                        "ibc": {
+                            "network": "AXELAR",
+                            "currency": "USDC"
+                        }
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "COSMOS_HUB",
+                            "currency": "ATOM"
+                        }
+                    },
+                    "NLS": {
+                        "ibc": {
+                            "network": "NOLUS",
+                            "currency": "NLS"
+                        }
+                    }
+                },
                 "amm_pools": [
                     {
                         "id": "12",
@@ -12,17 +67,37 @@
                     {
                         "id": "5",
                         "token_0": "OSMO",
-                        "token_1": "USDC"
+                        "token_1": "USDC_AXELAR"
                     },
                     {
                         "id": "41",
                         "token_0": "NLS",
-                        "token_1": "USDC"
+                        "token_1": "USDC_AXELAR"
                     }
                 ]
             },
-            "AXELAR": {},
-            "COSMOS_HUB": {}
+            "AXELAR": {
+                "currencies": {
+                    "USDC": {
+                        "native": {
+                            "name": "Usdc",
+                            "symbol": "uausdc",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            },
+            "COSMOS_HUB": {
+                "currencies": {
+                    "ATOM": {
+                        "native": {
+                            "name": "Cosmos Hub ATOM",
+                            "symbol": "uatom",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            }
         },
         "channels": [
             {
@@ -57,69 +132,47 @@
             }
         ]
     },
-    "currencies": {
-        "NLS": {
-            "name": "Nolus",
-            "symbol": "unls",
-            "decimal_digits": "6",
-            "network": "NOLUS",
-            "groups": [],
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "41",
-                        "pool_token": "USDC"
-                    }
-                ]
-            ]
+    "lease": {
+        "Lpn": {
+            "USDC_AXELAR": {}
         },
-        "USDC": {
-            "name": "Usdc",
-            "symbol": "uausdc",
-            "decimal_digits": "6",
-            "network": "AXELAR",
-            "groups": [
-                "Lpn"
-            ],
-            "swap_routes": []
-        },
-        "ATOM": {
-            "name": "Cosmos Hub ATOM",
-            "symbol": "uatom",
-            "decimal_digits": "6",
-            "network": "COSMOS_HUB",
-            "groups": [
-                "Lease"
-            ],
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "12",
-                        "pool_token": "OSMO"
-                    },
-                    {
-                        "pool_id": "5",
-                        "pool_token": "USDC"
-                    }
+        "Lease": {
+            "ATOM": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "12",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
                 ]
-            ]
-        },
-        "OSMO": {
-            "name": "Osmosis OSMO",
-            "symbol": "uosmo",
-            "decimal_digits": "6",
-            "network": "OSMOSIS",
-            "groups": [
-                "Lease"
-            ],
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "5",
-                        "pool_token": "USDC"
-                    }
+            },
+            "OSMO": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
                 ]
-            ]
+            }
+        },
+        "Native": {
+            "NLS": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "41",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            }
         }
     },
     "definitions": [
