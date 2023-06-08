@@ -1,96 +1,192 @@
 {
-    "amm_pools": [
-        {
-            "id": "12",
-            "token_0": "ATOM",
-            "token_1": "OSMO"
-        },
-        {
-            "id": "5",
-            "token_0": "OSMO",
-            "token_1": "USDC"
-        }
-    ],
-    "currencies": {
-        "NLS": {
-            "name": "Nolus",
-            "symbol": "unls",
-            "decimal_digits": "6",
-            "ibc_route": [],
-            "groups": [],
-            "swap_routes": [
-                [
+    "networks": {
+        "list": {
+            "NOLUS": {
+                "currencies": {
+                    "NLS": {
+                        "native": {
+                            "name": "Nolus",
+                            "symbol": "unls",
+                            "decimal_digits": "6"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
+                    },
+                    "USDC_AXELAR": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "USDC_AXELAR"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "ATOM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
+                    },
+                    "OSMO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "OSMO"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                    }
+                }
+            },
+            "OSMOSIS": {
+                "currencies": {
+                    "OSMO": {
+                        "native": {
+                            "name": "Osmosis OSMO",
+                            "symbol": "uosmo",
+                            "decimal_digits": "6"
+                        }
+                    },
+                    "USDC_AXELAR": {
+                        "ibc": {
+                            "network": "AXELAR",
+                            "currency": "USDC"
+                        }
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "COSMOS_HUB",
+                            "currency": "ATOM"
+                        }
+                    },
+                    "NLS": {
+                        "ibc": {
+                            "network": "NOLUS",
+                            "currency": "NLS"
+                        }
+                    }
+                },
+                "amm_pools": [
                     {
-                        "pool_id": "TBD <id of (NLS, OSMO)>",
-                        "pool_token": "OSMO"
+                        "id": "12",
+                        "token_0": "ATOM",
+                        "token_1": "OSMO"
                     },
                     {
-                        "pool_id": "5",
-                        "pool_token": "USDC"
-                    }
-                ]
-            ]
-        },
-        "USDC": {
-            "name": "Usdc",
-            "symbol": "uausdc",
-            "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0",
-                "channel-3"
-            ],
-            "groups": [
-                "Lpn"
-            ],
-            "swap_routes": []
-        },
-        "ATOM": {
-            "name": "Cosmos Hub ATOM",
-            "symbol": "uatom",
-            "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0",
-                "channel-12"
-            ],
-            "groups": [
-                "Lease"
-            ],
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "12",
-                        "pool_token": "OSMO"
+                        "id": "5",
+                        "token_0": "OSMO",
+                        "token_1": "USDC_AXELAR"
                     },
                     {
-                        "pool_id": "5",
-                        "pool_token": "USDC"
+                        "id": "39",
+                        "token_0": "NLS",
+                        "token_1": "USDC_AXELAR"
                     }
                 ]
-            ]
+            },
+            "AXELAR": {
+                "currencies": {
+                    "USDC": {
+                        "native": {
+                            "name": "Usdc",
+                            "symbol": "uausdc",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            },
+            "COSMOS_HUB": {
+                "currencies": {
+                    "ATOM": {
+                        "native": {
+                            "name": "Cosmos Hub ATOM",
+                            "symbol": "uatom",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            }
         },
-        "OSMO": {
-            "name": "Osmosis OSMO",
-            "symbol": "uosmo",
-            "decimal_digits": "6",
-            "ibc_route": [
-                "channel-0"
-            ],
-            "groups": [
-                "Lease"
-            ],
+        "channels": [
+            {
+                "a": {
+                    "network": "NOLUS",
+                    "ch": "channel-0"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-110"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-3"
+                },
+                "b": {
+                    "network": "AXELAR",
+                    "ch": "channel-227"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-12"
+                },
+                "b": {
+                    "network": "COSMOS_HUB",
+                    "ch": "channel-2500"
+                }
+            }
+        ]
+    },
+    "lease": {
+        "Lpn": {
+            "USDC_AXELAR": {}
+        },
+        "Lease": {
+            "ATOM": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "12",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            },
+            "OSMO": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            }
+        },
+        "Native": {
+            "id": "NLS",
             "swap_routes": [
                 [
                     {
-                        "pool_id": "5",
-                        "pool_token": "USDC"
+                        "pool_id": "39",
+                        "pool_token": "USDC_AXELAR"
                     }
                 ]
             ]
         }
     },
     "definitions": [
-        "Each currency is identified by its 'ticker'. A currency with ticker NLS is required.",
-        "The currencies map indexes the currencies by their ticker",
+        "This is the descriptor of the network topology, currencies and their usage at the Nolus AMM protocol.",
+        "",
+        "The network topology is represented as a collection of networks and the ICS-20 transfer channels that connect them.",
+        "Some networks may have DEX services available. Their description contain the pools of interest for the Nolus AMM protocol.",
+        "",
+        "On a given network, each currency is identified by its 'ticker'. A currency with ticker NLS on a network NOLUS is required.",
+        "A currency is either native or ibc on a network. In the latter case it points to the 'burning' currency residing at a network",
+        "that is at one hop distance. In the former case it is described with name, symbol and number of decimal digits.",
         "",
         "The 'name' is a human-readable description of the currency",
         "",
@@ -99,46 +195,22 @@
         "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
         "For example, '6' for OSMO means 10^8 units of its base denomination uosmo are equal to 1 OSMO",
         "",
-        "The 'ibc_route' array tracks the channels back to the currency's native chain. The channel identifiers ",
-        "are the channel endpoint ids at the mining side.",
+        "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
+        "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
+        "network 'K' reachable through a sequence of channels with names 'ch[0]', 'ch[1]' ... 'ch[k]' at their minting side.",
+        "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19).",
         "",
-        "The currency symbol at Nolus is either equal to the currency 'symbol' if its 'ibc_route' == [], or ",
-        "'ibc/' + sha256('transfer' + '/' + ibc_route[0] + '/' + ... + 'transfer' + '/' + ibc_route[n-1] + '/' + symbol) otherwise.",
+        "The usage of the currencies at the Nolus AMM protocol is described with the 'lease' JSON object",
+        "Each currency is classified as either Lpn, Lease or Native. Lpn contains the Lpp currencies. Lease currencies are the ones ",
+        "customers may open lease in. Native defines the native currency for the Nolus AMM protocol.",
+        "Leases may be paid with any of the provided currencies.",
         "",
-        "The currency symbol at the network Nolus interoperates with, e.g. Osmosis, is either ",
-        "'ibc/' + sha256('transfer' + '/' + channel-Osm + '/' + symbol) if 'ibc_route' == [], or ",
-        "symbol if 'ibc_route' == ['channel-0'], or ",
-        "'ibc/' + sha256('transfer' + '/' + ibc_route[1] + '/' + ... + 'transfer' + '/' + ibc_route[n-1] + '/' + symbol) otherwise, ",
-        "where 'n' = length(ibc_route), ",
-        "channel-0sm refers to the id of the channel between Osmosis and Nolus at the Osmosis endpoint, and ",
-        "channel-0 should be the id of the channel between Osmosis and Nolus at the Nolus endpoint",
-        "",
-        "more info https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19",
-        "",
-        "The supported groups are Lpn|Lease|Payment.",
-        "Lpn contains the Lpp currencies.",
-        "Lease currencies are the ones customers may open lease in.",
-        "Payment defines the currencies customers may repay their leases in.",
-        "All members of Lpn are members of Payments.",
-        "All members of Lease are members of Payments.",
-        "Lpn and Lease groups do not intersect.",
-        "",
-        "'amm_pools' list all Osmosis pools Nolus use to obtain prices and order swap transactions.",
-        "The pools at Osmosis are not limited to operate only on two currencies, therefore Osmosis APIs and",
-        "Nolus swapping routes always specify the target currency within the pool.",
-        "",
-        "'swap_routes' is a collection of paths throughout the 'amm_pools' that define the routes to swap",
-        "amounts of the currency they are defined at to an Lpn currency.",
-        "The elements of a path are called swap targets. Each swap target is defined by an identifier of a pool and ",
-        "the target token from that pool. A swap target defines the pool and the token to which to convert the target token",
-        "received from the previous target of the path. The previous target token for",
-        "the first element in the path plays the currency that route is defined for.",
-        "For example, the swap route [(\"12\", \"OSMO\"), (\"5\", \"USDC\")] defined for \"ATOM\"",
-        "means that the pool with id 12 is used to swap ATOM to OSMO, and then ",
-        "the pool with id 5 is used to swap OSMO to USDC.",
-        "",
-        "A currency of the group Payment, incl. the members of Lease and Lpn, is configured as ",
-        "a valid currency for use with leases funded with loans in an Lpn currency if and only if ",
-        "there is a swap route to the Lpn currency defined for that currency."
+        "Each of the currencies should provide in the 'swap_routes' array a separate swapping route to each of the Lpn currencies.",
+        "That holds true for the Lpn currencies, for example, if there are three Lpn items then each of them should provide two paths, ",
+        "each ending to some of the other currency",
+        "Routes should refer to pools at the closest DEX common for the currency and its Lpn. Nolus AMM uses the swapping routes ",
+        "to obtain prices and order swap transactions.",
+        "Please note, that some pools may not be limited to operate only on two currencies, therefore DEX APIs and",
+        "Nolus AMM swapping routes always specify the target currency within the pool.",
     ]
 }
