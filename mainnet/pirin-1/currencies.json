@@ -385,6 +385,6 @@
         "Routes should refer to pools at the closest DEX common for the currency and its Lpn. Nolus AMM uses the swapping routes ",
         "to obtain prices and order swap transactions.",
         "Please note, that some pools may not be limited to operate only on two currencies, therefore DEX APIs and",
-        "Nolus AMM swapping routes always specify the target currency within the pool.",
+        "Nolus AMM swapping routes always specify the target currency within the pool."
     ]
 }
