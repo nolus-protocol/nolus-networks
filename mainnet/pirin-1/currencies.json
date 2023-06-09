@@ -11,6 +11,34 @@
                         },
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
+                    "OSMO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "OSMO"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                    },
+                    "ST_OSMO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "ST_OSMO"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-stosmo.svg"
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "ATOM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
+                    },
+                    "ST_ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "ST_ATOM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-statom.svg"
+                    },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "OSMOSIS",
@@ -31,30 +59,40 @@
                             "currency": "WBTC_AXELAR"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "ATOM"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
-                    },
-                    "OSMO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "OSMO"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
                     }
                 }
             },
             "OSMOSIS": {
                 "currencies": {
+                    "NLS": {
+                        "ibc": {
+                            "network": "NOLUS",
+                            "currency": "NLS"
+                        }
+                    },
                     "OSMO": {
                         "native": {
                             "name": "Osmosis OSMO",
                             "symbol": "uosmo",
                             "decimal_digits": "6"
+                        }
+                    },
+                    "ST_OSMO": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "ST_OSMO"
+                        }
+                    },
+                    "ATOM": {
+                        "ibc": {
+                            "network": "COSMOS_HUB",
+                            "currency": "ATOM"
+                        }
+                    },
+                    "ST_ATOM": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "ST_ATOM"
                         }
                     },
                     "USDC_AXELAR": {
@@ -74,18 +112,6 @@
                             "network": "AXELAR",
                             "currency": "WBTC"
                         }
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "COSMOS_HUB",
-                            "currency": "ATOM"
-                        }
-                    },
-                    "NLS": {
-                        "ibc": {
-                            "network": "NOLUS",
-                            "currency": "NLS"
-                        }
                     }
                 },
                 "amm_pools": [
@@ -93,6 +119,16 @@
                         "id": "1",
                         "token_0": "ATOM",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "833",
+                        "token_0": "OSMO",
+                        "token_1": "ST_OSMO"
+                    },
+                    {
+                        "id": "803",
+                        "token_0": "ATOM",
+                        "token_1": "ST_ATOM"
                     },
                     {
                         "id": "678",
