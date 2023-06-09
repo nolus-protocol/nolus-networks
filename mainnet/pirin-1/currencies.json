@@ -39,21 +39,21 @@
                         },
                         "icon": "https://nolus.io/currencies/osmosis-statom.svg"
                     },
-                    "USDC_AXELAR": {
+                    "USDC": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
-                    "WETH_AXELAR": {
+                    "WETH": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WETH_AXELAR"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-eth.svg"
                     },
-                    "WBTC_AXELAR": {
+                    "WBTC": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WBTC_AXELAR"
@@ -269,9 +269,69 @@
                     ]
                 ]
             },
+            "ST_ATOM": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "803",
+                            "pool_token": "ATOM"
+                        },
+                        {
+                            "pool_id": "1",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            },
             "OSMO": {
                 "swap_routes": [
                     [
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            },
+            "ST_OSMO": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "833",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            },
+            "WBTC": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "712",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            },
+            "WETH": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "704",
+                            "pool_token": "OSMO"
+                        },
                         {
                             "pool_id": "678",
                             "pool_token": "USDC_AXELAR"
