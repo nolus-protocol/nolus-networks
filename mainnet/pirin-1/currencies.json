@@ -151,6 +151,24 @@
                         }
                     }
                 }
+            },
+            "STRIDE": {
+                "currencies": {
+                    "ST_ATOM": {
+                        "native": {
+                            "name": "Staked ATOM",
+                            "symbol": "stuatom",
+                            "decimal_digits": "6"
+                        }
+                    },
+                    "ST_OSMO": {
+                        "native": {
+                            "name": "Staked OSMO",
+                            "symbol": "stuosmo",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -182,6 +200,16 @@
                 "b": {
                     "network": "COSMOS_HUB",
                     "ch": "channel-141"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-326"
+                },
+                "b": {
+                    "network": "STRIDE",
+                    "ch": "channel-5"
                 }
             }
         ]
