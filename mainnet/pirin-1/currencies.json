@@ -18,6 +18,20 @@
                         },
                         "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
+                    "WETH_AXELAR": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "WETH_AXELAR"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-eth.svg"
+                    },
+                    "WBTC_AXELAR": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "WBTC_AXELAR"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
+                    },
                     "ATOM": {
                         "ibc": {
                             "network": "OSMOSIS",
@@ -49,6 +63,18 @@
                             "currency": "USDC"
                         }
                     },
+                    "WETH_AXELAR": {
+                        "ibc": {
+                            "network": "AXELAR",
+                            "currency": "WETH"
+                        }
+                    },
+                    "WBTC_AXELAR": {
+                        "ibc": {
+                            "network": "AXELAR",
+                            "currency": "WBTC"
+                        }
+                    },
                     "ATOM": {
                         "ibc": {
                             "network": "COSMOS_HUB",
@@ -74,6 +100,16 @@
                         "token_1": "USDC_AXELAR"
                     },
                     {
+                        "id": "704",
+                        "token_0": "OSMO",
+                        "token_1": "WETH_AXELAR"
+                    },
+                    {
+                        "id": "712",
+                        "token_0": "OSMO",
+                        "token_1": "WBTC_AXELAR"
+                    },
+                    {
                         "id": "???",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
@@ -87,6 +123,20 @@
                             "name": "Usdc",
                             "symbol": "uausdc",
                             "decimal_digits": "6"
+                        }
+                    },
+                    "WETH": {
+                        "native": {
+                            "name": "Wrapped Ethereum",
+                            "symbol": "weth-wei",
+                            "decimal_digits": "18"
+                        }
+                    },
+                    "WBTC": {
+                        "native": {
+                            "name": "Wrapped Bitcoin",
+                            "symbol": "wbtc-satoshi",
+                            "decimal_digits": "8"
                         }
                     }
                 }
