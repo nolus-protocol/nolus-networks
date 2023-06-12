@@ -39,7 +39,7 @@
                         },
                         "icon": "https://nolus.io/currencies/osmosis-statom.svg"
                     },
-                    "USDC": {
+                    "USDC_AXELAR": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
