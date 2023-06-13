@@ -7,6 +7,7 @@
                         "native": {
                             "name": "Nolus",
                             "symbol": "unls",
+                            "ticker": "NLS",
                             "decimal_digits": "6"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
@@ -74,6 +75,7 @@
                         "native": {
                             "name": "Osmosis OSMO",
                             "symbol": "uosmo",
+                            "ticker": "OSMO",
                             "decimal_digits": "6"
                         }
                     },
@@ -158,6 +160,7 @@
                         "native": {
                             "name": "Usdc",
                             "symbol": "uausdc",
+                            "ticker": "USDC",
                             "decimal_digits": "6"
                         }
                     },
@@ -165,6 +168,7 @@
                         "native": {
                             "name": "Wrapped Ethereum",
                             "symbol": "weth-wei",
+                            "ticker": "WETH",
                             "decimal_digits": "18"
                         }
                     },
@@ -172,6 +176,7 @@
                         "native": {
                             "name": "Wrapped Bitcoin",
                             "symbol": "wbtc-satoshi",
+                            "ticker": "WBTC",
                             "decimal_digits": "8"
                         }
                     }
@@ -183,6 +188,7 @@
                         "native": {
                             "name": "Cosmos Hub ATOM",
                             "symbol": "uatom",
+                            "ticker": "ATOM",
                             "decimal_digits": "6"
                         }
                     }
@@ -194,6 +200,7 @@
                         "native": {
                             "name": "Staked ATOM",
                             "symbol": "stuatom",
+                            "ticker": "stATOM",
                             "decimal_digits": "6"
                         }
                     },
@@ -201,6 +208,7 @@
                         "native": {
                             "name": "Staked OSMO",
                             "symbol": "stuosmo",
+                            "ticker": "stOSMO",
                             "decimal_digits": "6"
                         }
                     }
