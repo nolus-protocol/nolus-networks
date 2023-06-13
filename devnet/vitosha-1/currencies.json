@@ -7,6 +7,7 @@
                         "native": {
                             "name": "Nolus",
                             "symbol": "unls",
+                            "ticker": "NLS",
                             "decimal_digits": "6"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
@@ -40,6 +41,7 @@
                         "native": {
                             "name": "Osmosis OSMO",
                             "symbol": "uosmo",
+                            "ticker": "OSMO",
                             "decimal_digits": "6"
                         }
                     },
@@ -86,6 +88,7 @@
                         "native": {
                             "name": "Usdc",
                             "symbol": "uausdc",
+                            "ticker": "USDC",
                             "decimal_digits": "6"
                         }
                     }
@@ -97,6 +100,7 @@
                         "native": {
                             "name": "Cosmos Hub ATOM",
                             "symbol": "uatom",
+                            "ticker": "ATOM",
                             "decimal_digits": "6"
                         }
                     }
