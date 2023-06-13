@@ -12,7 +12,7 @@
                         },
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
-                    "USDC_AXELAR": {
+                    "USDC": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
@@ -142,7 +142,7 @@
     },
     "lease": {
         "Lpn": {
-            "USDC_AXELAR": {}
+            "USDC": {}
         },
         "Lease": {
             "ATOM": {
@@ -154,7 +154,7 @@
                         },
                         {
                             "pool_id": "5",
-                            "pool_token": "USDC_AXELAR"
+                            "pool_token": "USDC"
                         }
                     ]
                 ]
@@ -164,7 +164,7 @@
                     [
                         {
                             "pool_id": "5",
-                            "pool_token": "USDC_AXELAR"
+                            "pool_token": "USDC"
                         }
                     ]
                 ]
@@ -176,7 +176,7 @@
                 [
                     {
                         "pool_id": "39",
-                        "pool_token": "USDC_AXELAR"
+                        "pool_token": "USDC"
                     }
                 ]
             ]
