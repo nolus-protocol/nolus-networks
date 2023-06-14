@@ -159,7 +159,7 @@
                     "USDC": {
                         "native": {
                             "name": "Usdc",
-                            "symbol": "uausdc",
+                            "symbol": "uusdc",
                             "ticker": "USDC",
                             "decimal_digits": "6"
                         }
