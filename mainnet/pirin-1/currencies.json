@@ -60,6 +60,13 @@
                             "currency": "WBTC_AXELAR"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "AKT"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
                     }
                 }
             },
@@ -114,6 +121,12 @@
                             "network": "AXELAR",
                             "currency": "WBTC"
                         }
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "AKASH",
+                            "currency": "AKT"
+                        }
                     }
                 },
                 "amm_pools": [
@@ -151,6 +164,11 @@
                         "id": "1041",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
+                    },
+                    {
+                        "id": "3",
+                        "token_0": "AKT",
+                        "token_1": "OSMO"
                     }
                 ]
             },
@@ -213,6 +231,18 @@
                         }
                     }
                 }
+            },
+            "AKASH": {
+                "currencies": {
+                    "AKT": {
+                        "native": {
+                            "name": "Akash",
+                            "symbol": "uakt",
+                            "ticker": "AKT",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -254,6 +284,16 @@
                 "b": {
                     "network": "STRIDE",
                     "ch": "channel-5"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1"
+                },
+                "b": {
+                    "network": "AKASH",
+                    "ch": "channel-9"
                 }
             }
         ]
@@ -338,6 +378,20 @@
                     [
                         {
                             "pool_id": "704",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "AKT": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "3",
                             "pool_token": "OSMO"
                         },
                         {
