@@ -113,6 +113,7 @@
                 }
             },
             "COSMOS_HUB": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "ATOM": {
                         "native": {
@@ -120,6 +121,31 @@
                             "symbol": "uatom",
                             "ticker": "ATOM",
                             "decimal_digits": "6"
+                        }
+                    },
+                    "NLS": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "NLS"
+                        }
+                    },
+                    "USDC": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "USDC_AXELAR"
+                        }
+                    },
+
+                    "OSMO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "OSMO"
+                        }
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "AKT"
                         }
                     }
                 }
@@ -176,6 +202,16 @@
                 "b": {
                     "network": "AKASH",
                     "ch": "channel-1"
+                }
+            },
+            {
+                "a": {
+                    "network": "COSMOS_HUB",
+                    "ch": "channel-2939"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1084"
                 }
             }
         ]
