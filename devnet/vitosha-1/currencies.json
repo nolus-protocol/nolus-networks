@@ -13,6 +13,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
                     "USDC": {
+                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
@@ -104,6 +105,7 @@
                 ]
             },
             "AXELAR": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "USDC": {
                         "native": {
