@@ -13,6 +13,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
                     "USDC": {
+                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
@@ -20,6 +21,9 @@
                         "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "ATOM": {
+                        "forward": [
+                            "COSMOS_HUB"
+                        ],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
@@ -32,6 +36,13 @@
                             "currency": "OSMO"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "AKT"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
                     }
                 }
             },
@@ -62,6 +73,12 @@
                             "network": "NOLUS",
                             "currency": "NLS"
                         }
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "AKASH",
+                            "currency": "AKT"
+                        }
                     }
                 },
                 "amm_pools": [
@@ -79,10 +96,16 @@
                         "id": "41",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
+                    },
+                    {
+                        "id": "18",
+                        "token_0": "AКТ",
+                        "token_1": "OSMO"
                     }
                 ]
             },
             "AXELAR": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "USDC": {
                         "native": {
@@ -95,12 +118,25 @@
                 }
             },
             "COSMOS_HUB": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "ATOM": {
                         "native": {
                             "name": "Cosmos Hub ATOM",
                             "symbol": "uatom",
                             "ticker": "ATOM",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            },
+            "AKASH": {
+                "currencies": {
+                    "AKT": {
+                        "native": {
+                            "name": "Akash",
+                            "symbol": "uakt",
+                            "ticker": "AKT",
                             "decimal_digits": "6"
                         }
                     }
@@ -137,6 +173,26 @@
                     "network": "COSMOS_HUB",
                     "ch": "channel-2500"
                 }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-73"
+                },
+                "b": {
+                    "network": "AKASH",
+                    "ch": "channel-1"
+                }
+            },
+            {
+                "a": {
+                    "network": "COSMOS_HUB",
+                    "ch": "channel-2939"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1084"
+                }
             }
         ]
     },
@@ -162,6 +218,20 @@
             "OSMO": {
                 "swap_routes": [
                     [
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "AKT": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "18",
+                            "pool_token": "OSMO"
+                        },
                         {
                             "pool_id": "5",
                             "pool_token": "USDC"
