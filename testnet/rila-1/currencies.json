@@ -20,6 +20,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "ATOM": {
+                        "forward": ["COSMOS_HUB"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
@@ -121,31 +122,6 @@
                             "symbol": "uatom",
                             "ticker": "ATOM",
                             "decimal_digits": "6"
-                        }
-                    },
-                    "NLS": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "NLS"
-                        }
-                    },
-                    "USDC": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "USDC_AXELAR"
-                        }
-                    },
-
-                    "OSMO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "OSMO"
-                        }
-                    },
-                    "AKT": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "AKT"
                         }
                     }
                 }
