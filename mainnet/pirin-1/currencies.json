@@ -20,6 +20,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
                     },
                     "ST_OSMO": {
+                        "forward": ["STRIDE"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ST_OSMO"
@@ -27,6 +28,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-stosmo.svg"
                     },
                     "ATOM": {
+                        "forward": ["COSMOS_HUB"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
@@ -34,6 +36,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-atom.svg"
                     },
                     "ST_ATOM": {
+                        "forward": ["STRIDE"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ST_ATOM"
@@ -41,6 +44,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-statom.svg"
                     },
                     "USDC": {
+                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
@@ -48,6 +52,7 @@
                         "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "WETH": {
+                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WETH_AXELAR"
@@ -55,11 +60,20 @@
                         "icon": "https://nolus.io/currencies/osmosis-eth.svg"
                     },
                     "WBTC": {
+                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WBTC_AXELAR"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
+                    },
+                    "AKT": {
+                        "forward": ["AKASH"],
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "AKT"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
                     }
                 }
             },
@@ -114,6 +128,12 @@
                             "network": "AXELAR",
                             "currency": "WBTC"
                         }
+                    },
+                    "AKT": {
+                        "ibc": {
+                            "network": "AKASH",
+                            "currency": "AKT"
+                        }
                     }
                 },
                 "amm_pools": [
@@ -151,10 +171,16 @@
                         "id": "1041",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
+                    },
+                    {
+                        "id": "3",
+                        "token_0": "AKT",
+                        "token_1": "OSMO"
                     }
                 ]
             },
             "AXELAR": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "USDC": {
                         "native": {
@@ -183,6 +209,7 @@
                 }
             },
             "COSMOS_HUB": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "ATOM": {
                         "native": {
@@ -195,6 +222,7 @@
                 }
             },
             "STRIDE": {
+                "forward": "OSMOSIS",
                 "currencies": {
                     "ST_ATOM": {
                         "native": {
@@ -209,6 +237,19 @@
                             "name": "Staked OSMO",
                             "symbol": "stuosmo",
                             "ticker": "stOSMO",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            },
+            "AKASH": {
+                "forward": "OSMOSIS",
+                "currencies": {
+                    "AKT": {
+                        "native": {
+                            "name": "Akash",
+                            "symbol": "uakt",
+                            "ticker": "AKT",
                             "decimal_digits": "6"
                         }
                     }
@@ -254,6 +295,16 @@
                 "b": {
                     "network": "STRIDE",
                     "ch": "channel-5"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1"
+                },
+                "b": {
+                    "network": "AKASH",
+                    "ch": "channel-9"
                 }
             }
         ]
@@ -346,6 +397,20 @@
                         }
                     ]
                 ]
+            },
+            "AKT": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "3",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
             }
         },
         "Native": {
@@ -375,7 +440,7 @@
         "The 'symbol' is the base denomination of the currency at its native chain.",
         "",
         "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
-        "For example, '6' for OSMO means 10^8 units of its base denomination uosmo are equal to 1 OSMO",
+        "For example, '6' for OSMO means 10^6 units of its base denomination uosmo are equal to 1 OSMO",
         "",
         "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
         "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
