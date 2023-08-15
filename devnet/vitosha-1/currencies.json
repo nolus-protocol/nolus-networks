@@ -9,16 +9,14 @@
                             "symbol": "unls",
                             "ticker": "NLS",
                             "decimal_digits": "6"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
+                        }
                     },
                     "USDC": {
                         "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
+                        }
                     },
                     "ATOM": {
                         "forward": [
@@ -27,22 +25,19 @@
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
+                        }
                     },
                     "OSMO": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "OSMO"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                        }
                     },
                     "AKT": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "AKT"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
+                        }
                     }
                 }
             },
@@ -54,31 +49,36 @@
                             "symbol": "uosmo",
                             "ticker": "OSMO",
                             "decimal_digits": "6"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "USDC"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "ATOM": {
                         "ibc": {
                             "network": "COSMOS_HUB",
                             "currency": "ATOM"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
                     },
                     "NLS": {
                         "ibc": {
                             "network": "NOLUS",
                             "currency": "NLS"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
                     "AKT": {
                         "ibc": {
                             "network": "AKASH",
                             "currency": "AKT"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
                     }
                 },
                 "amm_pools": [
@@ -268,6 +268,11 @@
         "",
         "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
         "For example, '6' for OSMO means 10^8 units of its base denomination uosmo are equal to 1 OSMO",
+        "",
+        "The 'icon' is an optional currency attribute that provides a visual representation of the currency at that network and the others",
+        "where the currency might be sent over ibc. In other workds, if there is no icon attribute of an ibc originating currency then ",
+        "the icon is derived from the network and currency it points to. This might be applied multiple times traversing the ibc path ",
+        "toward its native network.",
         "",
         "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
         "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
