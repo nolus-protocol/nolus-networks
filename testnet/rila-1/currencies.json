@@ -34,6 +34,12 @@
                             "network": "OSMOSIS",
                             "currency": "AKT"
                         }
+                    },
+                    "JUNO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "JUNO"
+                        }
                     }
                 }
             },
@@ -75,6 +81,13 @@
                             "currency": "AKT"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-akt.svg"
+                    },
+                    "JUNO": {
+                        "ibc": {
+                            "network": "JUNO",
+                            "currency": "JUNO"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-juno.svg"
                     }
                 },
                 "amm_pools": [
@@ -96,6 +109,11 @@
                     {
                         "id": "18",
                         "token_0": "AКТ",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "3",
+                        "token_0": "JUNO",
                         "token_1": "OSMO"
                     }
                 ]
@@ -131,6 +149,18 @@
                             "name": "Akash",
                             "symbol": "uakt",
                             "ticker": "AKT",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
+            },
+            "JUNO": {
+                "currencies": {
+                    "AKT": {
+                        "native": {
+                            "name": "Juno",
+                            "symbol": "ujunox",
+                            "ticker": "JUNO",
                             "decimal_digits": "6"
                         }
                     }
@@ -187,6 +217,16 @@
                     "network": "OSMOSIS",
                     "ch": "channel-1084"
                 }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1"
+                },
+                "b": {
+                    "network": "JUNO",
+                    "ch": "channel-190"
+                }
             }
         ]
     },
@@ -222,6 +262,20 @@
                     [
                         {
                             "pool_id": "18",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "5",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "JUNO": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "3",
                             "pool_token": "OSMO"
                         },
                         {
