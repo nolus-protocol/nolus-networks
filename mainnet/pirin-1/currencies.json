@@ -74,6 +74,14 @@
                             "currency": "AKT"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-akt.svg"
+                    },
+                    "AXL": {
+                        "forward": ["AXELAR"],
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "AXL"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-axl.svg"
                     }
                 }
             },
@@ -134,6 +142,12 @@
                             "network": "AKASH",
                             "currency": "AKT"
                         }
+                    },
+                    "AXL": {
+                        "ibc": {
+                            "network": "AXELAR",
+                            "currency": "AXL"
+                        }
                     }
                 },
                 "amm_pools": [
@@ -176,6 +190,11 @@
                         "id": "3",
                         "token_0": "AKT",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "812",
+                        "token_0": "AXL",
+                        "token_1": "OSMO"
                     }
                 ]
             },
@@ -204,6 +223,14 @@
                             "symbol": "wbtc-satoshi",
                             "ticker": "WBTC",
                             "decimal_digits": "8"
+                        }
+                    },
+                    "AXL": {
+                        "native": {
+                            "name": "Axelar",
+                            "symbol": "uaxl",
+                            "ticker": "AXL",
+                            "decimal_digits": "6"
                         }
                     }
                 }
@@ -403,6 +430,20 @@
                     [
                         {
                             "pool_id": "3",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "AXL": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "812",
                             "pool_token": "OSMO"
                         },
                         {
