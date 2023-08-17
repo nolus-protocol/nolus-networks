@@ -156,7 +156,7 @@
             },
             "JUNO": {
                 "currencies": {
-                    "AKT": {
+                    "JUNO": {
                         "native": {
                             "name": "Juno",
                             "symbol": "ujunox",
@@ -191,11 +191,11 @@
             {
                 "a": {
                     "network": "OSMOSIS",
-                    "ch": "channel-12"
+                    "ch": "channel-1084"
                 },
                 "b": {
                     "network": "COSMOS_HUB",
-                    "ch": "channel-2500"
+                    "ch": "channel-2939"
                 }
             },
             {
@@ -206,16 +206,6 @@
                 "b": {
                     "network": "AKASH",
                     "ch": "channel-1"
-                }
-            },
-            {
-                "a": {
-                    "network": "COSMOS_HUB",
-                    "ch": "channel-2939"
-                },
-                "b": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-1084"
                 }
             },
             {
