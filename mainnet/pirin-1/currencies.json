@@ -9,79 +9,61 @@
                             "symbol": "unls",
                             "ticker": "NLS",
                             "decimal_digits": "6"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
+                        }
                     },
                     "OSMO": {
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "OSMO"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                        }
                     },
                     "ST_OSMO": {
-                        "forward": ["STRIDE"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ST_OSMO"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-stosmo.svg"
+                        }
                     },
                     "ATOM": {
-                        "forward": ["COSMOS_HUB"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ATOM"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
+                        }
                     },
                     "ST_ATOM": {
-                        "forward": ["STRIDE"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "ST_ATOM"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-statom.svg"
+                        }
                     },
                     "USDC": {
-                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "USDC_AXELAR"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
+                        }
                     },
                     "WETH": {
-                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WETH_AXELAR"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-eth.svg"
+                        }
                     },
                     "WBTC": {
-                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "WBTC_AXELAR"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
+                        }
                     },
                     "AKT": {
-                        "forward": ["AKASH"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "AKT"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
+                        }
                     },
                     "AXL": {
-                        "forward": ["AXELAR"],
                         "ibc": {
                             "network": "OSMOSIS",
                             "currency": "AXL"
-                        },
-                        "icon": "https://nolus.io/currencies/osmosis-axl.svg"
+                        }
                     }
                 }
             },
@@ -91,7 +73,8 @@
                         "ibc": {
                             "network": "NOLUS",
                             "currency": "NLS"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
                     },
                     "OSMO": {
                         "native": {
@@ -99,55 +82,64 @@
                             "symbol": "uosmo",
                             "ticker": "OSMO",
                             "decimal_digits": "6"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
                     },
                     "ST_OSMO": {
                         "ibc": {
                             "network": "STRIDE",
                             "currency": "ST_OSMO"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-stosmo.svg"
                     },
                     "ATOM": {
                         "ibc": {
                             "network": "COSMOS_HUB",
                             "currency": "ATOM"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
                     },
                     "ST_ATOM": {
                         "ibc": {
                             "network": "STRIDE",
                             "currency": "ST_ATOM"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-statom.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "USDC"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
                     },
                     "WETH_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "WETH"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-eth.svg"
                     },
                     "WBTC_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "WBTC"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-wbtc.svg"
                     },
                     "AKT": {
                         "ibc": {
                             "network": "AKASH",
                             "currency": "AKT"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
                     },
                     "AXL": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "AXL"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-axl.svg"
                     }
                 },
                 "amm_pools": [
@@ -199,7 +191,6 @@
                 ]
             },
             "AXELAR": {
-                "forward": "OSMOSIS",
                 "currencies": {
                     "USDC": {
                         "native": {
@@ -236,7 +227,6 @@
                 }
             },
             "COSMOS_HUB": {
-                "forward": "OSMOSIS",
                 "currencies": {
                     "ATOM": {
                         "native": {
@@ -249,7 +239,6 @@
                 }
             },
             "STRIDE": {
-                "forward": "OSMOSIS",
                 "currencies": {
                     "ST_ATOM": {
                         "native": {
@@ -270,7 +259,6 @@
                 }
             },
             "AKASH": {
-                "forward": "OSMOSIS",
                 "currencies": {
                     "AKT": {
                         "native": {
@@ -482,6 +470,11 @@
         "",
         "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
         "For example, '6' for OSMO means 10^6 units of its base denomination uosmo are equal to 1 OSMO",
+        "",
+        "The 'icon' is an optional currency attribute that provides a visual representation of the currency at that network and the others",
+        "where the currency might be sent over ibc. In other workds, if there is no icon attribute of an ibc originating currency then ",
+        "the icon is derived from the network and currency it points to. This might be applied multiple times traversing the ibc path ",
+        "toward its native network.",
         "",
         "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
         "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
