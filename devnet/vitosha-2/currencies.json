@@ -170,7 +170,7 @@
                 },
                 "b": {
                     "network": "OSMOSIS",
-                    "ch": "channel-109"
+                    "ch": "channel-1377"
                 }
             },
             {
@@ -276,7 +276,7 @@
             "swap_routes": [
                 [
                     {
-                        "pool_id": "41",
+                        "pool_id": "142",
                         "pool_token": "USDC"
                     }
                 ]
