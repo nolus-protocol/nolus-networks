@@ -70,6 +70,12 @@
                             "network": "OSMOSIS",
                             "currency": "JUNO"
                         }
+                    },
+                    "EVMOS": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "EVMOS"
+                        }
                     }
                 }
             },
@@ -153,6 +159,13 @@
                             "currency": "JUNO"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-juno.svg"
+                    },
+                    "EVMOS": {
+                        "ibc": {
+                            "network": "EVMOS",
+                            "currency": "EVMOS"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-evmos.svg"
                     }
                 },
                 "amm_pools": [
@@ -204,6 +217,11 @@
                     {
                         "id": "497",
                         "token_0": "JUNO",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "722",
+                        "token_0": "EVMOS",
                         "token_1": "OSMO"
                     }
                 ]
@@ -299,6 +317,18 @@
                         }
                     }
                 }
+            },
+            "EVMOS": {
+                "currencies": {
+                    "EVMOS": {
+                        "native": {
+                            "name": "Evmos",
+                            "symbol": "aevmos",
+                            "ticker": "EVMOS",
+                            "decimal_digits": "18"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -359,6 +389,16 @@
                 },
                 "b": {
                     "network": "JUNO",
+                    "ch": "channel-0"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-204"
+                },
+                "b": {
+                    "network": "EVMOS",
                     "ch": "channel-0"
                 }
             }
@@ -486,6 +526,20 @@
                     [
                         {
                             "pool_id": "497",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "EVMOS": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "722",
                             "pool_token": "OSMO"
                         },
                         {
