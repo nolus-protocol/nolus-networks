@@ -76,6 +76,12 @@
                             "network": "OSMOSIS",
                             "currency": "EVMOS"
                         }
+                    },
+                    "STK_ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "STK_ATOM"
+                        }
                     }
                 }
             },
@@ -166,6 +172,13 @@
                             "currency": "EVMOS"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-evmos.svg"
+                    },
+                    "STK_ATOM": {
+                        "ibc": {
+                            "network": "PERSISTENCE",
+                            "currency": "STK_ATOM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-stkatom.svg"
                     }
                 },
                 "amm_pools": [
@@ -223,6 +236,11 @@
                         "id": "722",
                         "token_0": "EVMOS",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "886",
+                        "token_0": "ATOM",
+                        "token_1": "STK_ATOM"
                     }
                 ]
             },
@@ -329,6 +347,18 @@
                         }
                     }
                 }
+            },
+            "PERSISTENCE": {
+                "currencies": {
+                    "STK_ATOM": {
+                        "native": {
+                            "name": "PSTAKE Liquid-Staked ATOM",
+                            "symbol": "stk/uatom",
+                            "ticker": "STK_ATOM",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -400,6 +430,16 @@
                 "b": {
                     "network": "EVMOS",
                     "ch": "channel-0"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-4"
+                },
+                "b": {
+                    "network": "PERSISTENCE",
+                    "ch": "channel-6"
                 }
             }
         ]
@@ -540,6 +580,24 @@
                     [
                         {
                             "pool_id": "722",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "678",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "STK_ATOM": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "886",
+                            "pool_token": "ATOM"
+                        },
+                        {
+                            "pool_id": "1",
                             "pool_token": "OSMO"
                         },
                         {
