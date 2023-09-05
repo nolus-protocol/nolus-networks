@@ -354,7 +354,7 @@
                         "native": {
                             "name": "PSTAKE Liquid-Staked ATOM",
                             "symbol": "stk/uatom",
-                            "ticker": "STK_ATOM",
+                            "ticker": "stkATOM",
                             "decimal_digits": "6"
                         }
                     }
