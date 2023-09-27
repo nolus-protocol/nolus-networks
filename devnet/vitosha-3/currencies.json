@@ -102,7 +102,7 @@
                         "token_1": "USDC_AXELAR"
                     },
                     {
-                        "id": "41",
+                        "id": "229",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
                     },
@@ -170,7 +170,7 @@
                 },
                 "b": {
                     "network": "OSMOSIS",
-                    "ch": "channel-1377"
+                    "ch": "channel-1636"
                 }
             },
             {
@@ -276,7 +276,7 @@
             "swap_routes": [
                 [
                     {
-                        "pool_id": "142",
+                        "pool_id": "229",
                         "pool_token": "USDC"
                     }
                 ]
