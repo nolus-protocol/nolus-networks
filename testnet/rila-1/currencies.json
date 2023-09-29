@@ -191,11 +191,11 @@
             {
                 "a": {
                     "network": "OSMOSIS",
-                    "ch": "channel-1084"
+                    "ch": "channel-12"
                 },
                 "b": {
                     "network": "COSMOS_HUB",
-                    "ch": "channel-2939"
+                    "ch": "channel-2500"
                 }
             },
             {

@@ -196,7 +196,7 @@
             {
                 "a": {
                     "network": "COSMOS_HUB",
-                    "ch": "channel-2939"
+                    "ch": "channel-2500"
                 },
                 "b": {
                     "network": "OSMOSIS",
