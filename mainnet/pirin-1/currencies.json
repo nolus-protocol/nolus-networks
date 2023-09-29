@@ -445,9 +445,7 @@
         ]
     },
     "lease": {
-        "Lpn": {
-            "USDC": {}
-        },
+        "Lpn": ["USDC"],
         "Lease": {
             "ATOM": {
                 "swap_routes": [
