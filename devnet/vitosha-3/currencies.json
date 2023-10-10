@@ -151,7 +151,7 @@
             },
             "JUNO": {
                 "currencies": {
-                    "AKT": {
+                    "JUNO": {
                         "native": {
                             "name": "Juno",
                             "symbol": "ujunox",
