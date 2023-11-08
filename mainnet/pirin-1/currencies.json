@@ -88,6 +88,12 @@
                             "network": "OSMOSIS",
                             "currency": "SCRT"
                         }
+                    },
+                    "CRO": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "CRO"
+                        }
                     }
                 }
             },
@@ -192,6 +198,13 @@
                             "currency": "SCRT"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-scrt.svg"
+                    },
+                    "CRO": {
+                        "ibc": {
+                            "network": "CRYPTO_ORG",
+                            "currency": "CRO"
+                        },
+                        "icon": "https://nolus.io/currencies/cro-scrt.svg"
                     }
                 },
                 "amm_pools": [
@@ -258,6 +271,11 @@
                     {
                         "id": "584",
                         "token_0": "SCRT",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "9",
+                        "token_0": "CRO",
                         "token_1": "OSMO"
                     }
                 ]
@@ -389,6 +407,18 @@
                         }
                     }
                 }
+            },
+            "CRYPTO_ORG": {
+                "currencies": {
+                    "CRO": {
+                        "native": {
+                            "name": "Crypto.org CRO",
+                            "symbol": "basecro",
+                            "ticker": "CRO",
+                            "decimal_digits": "8"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -480,6 +510,16 @@
                 "b": {
                     "network": "SECRET",
                     "ch": "channel-1"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-5"
+                },
+                "b": {
+                    "network": "CRYPTO_ORG",
+                    "ch": "channel-10"
                 }
             }
         ]
@@ -650,6 +690,20 @@
                     [
                         {
                             "pool_id": "584",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "1133",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "CRO": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "9",
                             "pool_token": "OSMO"
                         },
                         {
