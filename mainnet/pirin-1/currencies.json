@@ -204,7 +204,7 @@
                             "network": "CRYPTO_ORG",
                             "currency": "CRO"
                         },
-                        "icon": "https://nolus.io/currencies/cro-scrt.svg"
+                        "icon": "https://nolus.io/currencies/osmosis-cro.svg"
                     }
                 },
                 "amm_pools": [
