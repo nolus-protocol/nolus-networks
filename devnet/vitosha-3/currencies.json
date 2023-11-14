@@ -119,7 +119,7 @@
                         "native": {
                             "name": "Usdc",
                             "symbol": "uausdc",
-                            "ticker": "USDC",
+                            "ticker": "axlUSDC",
                             "decimal_digits": "6"
                         }
                     }
