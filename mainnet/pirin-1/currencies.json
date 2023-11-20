@@ -94,6 +94,12 @@
                             "network": "OSMOSIS",
                             "currency": "CRO"
                         }
+                    },
+                    "TIA": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "TIA"
+                        }
                     }
                 }
             },
@@ -205,6 +211,13 @@
                             "currency": "CRO"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-cro.svg"
+                    },
+                    "TIA": {
+                        "ibc": {
+                            "network": "CELESTIA",
+                            "currency": "TIA"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-tia.svg"
                     }
                 },
                 "amm_pools": [
@@ -276,6 +289,11 @@
                     {
                         "id": "9",
                         "token_0": "CRO",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "1248",
+                        "token_0": "TIA",
                         "token_1": "OSMO"
                     }
                 ]
@@ -419,6 +437,18 @@
                         }
                     }
                 }
+            },
+            "CELESTIA": {
+                "currencies": {
+                    "TIA": {
+                        "native": {
+                            "name": "Celestia TIA",
+                            "symbol": "utia",
+                            "ticker": "TIA",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -520,6 +550,16 @@
                 "b": {
                     "network": "CRYPTO_ORG",
                     "ch": "channel-10"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-6994"
+                },
+                "b": {
+                    "network": "CELESTIA",
+                    "ch": "channel-2"
                 }
             }
         ]
@@ -704,6 +744,20 @@
                     [
                         {
                             "pool_id": "9",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "1133",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "TIA": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "1248",
                             "pool_token": "OSMO"
                         },
                         {
