@@ -229,7 +229,7 @@
                         "token_1": "USDC_AXELAR"
                     },
                     {
-                        "id": "704",
+                        "id": "1134",
                         "token_0": "OSMO",
                         "token_1": "WETH_AXELAR"
                     },
@@ -601,7 +601,7 @@
                 "swap_routes": [
                     [
                         {
-                            "pool_id": "704",
+                            "pool_id": "1134",
                             "pool_token": "OSMO"
                         },
                         {
