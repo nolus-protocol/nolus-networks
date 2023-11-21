@@ -100,6 +100,12 @@
                             "network": "OSMOSIS",
                             "currency": "TIA"
                         }
+                    },
+                    "STARS": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "STARS"
+                        }
                     }
                 }
             },
@@ -218,6 +224,13 @@
                             "currency": "TIA"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-tia.svg"
+                    },
+                    "STARS": {
+                        "ibc": {
+                            "network": "STARGAZE",
+                            "currency": "STARS"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-stars.svg"
                     }
                 },
                 "amm_pools": [
@@ -294,6 +307,11 @@
                     {
                         "id": "1248",
                         "token_0": "TIA",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "1096",
+                        "token_0": "STARS",
                         "token_1": "OSMO"
                     }
                 ]
@@ -449,6 +467,18 @@
                         }
                     }
                 }
+            },
+            "STARGAZE": {
+                "currencies": {
+                    "STARS": {
+                        "native": {
+                            "name": "Stargaze STARS",
+                            "symbol": "ustars",
+                            "ticker": "STARS",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -560,6 +590,16 @@
                 "b": {
                     "network": "CELESTIA",
                     "ch": "channel-2"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-75"
+                },
+                "b": {
+                    "network": "STARGAZE",
+                    "ch": "channel-0"
                 }
             }
         ]
@@ -758,6 +798,20 @@
                     [
                         {
                             "pool_id": "1248",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "1133",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "STARS": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "1096",
                             "pool_token": "OSMO"
                         },
                         {
