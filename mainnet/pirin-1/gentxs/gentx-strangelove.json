@@ -1,0 +1,88 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "strangelove",
+          "identity": "158da6c7fcfb7bd23988d9c0d0d8b80f1c5c70b5",
+          "website": "https://strange.love/",
+          "security_contact": "security@strange.love",
+          "details": "Gentlemen, you can't fight in here! This is the War Room!"
+        },
+        "commission": {
+          "rate": "0.050000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "nolus1zts523wqvtrhd2a9mznfc83msgs6mgwccm6nld",
+        "validator_address": "nolusvaloper1zts523wqvtrhd2a9mznfc83msgs6mgwcpt0kus",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "wvvoqtrlrdAA3SVtIeH/ohgE36hydA4w1kTFrEfS7Bs="
+        },
+        "value": { "denom": "unls", "amount": "1000000" }
+      }
+    ],
+    "memo": "d142e699bf29f036600d7222e7c33f0ea8b4d295@0.0.0.0:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 3,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A5EqH2+OymV6Leskpe8L9RPc33SupzVDJtUROmIVqZtB"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A4jcsKg3Z2AcaGH22XjRiIrMKPrPzGh6Z6hji4fSY5uy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "ApeQ+BvRIgCWL5Vrcl3Znxy2TsgErNE1rdMZ8rwo3WuA"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "ApV7SUoUYBCwJN+SmjVvZthKiXvdGMnPTz7l7XUiinB3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Av4Tr/ayZmj2vBBR2up1EFNGPZIclSwSlpckPGy86/Q9"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AsDBRxCzQtjU44r9j/5gvFjdUvtalqqCMbBtanueo5lX"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": { "extra_bits_stored": 7, "elems": "Dg==" },
+            "mode_infos": [
+              { "single": { "mode": "SIGN_MODE_LEGACY_AMINO_JSON" } },
+              { "single": { "mode": "SIGN_MODE_LEGACY_AMINO_JSON" } },
+              { "single": { "mode": "SIGN_MODE_LEGACY_AMINO_JSON" } }
+            ]
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": { "amount": [], "gas_limit": "200000", "payer": "", "granter": "" }
+  },
+  "signatures": [
+    "CkCzAco2VHEdj0cPS8i86AVfj0jnXyg+HOc9F2sBDmXFDh9y+yJ7gW9ukIs2OYvRyKlRqp/DpZkDFzS6r8UBoWkHCkBXN+CsxssJGNpfnh5xF15+oMkJqzF6L6h7if6CREanyQwMe5unPEJF3Rs7fU0aiUFN516lIEyjrkPvTmz0UeQuCkD1l8lHGJ0vCK7JdC/OGPTclrEvKoqlVkQVgXFvE+TTgnLGepjxtOeKQHLp3qdMJYgFu77TSZCAKKSypJ+UVLki"
+  ]
+}
