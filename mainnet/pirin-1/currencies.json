@@ -106,6 +106,12 @@
                             "network": "OSMOSIS",
                             "currency": "STARS"
                         }
+                    },
+                    "Q_ATOM": {
+                        "ibc": {
+                            "network": "OSMOSIS",
+                            "currency": "Q_ATOM"
+                        }
                     }
                 }
             },
@@ -231,6 +237,13 @@
                             "currency": "STARS"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-stars.svg"
+                    },
+                    "Q_ATOM": {
+                        "ibc": {
+                            "network": "QUICKSILVER",
+                            "currency": "Q_ATOM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-qatom.svg"
                     }
                 },
                 "amm_pools": [
@@ -313,6 +326,11 @@
                         "id": "1096",
                         "token_0": "STARS",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "944",
+                        "token_0": "ATOM",
+                        "token_1": "Q_ATOM"
                     }
                 ]
             },
@@ -479,6 +497,18 @@
                         }
                     }
                 }
+            },
+            "QUICKSILVER": {
+                "currencies": {
+                    "Q_ATOM": {
+                        "native": {
+                            "name": "Quicksilver qATOM",
+                            "symbol": "uqatom",
+                            "ticker": "qATOM",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -600,6 +630,16 @@
                 "b": {
                     "network": "STARGAZE",
                     "ch": "channel-0"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-522"
+                },
+                "b": {
+                    "network": "QUICKSILVER",
+                    "ch": "channel-2"
                 }
             }
         ]
@@ -812,6 +852,24 @@
                     [
                         {
                             "pool_id": "1096",
+                            "pool_token": "OSMO"
+                        },
+                        {
+                            "pool_id": "1133",
+                            "pool_token": "USDC"
+                        }
+                    ]
+                ]
+            },
+            "Q_ATOM": {
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "944",
+                            "pool_token": "ATOM"
+                        },
+                        {
+                            "pool_id": "1",
                             "pool_token": "OSMO"
                         },
                         {
