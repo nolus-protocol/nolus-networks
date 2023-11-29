@@ -250,7 +250,7 @@
                 },
                 "b": {
                     "network": "AXELAR",
-                    "ch": "channel-???"
+                    "ch": "channel-237"
                 }
             },
             {
@@ -260,7 +260,7 @@
                 },
                 "b": {
                     "network": "COSMOS_HUB",
-                    "ch": "channel-???"
+                    "ch": "channel-16"
                 }
             }
         ]
