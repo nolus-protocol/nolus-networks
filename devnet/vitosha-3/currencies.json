@@ -270,12 +270,12 @@
             "DexNetwork": "OSMOSIS",
             "Lpn": {
                 "USDC": {
-                    "currency@dex": "USDC_AXELAR"
+                    "dex_currency": "USDC_AXELAR"
                 }
             },
             "Lease": {
                 "ATOM": {
-                    "currency@dex": "ATOM",
+                    "dex_currency": "ATOM",
                     "swap_routes": [
                         [
                             {
@@ -290,7 +290,7 @@
                     ]
                 },
                 "OSMO": {
-                    "currency@dex": "OSMO",
+                    "dex_currency": "OSMO",
                     "swap_routes": [
                         [
                             {
@@ -301,7 +301,7 @@
                     ]
                 },
                 "AKT": {
-                    "currency@dex": "AKT",
+                    "dex_currency": "AKT",
                     "swap_routes": [
                         [
                             {
@@ -316,7 +316,7 @@
                     ]
                 },
                 "JUNO": {
-                    "currency@dex": "JUNO",
+                    "dex_currency": "JUNO",
                     "swap_routes": [
                         [
                             {
@@ -332,7 +332,7 @@
                 }
             },
             "Native": {
-                "currency@dex": "NLS",
+                "dex_currency": "NLS",
                 "swap_routes": [
                     [
                         {
@@ -347,12 +347,12 @@
             "DexNetwork": "NEUTRON",
             "Lpn": {
                 "USDC_AXELAR": {
-                    "currency@dex": "USDC_AXELAR"
+                    "dex_currency": "USDC_AXELAR"
                 }
             },
             "Lease": {
                 "ATOM": {
-                    "currency@dex": "ATOM",
+                    "dex_currency": "ATOM",
                     "swap_routes": [
                         [
                             {
@@ -367,7 +367,7 @@
                     ]
                 },
                 "NTRN": {
-                    "currency@dex": "NTRN",
+                    "dex_currency": "NTRN",
                     "swap_routes": [
                         [
                             {
@@ -379,7 +379,7 @@
                 }
             },
             "Native": {
-                "currency@dex": "NLS",
+                "dex_currency": "NLS",
                 "swap_routes": [
                     [
                         {
