@@ -268,13 +268,11 @@
     "protocols": {
         "osmosis_axlusdc": {
             "DexNetwork": "OSMOSIS",
-            "Lpn": [
-                {
-                    "USDC": {
-                        "currency@dex": "USDC_AXELAR"
-                    }
+            "Lpn": {
+                "USDC": {
+                    "currency@dex": "USDC_AXELAR"
                 }
-            ],
+            },
             "Lease": {
                 "ATOM": {
                     "currency@dex": "ATOM",
@@ -347,13 +345,11 @@
         },
         "astroport_axlusdc": {
             "DexNetwork": "NEUTRON",
-            "Lpn": [
-                {
-                    "USDC_AXELAR": {
-                        "currency@dex": "USDC_AXELAR"
-                    }
+            "Lpn": {
+                "USDC_AXELAR": {
+                    "currency@dex": "USDC_AXELAR"
                 }
-            ],
+            },
             "Lease": {
                 "ATOM": {
                     "currency@dex": "ATOM",
