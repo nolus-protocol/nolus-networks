@@ -286,6 +286,16 @@
                     "network": "COSMOS_HUB",
                     "ch": "channel-16"
                 }
+            },
+            {
+                "a": {
+                    "network": "NEUTRON",
+                    "ch": "channel-48"
+                },
+                "b": {
+                    "network": "DYDX",
+                    "ch": "channel-11"
+                }
             }
         ]
     },
