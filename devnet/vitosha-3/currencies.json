@@ -316,7 +316,7 @@
                             },
                             {
                                 "pool_id": "5",
-                                "pool_token": "USDC"
+                                "pool_token": "USDC_AXELAR"
                             }
                         ]
                     ]
@@ -327,7 +327,7 @@
                         [
                             {
                                 "pool_id": "5",
-                                "pool_token": "USDC"
+                                "pool_token": "USDC_AXELAR"
                             }
                         ]
                     ]
@@ -342,7 +342,7 @@
                             },
                             {
                                 "pool_id": "5",
-                                "pool_token": "USDC"
+                                "pool_token": "USDC_AXELAR"
                             }
                         ]
                     ]
@@ -357,7 +357,7 @@
                             },
                             {
                                 "pool_id": "5",
-                                "pool_token": "USDC"
+                                "pool_token": "USDC_AXELAR"
                             }
                         ]
                     ]
@@ -369,7 +369,7 @@
                     [
                         {
                             "pool_id": "229",
-                            "pool_token": "USDC"
+                            "pool_token": "USDC_AXELAR"
                         }
                     ]
                 ]
@@ -398,17 +398,6 @@
                 },
                 "NTRN": {
                     "dex_currency": "NTRN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "DYDX": {
-                    "dex_currency": "DYDX",
                     "swap_routes": [
                         [
                             {
