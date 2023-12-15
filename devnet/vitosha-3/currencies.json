@@ -139,7 +139,8 @@
                             "symbol": "untrn",
                             "ticker": "NTRN",
                             "decimal_digits": "6"
-                        }
+                        },
+                        "icon": "https://nolus.io/currencies/neutron-ntrn.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
