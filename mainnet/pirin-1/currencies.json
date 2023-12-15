@@ -550,6 +550,7 @@
             },
             "Lease": {
                 "ATOM": {
+                    "dex_currency": "ATOM",
                     "swap_routes": [
                         [
                             {
@@ -564,6 +565,7 @@
                     ]
                 },
                 "ST_ATOM": {
+                    "dex_currency": "ST_ATOM",
                     "swap_routes": [
                         [
                             {
@@ -582,6 +584,7 @@
                     ]
                 },
                 "OSMO": {
+                    "dex_currency": "OSMO",
                     "swap_routes": [
                         [
                             {
@@ -592,6 +595,7 @@
                     ]
                 },
                 "ST_OSMO": {
+                    "dex_currency": "ST_OSMO",
                     "swap_routes": [
                         [
                             {
@@ -606,6 +610,7 @@
                     ]
                 },
                 "WBTC": {
+                    "dex_currency": "WBTC",
                     "swap_routes": [
                         [
                             {
@@ -620,6 +625,7 @@
                     ]
                 },
                 "WETH": {
+                    "dex_currency": "WETH",
                     "swap_routes": [
                         [
                             {
@@ -634,6 +640,7 @@
                     ]
                 },
                 "AKT": {
+                    "dex_currency": "AKT",
                     "swap_routes": [
                         [
                             {
@@ -648,6 +655,7 @@
                     ]
                 },
                 "AXL": {
+                    "dex_currency": "AXL",
                     "swap_routes": [
                         [
                             {
@@ -662,6 +670,7 @@
                     ]
                 },
                 "JUNO": {
+                    "dex_currency": "JUNO",
                     "swap_routes": [
                         [
                             {
@@ -676,6 +685,7 @@
                     ]
                 },
                 "EVMOS": {
+                    "dex_currency": "EVMOS",
                     "swap_routes": [
                         [
                             {
@@ -690,6 +700,7 @@
                     ]
                 },
                 "STK_ATOM": {
+                    "dex_currency": "STK_ATOM",
                     "swap_routes": [
                         [
                             {
@@ -708,6 +719,7 @@
                     ]
                 },
                 "SCRT": {
+                    "dex_currency": "SCRT",
                     "swap_routes": [
                         [
                             {
@@ -722,6 +734,7 @@
                     ]
                 },
                 "CRO": {
+                    "dex_currency": "CRO",
                     "swap_routes": [
                         [
                             {
@@ -736,6 +749,7 @@
                     ]
                 },
                 "TIA": {
+                    "dex_currency": "TIA",
                     "swap_routes": [
                         [
                             {
@@ -750,6 +764,7 @@
                     ]
                 },
                 "STARS": {
+                    "dex_currency": "STARS",
                     "swap_routes": [
                         [
                             {
@@ -764,6 +779,7 @@
                     ]
                 },
                 "Q_ATOM": {
+                    "dex_currency": "Q_ATOM",
                     "swap_routes": [
                         [
                             {
