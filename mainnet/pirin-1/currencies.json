@@ -10,108 +10,6 @@
                             "ticker": "NLS",
                             "decimal_digits": "6"
                         }
-                    },
-                    "OSMO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "OSMO"
-                        }
-                    },
-                    "ST_OSMO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "ST_OSMO"
-                        }
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "ATOM"
-                        }
-                    },
-                    "ST_ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "ST_ATOM"
-                        }
-                    },
-                    "USDC": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "USDC_AXELAR"
-                        }
-                    },
-                    "WETH": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "WETH_AXELAR"
-                        }
-                    },
-                    "WBTC": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "WBTC_AXELAR"
-                        }
-                    },
-                    "AKT": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "AKT"
-                        }
-                    },
-                    "AXL": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "AXL"
-                        }
-                    },
-                    "JUNO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "JUNO"
-                        }
-                    },
-                    "EVMOS": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "EVMOS"
-                        }
-                    },
-                    "STK_ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "STK_ATOM"
-                        }
-                    },
-                    "SCRT": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "SCRT"
-                        }
-                    },
-                    "CRO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "CRO"
-                        }
-                    },
-                    "TIA": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "TIA"
-                        }
-                    },
-                    "STARS": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "STARS"
-                        }
-                    },
-                    "Q_ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "Q_ATOM"
-                        }
                     }
                 }
             },
@@ -644,252 +542,273 @@
             }
         ]
     },
-    "lease": {
-        "Lpn": ["USDC"],
-        "Lease": {
-            "ATOM": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
-                    ]
-                ]
+    "protocols": {
+        "OSMOSIS-OSMOSIS-USDC_AXELAR": {
+            "DexNetwork": "OSMOSIS",
+            "Lpn": {
+                "dex_currency": "USDC_AXELAR"
             },
-            "ST_ATOM": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1136",
-                            "pool_token": "ATOM"
-                        },
-                        {
-                            "pool_id": "1",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+            "Lease": {
+                "ATOM": {
+                    "dex_currency": "ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "OSMO": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "ST_ATOM": {
+                    "dex_currency": "ST_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1136",
+                                "pool_token": "ATOM"
+                            },
+                            {
+                                "pool_id": "1",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "ST_OSMO": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "833",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "OSMO": {
+                    "dex_currency": "OSMO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "WBTC": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1090",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "ST_OSMO": {
+                    "dex_currency": "ST_OSMO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "833",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "WETH": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1134",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "WBTC": {
+                    "dex_currency": "WBTC",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1090",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "AKT": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1093",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "WETH": {
+                    "dex_currency": "WETH",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1134",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "AXL": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "812",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "AKT": {
+                    "dex_currency": "AKT",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1093",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "JUNO": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "497",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "AXL": {
+                    "dex_currency": "AXL",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "812",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "EVMOS": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "722",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "JUNO": {
+                    "dex_currency": "JUNO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "497",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "STK_ATOM": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "886",
-                            "pool_token": "ATOM"
-                        },
-                        {
-                            "pool_id": "1",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "EVMOS": {
+                    "dex_currency": "EVMOS",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "722",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "SCRT": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "584",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "STK_ATOM": {
+                    "dex_currency": "STK_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "886",
+                                "pool_token": "ATOM"
+                            },
+                            {
+                                "pool_id": "1",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "CRO": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "9",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "SCRT": {
+                    "dex_currency": "SCRT",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "584",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "TIA": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1248",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "CRO": {
+                    "dex_currency": "CRO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "9",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "STARS": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1096",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
-                            "pool_token": "USDC"
-                        }
+                },
+                "TIA": {
+                    "dex_currency": "TIA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1248",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
                     ]
-                ]
+                },
+                "STARS": {
+                    "dex_currency": "STARS",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1096",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "Q_ATOM": {
+                    "dex_currency": "Q_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "944",
+                                "pool_token": "ATOM"
+                            },
+                            {
+                                "pool_id": "1",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                }
             },
-            "Q_ATOM": {
+            "Native": {
+                "id": "NLS",
                 "swap_routes": [
                     [
                         {
-                            "pool_id": "944",
-                            "pool_token": "ATOM"
-                        },
-                        {
-                            "pool_id": "1",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "1133",
+                            "pool_id": "1041",
                             "pool_token": "USDC"
                         }
                     ]
                 ]
             }
-        },
-        "Native": {
-            "id": "NLS",
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "1041",
-                        "pool_token": "USDC"
-                    }
-                ]
-            ]
         }
     },
     "definitions": [
