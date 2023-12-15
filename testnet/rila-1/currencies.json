@@ -10,36 +10,6 @@
                             "ticker": "NLS",
                             "decimal_digits": "6"
                         }
-                    },
-                    "USDC": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "USDC_AXELAR"
-                        }
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "ATOM"
-                        }
-                    },
-                    "OSMO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "OSMO"
-                        }
-                    },
-                    "AKT": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "AKT"
-                        }
-                    },
-                    "JUNO": {
-                        "ibc": {
-                            "network": "OSMOSIS",
-                            "currency": "JUNO"
-                        }
                     }
                 }
             },
@@ -102,18 +72,13 @@
                         "token_1": "USDC_AXELAR"
                     },
                     {
-                        "id": "39",
+                        "id": "323",
                         "token_0": "NLS",
                         "token_1": "USDC_AXELAR"
                     },
                     {
                         "id": "18",
-                        "token_0": "AКТ",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "3",
-                        "token_0": "JUNO",
+                        "token_0": "AKT",
                         "token_1": "OSMO"
                     }
                 ]
@@ -171,11 +136,11 @@
             {
                 "a": {
                     "network": "NOLUS",
-                    "ch": "channel-0"
+                    "ch": "channel-1993"
                 },
                 "b": {
                     "network": "OSMOSIS",
-                    "ch": "channel-110"
+                    "ch": "channel-4508"
                 }
             },
             {
@@ -191,21 +156,21 @@
             {
                 "a": {
                     "network": "OSMOSIS",
-                    "ch": "channel-12"
-                },
-                "b": {
-                    "network": "COSMOS_HUB",
-                    "ch": "channel-2500"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
                     "ch": "channel-73"
                 },
                 "b": {
                     "network": "AKASH",
                     "ch": "channel-1"
+                }
+            },
+            {
+                "a": {
+                    "network": "COSMOS_HUB",
+                    "ch": "channel-2500"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-12"
                 }
             },
             {
@@ -220,72 +185,81 @@
             }
         ]
     },
-    "lease": {
-        "Lpn": ["USDC"],
-        "Lease": {
-            "ATOM": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "12",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "5",
-                            "pool_token": "USDC"
-                        }
-                    ]
-                ]
+    "protocols": {
+        "osmosis_axlusdc": {
+            "DexNetwork": "OSMOSIS",
+            "Lpn": {
+                "dex_currency": "USDC_AXELAR"
             },
-            "OSMO": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "5",
-                            "pool_token": "USDC"
-                        }
+            "Lease": {
+                "ATOM": {
+                    "dex_currency": "ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "12",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "5",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
                     ]
-                ]
-            },
-            "AKT": {
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "18",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "5",
-                            "pool_token": "USDC"
-                        }
+                },
+                "OSMO": {
+                    "dex_currency": "OSMO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "5",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
                     ]
-                ]
+                },
+                "AKT": {
+                    "dex_currency": "AKT",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "18",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "5",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
+                    ]
+                },
+                "JUNO": {
+                    "dex_currency": "JUNO",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "3",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "5",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
+                    ]
+                }
             },
-            "JUNO": {
+            "Native": {
+                "dex_currency": "NLS",
                 "swap_routes": [
                     [
                         {
-                            "pool_id": "3",
-                            "pool_token": "OSMO"
-                        },
-                        {
-                            "pool_id": "5",
-                            "pool_token": "USDC"
+                            "pool_id": "323",
+                            "pool_token": "USDC_AXELAR"
                         }
                     ]
                 ]
             }
-        },
-        "Native": {
-            "id": "NLS",
-            "swap_routes": [
-                [
-                    {
-                        "pool_id": "39",
-                        "pool_token": "USDC"
-                    }
-                ]
-            ]
         }
     },
     "definitions": [
@@ -295,6 +269,8 @@
         "Some networks may have DEX services available. Their description contain the pools of interest for the Nolus AMM protocol.",
         "",
         "On a given network, each currency is identified by its 'ticker'. A currency with ticker NLS on a network NOLUS is required.",
+        "The Nolus network description should not contain other currencies. They are defined in the 'protocols' object.",
+        "",
         "A currency is either native or ibc on a network. In the latter case it points to the 'burning' currency residing at a network",
         "that is at one hop distance. In the former case it is described with name, symbol and number of decimal digits.",
         "",
@@ -315,7 +291,8 @@
         "network 'K' reachable through a sequence of channels with names 'ch[0]', 'ch[1]' ... 'ch[k]' at their minting side.",
         "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19).",
         "",
-        "The usage of the currencies at the Nolus AMM protocol is described with the 'lease' JSON object",
+        "The usage of the currencies at the Nolus AMM protocol is described with a dictionary of 'protocols' JSON objects",
+        "The key has the structure <dex>_<lpn>. The first property of a protocol, 'DexNetwork', is the name of the network it operates on.",
         "Each currency is classified as either Lpn, Lease or Native. Lpn contains the Lpp currencies. Lease currencies are the ones ",
         "customers may open lease in. Native defines the native currency for the Nolus AMM protocol.",
         "Leases may be paid with any of the provided currencies.",
