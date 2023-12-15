@@ -156,13 +156,6 @@
                         },
                         "icon": "https://nolus.io/currencies/neutron-atom.svg"
                     },
-                    "DYDX": {
-                        "ibc": {
-                            "network": "DYDX",
-                            "currency": "DYDX"
-                        },
-                        "icon": "https://nolus.io/currencies/neutron-dydx.svg"
-                    },
                     "NLS": {
                         "ibc": {
                             "network": "NOLUS",
@@ -178,12 +171,7 @@
                         },
                         {
                             "id": "",
-                            "token_0": "NTRN",
-                            "token_1": "ATOM"
-                        },
-                        {
-                            "id": "",
-                            "token_0": "DYDX",
+                            "token_0": "ATOM",
                             "token_1": "USDC_AXELAR"
                         },
                         {
@@ -192,18 +180,6 @@
                             "token_1": "NLS"
                         }
                     ]
-                }
-            },
-            "DYDX": {
-                "currencies": {
-                    "DYDX": {
-                        "native": {
-                            "name": "Dydx",
-                            "symbol": "adydx",
-                            "ticker": "DYDX",
-                            "decimal_digits": "18"
-                        }
-                    }
                 }
             }
         },
@@ -286,16 +262,6 @@
                 "b": {
                     "network": "COSMOS_HUB",
                     "ch": "channel-16"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-48"
-                },
-                "b": {
-                    "network": "DYDX",
-                    "ch": "channel-11"
                 }
             }
         ]
@@ -386,10 +352,6 @@
                     "dex_currency": "ATOM",
                     "swap_routes": [
                         [
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
                             {
                                 "pool_id": "",
                                 "pool_token": "USDC_AXELAR"
