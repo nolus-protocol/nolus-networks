@@ -186,7 +186,7 @@
         ]
     },
     "protocols": {
-        "osmosis_axlusdc": {
+        "OSMOSIS-OSMOSIS-USDC-1": {
             "DexNetwork": "OSMOSIS",
             "Lpn": {
                 "dex_currency": "USDC_AXELAR"
