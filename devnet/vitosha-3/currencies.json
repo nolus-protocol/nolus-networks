@@ -162,25 +162,25 @@
                             "currency": "NLS"
                         },
                         "icon": "https://nolus.io/currencies/neutron-nls.svg"
+                    }
+                },
+                "amm_pools": [
+                    {
+                        "id": "",
+                        "token_0": "NTRN",
+                        "token_1": "USDC_AXELAR"
                     },
-                    "amm_pools": [
-                        {
-                            "id": "",
-                            "token_0": "NTRN",
-                            "token_1": "USDC_AXELAR"
-                        },
-                        {
-                            "id": "",
-                            "token_0": "ATOM",
-                            "token_1": "USDC_AXELAR"
-                        },
-                        {
-                            "id": "",
-                            "token_0": "NTRN",
-                            "token_1": "NLS"
-                        }
-                    ]
-                }
+                    {
+                        "id": "",
+                        "token_0": "ATOM",
+                        "token_1": "USDC_AXELAR"
+                    },
+                    {
+                        "id": "",
+                        "token_0": "NTRN",
+                        "token_1": "NLS"
+                    }
+                ]
             }
         },
         "channels": [
