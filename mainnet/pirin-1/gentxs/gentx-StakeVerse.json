@@ -5,7 +5,7 @@
         "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
         "description": {
           "moniker": "StakeVerse",
-          "identity": "ashokvardhn",
+          "identity": "6AF1FB0DC2111276",
           "website": "decentralized_staker",
           "security_contact": "9611887186",
           "details": "Crypto Staker who liked Nolus and supporting the Project"
