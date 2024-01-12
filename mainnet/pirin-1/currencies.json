@@ -666,6 +666,16 @@
                     "network": "DYDX",
                     "ch": "channel-11"
                 }
+            },
+            {
+                "a": {
+                    "network": "NEUTRON",
+                    "ch": "channel-2"
+                },
+                "b": {
+                    "network": "AXELAR",
+                    "ch": "channel-78"
+                }
             }
         ]
     },
