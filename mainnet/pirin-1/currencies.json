@@ -142,6 +142,13 @@
                             "currency": "Q_ATOM"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-qatom.svg"
+                    },
+                    "STRD": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "STRD"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-strd.svg"
                     }
                 },
                 "amm_pools": [
@@ -229,6 +236,11 @@
                         "id": "944",
                         "token_0": "ATOM",
                         "token_1": "Q_ATOM"
+                    },
+                    {
+                        "id": "1098",
+                        "token_0": "STRD",
+                        "token_1": "OSMO"
                     }
                 ]
             },
@@ -295,6 +307,14 @@
                             "name": "Staked OSMO",
                             "symbol": "stuosmo",
                             "ticker": "stOSMO",
+                            "decimal_digits": "6"
+                        }
+                    },
+                    "STRD": {
+                        "native": {
+                            "name": "Stride STRD",
+                            "symbol": "ustrd",
+                            "ticker": "STRD",
                             "decimal_digits": "6"
                         }
                     }
@@ -629,6 +649,16 @@
             },
             {
                 "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-326"
+                },
+                "b": {
+                    "network": "STRIDE",
+                    "ch": "channel-5"
+                }
+            },
+            {
+                "a": {
                     "network": "NOLUS",
                     "ch": "channel-3839"
                 },
@@ -925,6 +955,21 @@
                             },
                             {
                                 "pool_id": "1",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "STRD": {
+                    "dex_currency": "STRD",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1098",
                                 "pool_token": "OSMO"
                             },
                             {
