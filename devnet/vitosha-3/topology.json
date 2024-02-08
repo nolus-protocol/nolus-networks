@@ -1,17 +1,14 @@
 {
+    "host_network": {
+        "name": "NOLUS",
+        "native_currency": {
+            "name": "Nolus",
+            "symbol": "unls",
+            "ticker": "NLS",
+            "decimal_digits": "6"
+        }
+    },
     "networks": {
-        "NOLUS": {
-            "currencies": {
-                "NLS": {
-                    "native": {
-                        "name": "Nolus",
-                        "symbol": "unls",
-                        "ticker": "NLS",
-                        "decimal_digits": "6"
-                    }
-                }
-            }
-        },
         "OSMOSIS": {
             "currencies": {
                 "OSMO": {
