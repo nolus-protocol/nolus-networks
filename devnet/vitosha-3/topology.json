@@ -1,24 +1,22 @@
 {
-    "networks": {
-        "NOLUS": {
-            "currencies": {
-                "NLS": {
-                    "native": {
-                        "name": "Nolus",
-                        "symbol": "unls",
-                        "ticker": "NLS",
-                        "decimal_digits": "6"
-                    }
-                }
+    "host_network": {
+        "name": "NOLUS",
+        "currency": {
+            "id": "NLS",
+            "native": {
+                "name": "Nolus",
+                "symbol": "unls",
+                "decimal_digits": "6"
             }
-        },
+        }
+    },
+    "networks": {
         "OSMOSIS": {
             "currencies": {
                 "OSMO": {
                     "native": {
                         "name": "Osmosis OSMO",
                         "symbol": "uosmo",
-                        "ticker": "OSMO",
                         "decimal_digits": "6"
                     },
                     "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
@@ -88,7 +86,6 @@
                     "native": {
                         "name": "Usdc",
                         "symbol": "uausdc",
-                        "ticker": "USDC",
                         "decimal_digits": "6"
                     }
                 }
@@ -100,7 +97,6 @@
                     "native": {
                         "name": "Cosmos Hub ATOM",
                         "symbol": "uatom",
-                        "ticker": "ATOM",
                         "decimal_digits": "6"
                     }
                 }
@@ -112,7 +108,6 @@
                     "native": {
                         "name": "Akash",
                         "symbol": "uakt",
-                        "ticker": "AKT",
                         "decimal_digits": "6"
                     }
                 }
@@ -124,7 +119,6 @@
                     "native": {
                         "name": "Juno",
                         "symbol": "ujunox",
-                        "ticker": "JUNO",
                         "decimal_digits": "6"
                     }
                 }
@@ -136,7 +130,6 @@
                     "native": {
                         "name": "Neutron",
                         "symbol": "untrn",
-                        "ticker": "NTRN",
                         "decimal_digits": "6"
                     },
                     "icon": "https://nolus.io/currencies/neutron-ntrn.svg"
@@ -291,6 +284,6 @@
         "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
         "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
         "network 'K' reachable through a sequence of channels with names 'ch[0]', 'ch[1]' ... 'ch[k]' at their minting side.",
-        "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19).",
+        "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19)."
     ]
 }
