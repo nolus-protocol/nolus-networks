@@ -153,7 +153,7 @@
                 },
                 "amm_pools": [
                     {
-                        "id": "1",
+                        "id": "1135",
                         "token_0": "ATOM",
                         "token_1": "OSMO"
                     },
@@ -198,7 +198,7 @@
                         "token_1": "OSMO"
                     },
                     {
-                        "id": "497",
+                        "id": "1097",
                         "token_0": "JUNO",
                         "token_1": "OSMO"
                     },
