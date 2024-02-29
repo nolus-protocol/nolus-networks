@@ -149,6 +149,15 @@
                             "currency": "STRD"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-strd.svg"
+                    },
+                    "MILK_TIA": {
+                        "native": {
+                            "name": "Osmosis milkTIA",
+                            "symbol": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+                            "ticker": "milkTIA",
+                            "decimal_digits": "6"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-milktia.svg"
                     }
                 },
                 "amm_pools": [
@@ -241,6 +250,11 @@
                         "id": "1098",
                         "token_0": "STRD",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "1335",
+                        "token_0": "MILK_TIA",
+                        "token_1": "TIA"
                     }
                 ]
             },
@@ -970,6 +984,25 @@
                         [
                             {
                                 "pool_id": "1098",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "MILK_TIA": {
+                    "dex_currency": "MILK_TIA",
+                    "swap_routes": [
+                        [
+                            {
+                            "pool_id": "1335",
+                            "pool_token": "TIA"
+                            },
+                            {
+                                "pool_id": "1248",
                                 "pool_token": "OSMO"
                             },
                             {
