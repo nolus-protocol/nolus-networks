@@ -336,6 +336,14 @@
                             "decimal_digits": "6"
                         }
                     },
+                    "ST_TIA": {
+                        "native": {
+                            "name": "Staked TIA",
+                            "symbol": "stutia",
+                            "ticker": "stTIA",
+                            "decimal_digits": "6"
+                        }
+                    },
                     "STRD": {
                         "native": {
                             "name": "Stride STRD",
@@ -502,7 +510,7 @@
                     },
                     "TIA": {
                         "ibc": {
-                            "network": "STRIDE",
+                            "network": "CELESTIA",
                             "currency": "TIA"
                         },
                         "icon": "https://nolus.io/currencies/neutron-tia.svg"
@@ -755,6 +763,16 @@
                 "b": {
                     "network": "AXELAR",
                     "ch": "channel-78"
+                }
+            },
+            {
+                "a": {
+                    "network": "NEUTRON",
+                    "ch": "channel-35"
+                },
+                "b": {
+                    "network": "CELESTIA",
+                    "ch": "channel-8"
                 }
             }
         ]
