@@ -158,6 +158,13 @@
                             "decimal_digits": "6"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-milktia.svg"
+                    },
+                    "ST_TIA": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "ST_TIA"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-sttia.svg"
                     }
                 },
                 "amm_pools": [
@@ -254,6 +261,11 @@
                     {
                         "id": "1335",
                         "token_0": "MILK_TIA",
+                        "token_1": "TIA"
+                    },
+                    {
+                        "id": "1428",
+                        "token_0": "ST_TIA",
                         "token_1": "TIA"
                     }
                 ]
@@ -487,6 +499,20 @@
                             "currency": "NLS"
                         },
                         "icon": "https://nolus.io/currencies/neutron-nls.svg"
+                    },
+                    "TIA": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "TIA"
+                        },
+                        "icon": "https://nolus.io/currencies/neutron-tia.svg"
+                    },
+                    "ST_TIA": {
+                        "ibc": {
+                            "network": "STRIDE",
+                            "currency": "ST_TIA"
+                        },
+                        "icon": "https://nolus.io/currencies/neutron-sttia.svg"
                     }
                 },
                 "amm_pools": [
@@ -514,6 +540,16 @@
                         "id": "",
                         "token_0": "DYDX",
                         "token_1": "USDC_AXELAR"
+                    },
+                    {
+                        "id": "",
+                        "token_0": "NTRN",
+                        "token_1": "TIA"
+                    },
+                    {
+                        "id": "",
+                        "token_0": "ST_TIA",
+                        "token_1": "TIA"
                     }
                 ]
             },
@@ -1011,6 +1047,25 @@
                             }
                         ]
                     ]
+                },
+                "ST_TIA": {
+                    "dex_currency": "ST_TIA",
+                    "swap_routes": [
+                        [
+                            {
+                            "pool_id": "1428",
+                            "pool_token": "TIA"
+                            },
+                            {
+                                "pool_id": "1248",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
                 }
             },
             "Native": {
@@ -1080,6 +1135,40 @@
                     "dex_currency": "DYDX",
                     "swap_routes": [
                         [
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
+                    ]
+                },
+                "TIA": {
+                    "dex_currency": "TIA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
+                    ]
+                },
+                "ST_TIA": {
+                    "dex_currency": "ST_TIA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "TIA"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
                             {
                                 "pool_id": "",
                                 "pool_token": "USDC_AXELAR"
