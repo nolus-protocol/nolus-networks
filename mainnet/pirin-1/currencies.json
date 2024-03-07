@@ -165,6 +165,13 @@
                             "currency": "ST_TIA"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-sttia.svg"
+                    },
+                    "DYM": {
+                        "ibc": {
+                            "network": "DYMENSION",
+                            "currency": "DYM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-dym.svg"
                     }
                 },
                 "amm_pools": [
@@ -267,6 +274,16 @@
                         "id": "1428",
                         "token_0": "ST_TIA",
                         "token_1": "TIA"
+                    },
+                    {
+                        "id": "1223",
+                        "token_0": "USDC_AXELAR",
+                        "token_1": "USDC_NOBLE"
+                    },
+                    {
+                        "id": "1450",
+                        "token_0": "DYM",
+                        "token_1": "USDC_NOBLE"
                     }
                 ]
             },
@@ -572,6 +589,18 @@
                         }
                     }
                 }
+            },
+            "DYMENSION": {
+                "currencies": {
+                    "DYM": {
+                        "native": {
+                            "name": "Dymension DYM",
+                            "symbol": "adym",
+                            "ticker": "DYM",
+                            "decimal_digits": "18"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -713,6 +742,16 @@
                 "b": {
                     "network": "STRIDE",
                     "ch": "channel-5"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-19774"
+                },
+                "b": {
+                    "network": "DYMENSION",
+                    "ch": "channel-2"
                 }
             },
             {
@@ -1077,6 +1116,25 @@
                             {
                                 "pool_id": "1248",
                                 "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "DYM": {
+                    "dex_currency": "DYM",
+                    "swap_routes": [
+                        [
+                            {
+                            "pool_id": "1450",
+                            "pool_token": "DYM"
+                            },
+                            {
+                                "pool_id": "1223",
+                                "pool_token": "USDC_NOBLE"
                             },
                             {
                                 "pool_id": "1133",
