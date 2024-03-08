@@ -172,6 +172,13 @@
                             "currency": "JKL"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-jkl.svg"
+                    },
+                    "DYM": {
+                        "ibc": {
+                            "network": "DYMENSION",
+                            "currency": "DYM"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-dym.svg"
                     }
                 },
                 "amm_pools": [
@@ -279,6 +286,16 @@
                         "id": "832",
                         "token_0": "JKL",
                         "token_1": "OSMO"
+                    },
+                    {
+                        "id": "1223",
+                        "token_0": "USDC_AXELAR",
+                        "token_1": "USDC_NOBLE"
+                    },
+                    {
+                        "id": "1450",
+                        "token_0": "DYM",
+                        "token_1": "USDC_NOBLE"
                     }
                 ]
             },
@@ -596,6 +613,18 @@
                         }
                     }
                 }
+            },
+            "DYMENSION": {
+                "currencies": {
+                    "DYM": {
+                        "native": {
+                            "name": "Dymension DYM",
+                            "symbol": "adym",
+                            "ticker": "DYM",
+                            "decimal_digits": "18"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -741,6 +770,26 @@
             },
             {
                 "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-19774"
+                },
+                "b": {
+                    "network": "DYMENSION",
+                    "ch": "channel-2"
+                }
+            },
+            {
+                "a": {
+                    "network": "JACKAL",
+                    "ch": "channel-0"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-412"
+                }
+            },
+            {
+                "a": {
                     "network": "NOLUS",
                     "ch": "channel-3839"
                 },
@@ -797,16 +846,6 @@
                 "b": {
                     "network": "CELESTIA",
                     "ch": "channel-8"
-                }
-            },
-            {
-                "a": {
-                    "network": "JACKAL",
-                    "ch": "channel-0"
-                },
-                "b": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-412"
                 }
             }
         ]
@@ -1126,6 +1165,25 @@
                             {
                                 "pool_id": "832",
                                 "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                     ]
+                },
+                "DYM": {
+                    "dex_currency": "DYM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1450",
+                                "pool_token": "DYM"
+                            },
+                            {
+                                "pool_id": "1223",
+                                "pool_token": "USDC_NOBLE"
                             },
                             {
                                 "pool_id": "1133",
