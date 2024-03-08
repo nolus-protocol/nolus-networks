@@ -165,6 +165,13 @@
                             "currency": "ST_TIA"
                         },
                         "icon": "https://nolus.io/currencies/osmosis-sttia.svg"
+                    },
+                    "JKL": {
+                        "ibc": {
+                            "network": "JACKAL",
+                            "currency": "JKL"
+                        },
+                        "icon": "https://nolus.io/currencies/osmosis-jkl.svg"
                     }
                 },
                 "amm_pools": [
@@ -267,6 +274,11 @@
                         "id": "1428",
                         "token_0": "ST_TIA",
                         "token_1": "TIA"
+                    },
+                    {
+                        "id": "832",
+                        "token_0": "JKL",
+                        "token_1": "OSMO"
                     }
                 ]
             },
@@ -572,6 +584,18 @@
                         }
                     }
                 }
+            },
+            "JACKAL": {
+                "currencies": {
+                    "JKL": {
+                        "native": {
+                            "name": "Jackal JKL",
+                            "symbol": "ujkl",
+                            "ticker": "JKL",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -773,6 +797,16 @@
                 "b": {
                     "network": "CELESTIA",
                     "ch": "channel-8"
+                }
+            },
+            {
+                "a": {
+                    "network": "JACKAL",
+                    "ch": "channel-0"
+                },
+                "b": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-412"
                 }
             }
         ]
@@ -1076,6 +1110,21 @@
                             },
                             {
                                 "pool_id": "1248",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "JKL": {
+                    "dex_currency": "JKL",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "832",
                                 "pool_token": "OSMO"
                             },
                             {
