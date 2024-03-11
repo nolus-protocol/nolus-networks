@@ -780,12 +780,12 @@
             },
             {
                 "a": {
-                    "network": "JACKAL",
-                    "ch": "channel-0"
-                },
-                "b": {
                     "network": "OSMOSIS",
                     "ch": "channel-412"
+                },
+                "b": {
+                    "network": "JACKAL",
+                    "ch": "channel-0"
                 }
             },
             {
