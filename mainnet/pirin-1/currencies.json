@@ -179,6 +179,13 @@
                             "currency": "DYM"
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-dym.svg"
+                    },
+                    "INJ": {
+                        "ibc": {
+                            "network": "INJECTIVE",
+                            "currency": "INJ"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-inj.svg"
                     }
                 },
                 "amm_pools": [
@@ -295,6 +302,11 @@
                     {
                         "id": "1450",
                         "token_0": "DYM",
+                        "token_1": "USDC_NOBLE"
+                    },
+                    {
+                        "id": "1319",
+                        "token_0": "INJ",
                         "token_1": "USDC_NOBLE"
                     }
                 ]
@@ -625,6 +637,18 @@
                         }
                     }
                 }
+            },
+            "INJECTIVE": {
+                "currencies": {
+                    "INJ": {
+                        "native": {
+                            "name": "Injective INJ",
+                            "symbol": "inj",
+                            "ticker": "INJ",
+                            "decimal_digits": "18"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -786,6 +810,16 @@
                 "b": {
                     "network": "JACKAL",
                     "ch": "channel-0"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-122"
+                },
+                "b": {
+                    "network": "INJECTIVE",
+                    "ch": "channel-8"
                 }
             },
             {
@@ -1179,14 +1213,25 @@
                         [
                             {
                                 "pool_id": "1450",
-                                "pool_token": "DYM"
-                            },
-                            {
-                                "pool_id": "1223",
                                 "pool_token": "USDC_NOBLE"
                             },
                             {
-                                "pool_id": "1133",
+                                "pool_id": "1223",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                    ]
+                },
+                "INJ": {
+                    "dex_currency": "INJ",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1319",
+                                "pool_token": "USDC_NOBLE"
+                            },
+                            {
+                                "pool_id": "1223",
                                 "pool_token": "USDC"
                             }
                         ]
