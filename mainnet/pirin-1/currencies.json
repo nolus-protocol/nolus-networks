@@ -913,7 +913,7 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "1",
+                                "pool_id": "1135",
                                 "pool_token": "OSMO"
                             },
                             {
@@ -1278,7 +1278,7 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "1",
+                                "pool_id": "1135",
                                 "pool_token": "OSMO"
                             },
                             {
