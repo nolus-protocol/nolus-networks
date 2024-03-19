@@ -670,6 +670,18 @@
                         }
                     }
                 }
+            },
+            "NOBLE": {
+                "currencies": {
+                    "USDC_NOBLE": {
+                        "native": {
+                            "name": "Noble USDC",
+                            "symbol": "uusdc",
+                            "ticker": "USDC",
+                            "decimal_digits": "6"
+                        }
+                    }
+                }
             }
         },
         "channels": [
