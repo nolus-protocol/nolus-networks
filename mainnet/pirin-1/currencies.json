@@ -192,7 +192,7 @@
                             "network": "NOBLE",
                             "currency": "USDC_NOBLE"
                         },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc-noble.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
                     }
                 },
                 "amm_pools": [
