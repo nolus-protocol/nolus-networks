@@ -193,6 +193,15 @@
                             "currency": "USDC_NOBLE"
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+                    },
+                    "LVN": {
+                        "native": {
+                            "name": "Osmosis LVN",
+                            "symbol": "factory/osmo1mlng7pz4pnyxtpq0akfwall37czyk9lukaucsrn30ameplhhshtqdvfm5c/ulvn",
+                            "ticker": "LVN",
+                            "decimal_digits": "6"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-lvn.svg"
                     }
                 },
                 "amm_pools": [
@@ -315,6 +324,11 @@
                         "id": "1319",
                         "token_0": "INJ",
                         "token_1": "USDC_NOBLE"
+                    },
+                    {
+                        "id": "1325",
+                        "token_0": "LVN",
+                        "token_1": "OSMO"
                     }
                 ]
             },
@@ -1253,6 +1267,21 @@
                             }
                         ]
                     ]
+                },
+                "LVN": {
+                    "dex_currency": "LVN",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1325",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                     ]
                 }
             },
             "Native": {
