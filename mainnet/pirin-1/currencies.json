@@ -195,6 +195,13 @@
                             "decimal_digits": "6"
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-lvn.svg"
+                    },
+                    "PICA": {
+                        "ibc": {
+                            "network": "COMPOSABLE",
+                            "currency": "PICA"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-pica.svg"
                     }
                 },
                 "amm_pools": [
@@ -321,6 +328,11 @@
                     {
                         "id": "1325",
                         "token_0": "LVN",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "1057",
+                        "token_0": "PICA",
                         "token_1": "OSMO"
                     }
                 ]
@@ -663,6 +675,18 @@
                         }
                     }
                 }
+            },
+            "COMPOSABLE": {
+                "currencies": {
+                    "PICA": {
+                        "native": {
+                            "name": "Composable PICA",
+                            "symbol": "ppica",
+                            "ticker": "PICA",
+                            "decimal_digits": "12"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -834,6 +858,16 @@
                 "b": {
                     "network": "INJECTIVE",
                     "ch": "channel-8"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-1279"
+                },
+                "b": {
+                    "network": "COMPOSABLE",
+                    "ch": "channel-3"
                 }
             },
             {
@@ -1257,6 +1291,21 @@
                         [
                             {
                                 "pool_id": "1325",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1133",
+                                "pool_token": "USDC"
+                            }
+                        ]
+                     ]
+                },
+                "PICA": {
+                    "dex_currency": "PICA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1057",
                                 "pool_token": "OSMO"
                             },
                             {
