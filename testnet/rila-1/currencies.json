@@ -22,42 +22,42 @@
                             "ticker": "OSMO",
                             "decimal_digits": "6"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-osmo.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "USDC"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-usdc.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
                     },
                     "ATOM": {
                         "ibc": {
                             "network": "COSMOS_HUB",
                             "currency": "ATOM"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-atom.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-atom.svg"
                     },
                     "NLS": {
                         "ibc": {
                             "network": "NOLUS",
                             "currency": "NLS"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-nls.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nls.svg"
                     },
                     "AKT": {
                         "ibc": {
                             "network": "AKASH",
                             "currency": "AKT"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-akt.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-akt.svg"
                     },
                     "JUNO": {
                         "ibc": {
                             "network": "JUNO",
                             "currency": "JUNO"
                         },
-                        "icon": "https://nolus.io/currencies/osmosis-juno.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-juno.svg"
                     }
                 },
                 "amm_pools": [
@@ -140,28 +140,28 @@
                             "ticker": "NTRN",
                             "decimal_digits": "6"
                         },
-                        "icon": "https://nolus.io/currencies/neutron-ntrn.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-ntrn.svg"
                     },
                     "USDC_AXELAR": {
                         "ibc": {
                             "network": "AXELAR",
                             "currency": "USDC"
                         },
-                        "icon": "https://nolus.io/currencies/neutron-usdc.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
                     },
                     "ATOM": {
                         "ibc": {
                             "network": "COSMOS_HUB",
                             "currency": "ATOM"
                         },
-                        "icon": "https://nolus.io/currencies/neutron-atom.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-atom.svg"
                     },
                     "NLS": {
                         "ibc": {
                             "network": "NOLUS",
                             "currency": "NLS"
                         },
-                        "icon": "https://nolus.io/currencies/neutron-nls.svg"
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-nls.svg"
                     }
                 },
                 "amm_pools": [
