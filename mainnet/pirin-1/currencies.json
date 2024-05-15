@@ -101,13 +101,6 @@
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-evmos.svg"
                     },
-                    "STK_ATOM": {
-                        "ibc": {
-                            "network": "PERSISTENCE",
-                            "currency": "STK_ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stkatom.svg"
-                    },
                     "SCRT": {
                         "ibc": {
                             "network": "SECRET",
@@ -266,11 +259,6 @@
                         "id": "722",
                         "token_0": "EVMOS",
                         "token_1": "OSMO"
-                    },
-                    {
-                        "id": "886",
-                        "token_0": "ATOM",
-                        "token_1": "STK_ATOM"
                     },
                     {
                         "id": "584",
@@ -595,6 +583,13 @@
                             "currency": "ST_TIA"
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-sttia.svg"
+                    },
+                    "STK_ATOM": {
+                        "ibc": {
+                            "network": "PERSISTENCE",
+                            "currency": "STK_ATOM"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-stkatom.svg"
                     }
                 },
                 "amm_pools": [
@@ -632,6 +627,11 @@
                         "id": "",
                         "token_0": "ST_TIA",
                         "token_1": "TIA"
+                    },
+                    {
+                        "id": "",
+                        "token_0": "STK_ATOM",
+                        "token_1": "ATOM"
                     }
                 ]
             },
@@ -958,6 +958,16 @@
                     "network": "CELESTIA",
                     "ch": "channel-8"
                 }
+            },
+            {
+                "a": {
+                    "network": "NEUTRON",
+                    "ch": "channel-49"
+                },
+                "b": {
+                    "network": "PERSISTENCE",
+                    "ch": "channel-136"
+                }
             }
         ]
     },
@@ -1109,25 +1119,6 @@
                         [
                             {
                                 "pool_id": "722",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "STK_ATOM": {
-                    "dex_currency": "STK_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "886",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1",
                                 "pool_token": "OSMO"
                             },
                             {
@@ -1553,29 +1544,6 @@
                         ]
                     ]
                 },
-                "STK_ATOM": {
-                    "dex_currency": "STK_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "886",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
                 "SCRT": {
                     "dex_currency": "SCRT",
                     "swap_routes": [
@@ -1882,6 +1850,25 @@
                             {
                                 "pool_id": "",
                                 "pool_token": "TIA"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_AXELAR"
+                            }
+                        ]
+                    ]
+                },
+                "STK_ATOM": {
+                    "dex_currency": "STK_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "ATOM"
                             },
                             {
                                 "pool_id": "",
