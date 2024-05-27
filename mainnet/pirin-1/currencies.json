@@ -202,6 +202,13 @@
                             "currency": "PICA"
                         },
                         "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-pica.svg"
+                    },
+                    "CUDOS": {
+                        "ibc": {
+                            "network": "CUDOS",
+                            "currency": "CUDOS"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cudos.svg"
                     }
                 },
                 "amm_pools": [
@@ -328,6 +335,11 @@
                     {
                         "id": "1057",
                         "token_0": "PICA",
+                        "token_1": "OSMO"
+                    },
+                    {
+                        "id": "796",
+                        "token_0": "CUDOS",
                         "token_1": "OSMO"
                     }
                 ]
@@ -706,6 +718,18 @@
                         }
                     }
                 }
+            },
+            "CUDOS": {
+                "currencies": {
+                    "CUDOS": {
+                        "native": {
+                            "name": "Cudos CUDOS",
+                            "symbol": "acudos",
+                            "ticker": "CUDOS",
+                            "decimal_digits": "18"
+                        }
+                    }
+                }
             }
         },
         "channels": [
@@ -896,6 +920,16 @@
                 },
                 "b": {
                     "network": "NOBLE",
+                    "ch": "channel-1"
+                }
+            },
+            {
+                "a": {
+                    "network": "OSMOSIS",
+                    "ch": "channel-298"
+                },
+                "b": {
+                    "network": "CUDOS",
                     "ch": "channel-1"
                 }
             },
@@ -1359,15 +1393,7 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "1135",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1251",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1378,19 +1404,11 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "1136",
+                                "pool_id": "1283",
                                 "pool_token": "ATOM"
                             },
                             {
-                                "pool_id": "1",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1251",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1401,11 +1419,7 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1420,11 +1434,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1439,11 +1449,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1458,11 +1464,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1477,11 +1479,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1496,11 +1494,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1511,15 +1505,11 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "497",
+                                "pool_id": "1097",
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1534,11 +1524,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1549,15 +1535,11 @@
                     "swap_routes": [
                         [
                             {
-                                "pool_id": "584",
+                                "pool_id": "1095",
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1572,11 +1554,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1591,11 +1569,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1610,11 +1584,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1629,15 +1599,7 @@
                                 "pool_token": "ATOM"
                             },
                             {
-                                "pool_id": "1",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1251",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1652,11 +1614,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1675,11 +1633,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1698,11 +1652,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1717,11 +1667,7 @@
                                 "pool_token": "OSMO"
                             },
                             {
-                                "pool_id": "1133",
-                                "pool_token": "USDC_AXELAR"
-                            },
-                            {
-                                "pool_id": "1223",
+                                "pool_id": "1263",
                                 "pool_token": "USDC_NOBLE"
                             }
                         ]
@@ -1748,6 +1694,51 @@
                             }
                         ]
                     ]
+                },
+                "LVN": {
+                    "dex_currency": "LVN",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1325",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1263",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                     ]
+                },
+                "PICA": {
+                    "dex_currency": "PICA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "1057",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1263",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                     ]
+                },
+                "CUDOS": {
+                    "dex_currency": "CUDOS",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "796",
+                                "pool_token": "OSMO"
+                            },
+                            {
+                                "pool_id": "1263",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                     ]
                 }
             },
             "Native": {
