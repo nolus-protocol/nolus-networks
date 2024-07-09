@@ -267,7 +267,7 @@
         ]
     },
     "protocols": {
-        "OSMOSIS-OSMOSIS-USDC-1": {
+        "OSMOSIS-OSMOSIS-OSMO": {
             "DexNetwork": "OSMOSIS",
             "Lpn": {
                 "dex_currency": "USDC_AXELAR"
@@ -342,7 +342,7 @@
                 ]
             }
         },
-        "NEUTRON-ASTROPORT-USDC_AXELAR": {
+        "NEUTRON-ASTROPORT-USDC_AXL": {
             "DexNetwork": "NEUTRON",
             "Lpn": {
                 "dex_currency": "USDC_AXELAR"
