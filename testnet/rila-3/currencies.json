@@ -270,76 +270,12 @@
         "OSMOSIS-OSMOSIS-OSMO": {
             "DexNetwork": "OSMOSIS",
             "Lpn": {
-                "dex_currency": "USDC_AXELAR"
+                "dex_currency": "OSMO"
             },
             "Lease": {
-                "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "12",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "5",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "OSMO": {
-                    "dex_currency": "OSMO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "5",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "AKT": {
-                    "dex_currency": "AKT",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "18",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "5",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "JUNO": {
-                    "dex_currency": "JUNO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "3",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "5",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
+                "USDC_AXELAR": {
+                    "dex_currency": "USDC_AXELAR"
                 }
-            },
-            "Native": {
-                "dex_currency": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "323",
-                            "pool_token": "USDC_AXELAR"
-                        }
-                    ]
-                ]
             }
         },
         "NEUTRON-ASTROPORT-USDC_AXL": {
@@ -349,42 +285,14 @@
             },
             "Lease": {
                 "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
+                    "dex_currency": "ATOM"
                 },
                 "NTRN": {
-                    "dex_currency": "NTRN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
+                    "dex_currency": "NTRN"
                 }
             },
             "Native": {
-                "dex_currency": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "",
-                            "pool_token": "NTRN"
-                        },
-                        {
-                            "pool_id": "",
-                            "pool_token": "USDC_AXELAR"
-                        }
-                    ]
-                ]
+                "dex_currency": "NLS"
             }
         }
     },
