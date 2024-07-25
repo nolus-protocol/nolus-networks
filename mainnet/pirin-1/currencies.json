@@ -1,2054 +1,2072 @@
 {
     "networks": {
-        "list": {
-            "NOLUS": {
-                "currencies": {
-                    "NLS": {
-                        "native": {
-                            "name": "Nolus",
-                            "symbol": "unls",
-                            "ticker": "NLS",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+      "list": {
+        "NOLUS": {
+          "currencies": {
+            "NLS": {
+              "native": {
+                "name": "Nolus",
+                "symbol": "unls",
+                "ticker": "NLS",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "OSMOSIS": {
+          "currencies": {
+            "NLS": {
+              "ibc": {
+                "network": "NOLUS",
+                "currency": "NLS"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nls.svg"
             },
-            "OSMOSIS": {
-                "currencies": {
-                    "NLS": {
-                        "ibc": {
-                            "network": "NOLUS",
-                            "currency": "NLS"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nls.svg"
-                    },
-                    "OSMO": {
-                        "native": {
-                            "name": "Osmosis OSMO",
-                            "symbol": "uosmo",
-                            "ticker": "OSMO",
-                            "decimal_digits": "6"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
-                    },
-                    "ST_OSMO": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "ST_OSMO"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stosmo.svg"
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "COSMOS_HUB",
-                            "currency": "ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-atom.svg"
-                    },
-                    "ST_ATOM": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "ST_ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-statom.svg"
-                    },
-                    "USDC_AXELAR": {
-                        "ibc": {
-                            "network": "AXELAR",
-                            "currency": "USDC"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
-                    },
-                    "WETH_AXELAR": {
-                        "ibc": {
-                            "network": "AXELAR",
-                            "currency": "WETH"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-eth.svg"
-                    },
-                    "WBTC_AXELAR": {
-                        "ibc": {
-                            "network": "AXELAR",
-                            "currency": "WBTC"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-wbtc.svg"
-                    },
-                    "AKT": {
-                        "ibc": {
-                            "network": "AKASH",
-                            "currency": "AKT"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-akt.svg"
-                    },
-                    "AXL": {
-                        "ibc": {
-                            "network": "AXELAR",
-                            "currency": "AXL"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-axl.svg"
-                    },
-                    "JUNO": {
-                        "ibc": {
-                            "network": "JUNO",
-                            "currency": "JUNO"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-juno.svg"
-                    },
-                    "EVMOS": {
-                        "ibc": {
-                            "network": "EVMOS",
-                            "currency": "EVMOS"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-evmos.svg"
-                    },
-                    "SCRT": {
-                        "ibc": {
-                            "network": "SECRET",
-                            "currency": "SCRT"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-scrt.svg"
-                    },
-                    "CRO": {
-                        "ibc": {
-                            "network": "CRYPTO_ORG",
-                            "currency": "CRO"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cro.svg"
-                    },
-                    "TIA": {
-                        "ibc": {
-                            "network": "CELESTIA",
-                            "currency": "TIA"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-tia.svg"
-                    },
-                    "STARS": {
-                        "ibc": {
-                            "network": "STARGAZE",
-                            "currency": "STARS"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stars.svg"
-                    },
-                    "Q_ATOM": {
-                        "ibc": {
-                            "network": "QUICKSILVER",
-                            "currency": "Q_ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-qatom.svg"
-                    },
-                    "STRD": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "STRD"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-strd.svg"
-                    },
-                    "MILK_TIA": {
-                        "native": {
-                            "name": "Osmosis milkTIA",
-                            "symbol": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
-                            "ticker": "milkTIA",
-                            "decimal_digits": "6"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-milktia.svg"
-                    },
-                    "ST_TIA": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "ST_TIA"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-sttia.svg"
-                    },
-                    "JKL": {
-                        "ibc": {
-                            "network": "JACKAL",
-                            "currency": "JKL"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-jkl.svg"
-                    },
-                    "DYM": {
-                        "ibc": {
-                            "network": "DYMENSION",
-                            "currency": "DYM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-dym.svg"
-                    },
-                    "INJ": {
-                        "ibc": {
-                            "network": "INJECTIVE",
-                            "currency": "INJ"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-inj.svg"
-                    },
-                    "USDC_NOBLE": {
-                        "ibc": {
-                            "network": "NOBLE",
-                            "currency": "USDC_NOBLE"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
-                    },
-                    "LVN": {
-                        "native": {
-                            "name": "Osmosis LVN",
-                            "symbol": "factory/osmo1mlng7pz4pnyxtpq0akfwall37czyk9lukaucsrn30ameplhhshtqdvfm5c/ulvn",
-                            "ticker": "LVN",
-                            "decimal_digits": "6"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-lvn.svg"
-                    },
-                    "PICA": {
-                        "ibc": {
-                            "network": "COMPOSABLE",
-                            "currency": "PICA"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-pica.svg"
-                    },
-                    "CUDOS": {
-                        "ibc": {
-                            "network": "CUDOS",
-                            "currency": "CUDOS"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cudos.svg"
-                    }
-                },
-                "amm_pools": [
-                    {
-                        "id": "1135",
-                        "token_0": "ATOM",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "833",
-                        "token_0": "OSMO",
-                        "token_1": "ST_OSMO"
-                    },
-                    {
-                        "id": "1136",
-                        "token_0": "ATOM",
-                        "token_1": "ST_ATOM"
-                    },
-                    {
-                        "id": "1133",
-                        "token_0": "OSMO",
-                        "token_1": "USDC_AXELAR"
-                    },
-                    {
-                        "id": "1134",
-                        "token_0": "OSMO",
-                        "token_1": "WETH_AXELAR"
-                    },
-                    {
-                        "id": "1090",
-                        "token_0": "OSMO",
-                        "token_1": "WBTC_AXELAR"
-                    },
-                    {
-                        "id": "1041",
-                        "token_0": "NLS",
-                        "token_1": "USDC_AXELAR"
-                    },
-                    {
-                        "id": "1093",
-                        "token_0": "AKT",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "812",
-                        "token_0": "AXL",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1097",
-                        "token_0": "JUNO",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "722",
-                        "token_0": "EVMOS",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "584",
-                        "token_0": "SCRT",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "9",
-                        "token_0": "CRO",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1248",
-                        "token_0": "TIA",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1096",
-                        "token_0": "STARS",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "944",
-                        "token_0": "ATOM",
-                        "token_1": "Q_ATOM"
-                    },
-                    {
-                        "id": "1098",
-                        "token_0": "STRD",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1335",
-                        "token_0": "MILK_TIA",
-                        "token_1": "TIA"
-                    },
-                    {
-                        "id": "1428",
-                        "token_0": "ST_TIA",
-                        "token_1": "TIA"
-                    },
-                    {
-                        "id": "832",
-                        "token_0": "JKL",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1223",
-                        "token_0": "USDC_AXELAR",
-                        "token_1": "USDC_NOBLE"
-                    },
-                    {
-                        "id": "1450",
-                        "token_0": "DYM",
-                        "token_1": "USDC_NOBLE"
-                    },
-                    {
-                        "id": "1319",
-                        "token_0": "INJ",
-                        "token_1": "USDC_NOBLE"
-                    },
-                    {
-                        "id": "1325",
-                        "token_0": "LVN",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "1057",
-                        "token_0": "PICA",
-                        "token_1": "OSMO"
-                    },
-                    {
-                        "id": "796",
-                        "token_0": "CUDOS",
-                        "token_1": "OSMO"
-                    }
-                ]
+            "OSMO": {
+              "native": {
+                "name": "Osmosis OSMO",
+                "symbol": "uosmo",
+                "ticker": "OSMO",
+                "decimal_digits": "6"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
             },
-            "AXELAR": {
-                "currencies": {
-                    "USDC": {
-                        "native": {
-                            "name": "Usdc",
-                            "symbol": "uusdc",
-                            "ticker": "USDC",
-                            "decimal_digits": "6"
-                        }
-                    },
-                    "WETH": {
-                        "native": {
-                            "name": "Wrapped Ethereum",
-                            "symbol": "weth-wei",
-                            "ticker": "WETH",
-                            "decimal_digits": "18"
-                        }
-                    },
-                    "WBTC": {
-                        "native": {
-                            "name": "Wrapped Bitcoin",
-                            "symbol": "wbtc-satoshi",
-                            "ticker": "WBTC",
-                            "decimal_digits": "8"
-                        }
-                    },
-                    "AXL": {
-                        "native": {
-                            "name": "Axelar",
-                            "symbol": "uaxl",
-                            "ticker": "AXL",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "ST_OSMO": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "ST_OSMO"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stosmo.svg"
             },
-            "COSMOS_HUB": {
-                "currencies": {
-                    "ATOM": {
-                        "native": {
-                            "name": "Cosmos Hub ATOM",
-                            "symbol": "uatom",
-                            "ticker": "ATOM",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "ATOM": {
+              "ibc": {
+                "network": "COSMOS_HUB",
+                "currency": "ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-atom.svg"
             },
-            "STRIDE": {
-                "currencies": {
-                    "ST_ATOM": {
-                        "native": {
-                            "name": "Staked ATOM",
-                            "symbol": "stuatom",
-                            "ticker": "stATOM",
-                            "decimal_digits": "6"
-                        }
-                    },
-                    "ST_OSMO": {
-                        "native": {
-                            "name": "Staked OSMO",
-                            "symbol": "stuosmo",
-                            "ticker": "stOSMO",
-                            "decimal_digits": "6"
-                        }
-                    },
-                    "ST_TIA": {
-                        "native": {
-                            "name": "Staked TIA",
-                            "symbol": "stutia",
-                            "ticker": "stTIA",
-                            "decimal_digits": "6"
-                        }
-                    },
-                    "STRD": {
-                        "native": {
-                            "name": "Stride STRD",
-                            "symbol": "ustrd",
-                            "ticker": "STRD",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "ST_ATOM": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "ST_ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-statom.svg"
             },
-            "AKASH": {
-                "currencies": {
-                    "AKT": {
-                        "native": {
-                            "name": "Akash",
-                            "symbol": "uakt",
-                            "ticker": "AKT",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "USDC_AXELAR": {
+              "ibc": {
+                "network": "AXELAR",
+                "currency": "USDC"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+            },
+            "WETH_AXELAR": {
+              "ibc": {
+                "network": "AXELAR",
+                "currency": "WETH"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-eth.svg"
+            },
+            "WBTC_AXELAR": {
+              "ibc": {
+                "network": "AXELAR",
+                "currency": "WBTC"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-wbtc.svg"
+            },
+            "AKT": {
+              "ibc": {
+                "network": "AKASH",
+                "currency": "AKT"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-akt.svg"
+            },
+            "AXL": {
+              "ibc": {
+                "network": "AXELAR",
+                "currency": "AXL"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-axl.svg"
             },
             "JUNO": {
-                "currencies": {
-                    "JUNO": {
-                        "native": {
-                            "name": "Juno",
-                            "symbol": "ujuno",
-                            "ticker": "JUNO",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+              "ibc": {
+                "network": "JUNO",
+                "currency": "JUNO"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-juno.svg"
             },
             "EVMOS": {
-                "currencies": {
-                    "EVMOS": {
-                        "native": {
-                            "name": "Evmos",
-                            "symbol": "aevmos",
-                            "ticker": "EVMOS",
-                            "decimal_digits": "18"
-                        }
-                    }
-                }
+              "ibc": {
+                "network": "EVMOS",
+                "currency": "EVMOS"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-evmos.svg"
             },
-            "PERSISTENCE": {
-                "currencies": {
-                    "STK_ATOM": {
-                        "native": {
-                            "name": "PSTAKE Liquid-Staked ATOM",
-                            "symbol": "stk/uatom",
-                            "ticker": "stkATOM",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "SCRT": {
+              "ibc": {
+                "network": "SECRET",
+                "currency": "SCRT"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-scrt.svg"
             },
-            "SECRET": {
-                "currencies": {
-                    "SCRT": {
-                        "native": {
-                            "name": "Secret Network SCRT",
-                            "symbol": "uscrt",
-                            "ticker": "SCRT",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "CRO": {
+              "ibc": {
+                "network": "CRYPTO_ORG",
+                "currency": "CRO"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cro.svg"
             },
-            "CRYPTO_ORG": {
-                "currencies": {
-                    "CRO": {
-                        "native": {
-                            "name": "Crypto.org CRO",
-                            "symbol": "basecro",
-                            "ticker": "CRO",
-                            "decimal_digits": "8"
-                        }
-                    }
-                }
+            "TIA": {
+              "ibc": {
+                "network": "CELESTIA",
+                "currency": "TIA"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-tia.svg"
             },
-            "CELESTIA": {
-                "currencies": {
-                    "TIA": {
-                        "native": {
-                            "name": "Celestia TIA",
-                            "symbol": "utia",
-                            "ticker": "TIA",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "STARS": {
+              "ibc": {
+                "network": "STARGAZE",
+                "currency": "STARS"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stars.svg"
             },
-            "STARGAZE": {
-                "currencies": {
-                    "STARS": {
-                        "native": {
-                            "name": "Stargaze STARS",
-                            "symbol": "ustars",
-                            "ticker": "STARS",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "Q_ATOM": {
+              "ibc": {
+                "network": "QUICKSILVER",
+                "currency": "Q_ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-qatom.svg"
             },
-            "QUICKSILVER": {
-                "currencies": {
-                    "Q_ATOM": {
-                        "native": {
-                            "name": "Quicksilver qATOM",
-                            "symbol": "uqatom",
-                            "ticker": "qATOM",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "STRD": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "STRD"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-strd.svg"
             },
-            "NEUTRON": {
-                "currencies": {
-                    "NTRN": {
-                        "native": {
-                            "name": "Neutron",
-                            "symbol": "untrn",
-                            "ticker": "NTRN",
-                            "decimal_digits": "6"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-ntrn.svg"
-                    },
-                    "USDC_AXELAR": {
-                        "ibc": {
-                            "network": "AXELAR",
-                            "currency": "USDC"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
-                    },
-                    "ATOM": {
-                        "ibc": {
-                            "network": "COSMOS_HUB",
-                            "currency": "ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-atom.svg"
-                    },
-                    "ST_ATOM": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "ST_ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-statom.svg"
-                    },
-                    "DYDX": {
-                        "ibc": {
-                            "network": "DYDX",
-                            "currency": "DYDX"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-dydx.svg"
-                    },
-                    "NLS": {
-                        "ibc": {
-                            "network": "NOLUS",
-                            "currency": "NLS"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-nls.svg"
-                    },
-                    "TIA": {
-                        "ibc": {
-                            "network": "CELESTIA",
-                            "currency": "TIA"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-tia.svg"
-                    },
-                    "ST_TIA": {
-                        "ibc": {
-                            "network": "STRIDE",
-                            "currency": "ST_TIA"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-sttia.svg"
-                    },
-                    "STK_ATOM": {
-                        "ibc": {
-                            "network": "PERSISTENCE",
-                            "currency": "STK_ATOM"
-                        },
-                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-stkatom.svg"
-                    }
-                },
-                "amm_pools": [
-                    {
-                        "id": "",
-                        "token_0": "NTRN",
-                        "token_1": "USDC_AXELAR"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "ATOM",
-                        "token_1": "NTRN"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "ATOM",
-                        "token_1": "ST_ATOM"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "NTRN",
-                        "token_1": "NLS"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "DYDX",
-                        "token_1": "USDC_AXELAR"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "NTRN",
-                        "token_1": "TIA"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "ST_TIA",
-                        "token_1": "TIA"
-                    },
-                    {
-                        "id": "",
-                        "token_0": "STK_ATOM",
-                        "token_1": "ATOM"
-                    }
-                ]
+            "MILK_TIA": {
+              "native": {
+                "name": "Osmosis milkTIA",
+                "symbol": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+                "ticker": "milkTIA",
+                "decimal_digits": "6"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-milktia.svg"
             },
-            "DYDX": {
-                "currencies": {
-                    "DYDX": {
-                        "native": {
-                            "name": "dYdX",
-                            "symbol": "adydx",
-                            "ticker": "DYDX",
-                            "decimal_digits": "18"
-                        }
-                    }
-                }
+            "ST_TIA": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "ST_TIA"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-sttia.svg"
             },
-            "JACKAL": {
-                "currencies": {
-                    "JKL": {
-                        "native": {
-                            "name": "Jackal JKL",
-                            "symbol": "ujkl",
-                            "ticker": "JKL",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "JKL": {
+              "ibc": {
+                "network": "JACKAL",
+                "currency": "JKL"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-jkl.svg"
             },
-            "DYMENSION": {
-                "currencies": {
-                    "DYM": {
-                        "native": {
-                            "name": "Dymension DYM",
-                            "symbol": "adym",
-                            "ticker": "DYM",
-                            "decimal_digits": "18"
-                        }
-                    }
-                }
+            "DYM": {
+              "ibc": {
+                "network": "DYMENSION",
+                "currency": "DYM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-dym.svg"
             },
-            "INJECTIVE": {
-                "currencies": {
-                    "INJ": {
-                        "native": {
-                            "name": "Injective INJ",
-                            "symbol": "inj",
-                            "ticker": "INJ",
-                            "decimal_digits": "18"
-                        }
-                    }
-                }
+            "INJ": {
+              "ibc": {
+                "network": "INJECTIVE",
+                "currency": "INJ"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-inj.svg"
             },
-            "NOBLE": {
-                "currencies": {
-                    "USDC_NOBLE": {
-                        "native": {
-                            "name": "Noble USDC",
-                            "symbol": "uusdc",
-                            "ticker": "USDC",
-                            "decimal_digits": "6"
-                        }
-                    }
-                }
+            "USDC_NOBLE": {
+              "ibc": {
+                "network": "NOBLE",
+                "currency": "USDC_NOBLE"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
             },
-            "COMPOSABLE": {
-                "currencies": {
-                    "PICA": {
-                        "native": {
-                            "name": "Composable PICA",
-                            "symbol": "ppica",
-                            "ticker": "PICA",
-                            "decimal_digits": "12"
-                        }
-                    }
-                }
+            "LVN": {
+              "native": {
+                "name": "Osmosis LVN",
+                "symbol": "factory/osmo1mlng7pz4pnyxtpq0akfwall37czyk9lukaucsrn30ameplhhshtqdvfm5c/ulvn",
+                "ticker": "LVN",
+                "decimal_digits": "6"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-lvn.svg"
+            },
+            "PICA": {
+              "ibc": {
+                "network": "COMPOSABLE",
+                "currency": "PICA"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-pica.svg"
             },
             "CUDOS": {
-                "currencies": {
-                    "CUDOS": {
-                        "native": {
-                            "name": "Cudos CUDOS",
-                            "symbol": "acudos",
-                            "ticker": "CUDOS",
-                            "decimal_digits": "18"
-                        }
-                    }
-                }
+              "ibc": {
+                "network": "CUDOS",
+                "currency": "CUDOS"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cudos.svg"
             }
+          },
+          "amm_pools": [
+            {
+              "id": "1135",
+              "token_0": "ATOM",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "833",
+              "token_0": "OSMO",
+              "token_1": "ST_OSMO"
+            },
+            {
+              "id": "1136",
+              "token_0": "ATOM",
+              "token_1": "ST_ATOM"
+            },
+            {
+              "id": "1133",
+              "token_0": "OSMO",
+              "token_1": "USDC_AXELAR"
+            },
+            {
+              "id": "1134",
+              "token_0": "OSMO",
+              "token_1": "WETH_AXELAR"
+            },
+            {
+              "id": "1090",
+              "token_0": "OSMO",
+              "token_1": "WBTC_AXELAR"
+            },
+            {
+              "id": "1041",
+              "token_0": "NLS",
+              "token_1": "USDC_AXELAR"
+            },
+            {
+              "id": "1093",
+              "token_0": "AKT",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "812",
+              "token_0": "AXL",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1097",
+              "token_0": "JUNO",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "722",
+              "token_0": "EVMOS",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "584",
+              "token_0": "SCRT",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "9",
+              "token_0": "CRO",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1248",
+              "token_0": "TIA",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1096",
+              "token_0": "STARS",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "944",
+              "token_0": "ATOM",
+              "token_1": "Q_ATOM"
+            },
+            {
+              "id": "1098",
+              "token_0": "STRD",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1335",
+              "token_0": "MILK_TIA",
+              "token_1": "TIA"
+            },
+            {
+              "id": "1428",
+              "token_0": "ST_TIA",
+              "token_1": "TIA"
+            },
+            {
+              "id": "832",
+              "token_0": "JKL",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1223",
+              "token_0": "USDC_AXELAR",
+              "token_1": "USDC_NOBLE"
+            },
+            {
+              "id": "1450",
+              "token_0": "DYM",
+              "token_1": "USDC_NOBLE"
+            },
+            {
+              "id": "1319",
+              "token_0": "INJ",
+              "token_1": "USDC_NOBLE"
+            },
+            {
+              "id": "1325",
+              "token_0": "LVN",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "1057",
+              "token_0": "PICA",
+              "token_1": "OSMO"
+            },
+            {
+              "id": "796",
+              "token_0": "CUDOS",
+              "token_1": "OSMO"
+            }
+          ]
         },
-        "channels": [
-            {
-                "a": {
-                    "network": "NOLUS",
-                    "ch": "channel-0"
-                },
-                "b": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-783"
-                }
+        "AXELAR": {
+          "currencies": {
+            "USDC": {
+              "native": {
+                "name": "Usdc",
+                "symbol": "uusdc",
+                "ticker": "USDC",
+                "decimal_digits": "6"
+              }
             },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-208"
-                },
-                "b": {
-                    "network": "AXELAR",
-                    "ch": "channel-3"
-                }
+            "WETH": {
+              "native": {
+                "name": "Wrapped Ethereum",
+                "symbol": "weth-wei",
+                "ticker": "WETH",
+                "decimal_digits": "18"
+              }
             },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-0"
-                },
-                "b": {
-                    "network": "COSMOS_HUB",
-                    "ch": "channel-141"
-                }
+            "WBTC": {
+              "native": {
+                "name": "Wrapped Bitcoin",
+                "symbol": "wbtc-satoshi",
+                "ticker": "WBTC",
+                "decimal_digits": "8"
+              }
             },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-326"
-                },
-                "b": {
-                    "network": "STRIDE",
-                    "ch": "channel-5"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-1"
-                },
-                "b": {
-                    "network": "AKASH",
-                    "ch": "channel-9"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-42"
-                },
-                "b": {
-                    "network": "JUNO",
-                    "ch": "channel-0"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-204"
-                },
-                "b": {
-                    "network": "EVMOS",
-                    "ch": "channel-0"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-4"
-                },
-                "b": {
-                    "network": "PERSISTENCE",
-                    "ch": "channel-6"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-88"
-                },
-                "b": {
-                    "network": "SECRET",
-                    "ch": "channel-1"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-5"
-                },
-                "b": {
-                    "network": "CRYPTO_ORG",
-                    "ch": "channel-10"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-6994"
-                },
-                "b": {
-                    "network": "CELESTIA",
-                    "ch": "channel-2"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-75"
-                },
-                "b": {
-                    "network": "STARGAZE",
-                    "ch": "channel-0"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-522"
-                },
-                "b": {
-                    "network": "QUICKSILVER",
-                    "ch": "channel-2"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-326"
-                },
-                "b": {
-                    "network": "STRIDE",
-                    "ch": "channel-5"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-19774"
-                },
-                "b": {
-                    "network": "DYMENSION",
-                    "ch": "channel-2"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-412"
-                },
-                "b": {
-                    "network": "JACKAL",
-                    "ch": "channel-0"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-122"
-                },
-                "b": {
-                    "network": "INJECTIVE",
-                    "ch": "channel-8"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-1279"
-                },
-                "b": {
-                    "network": "COMPOSABLE",
-                    "ch": "channel-3"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-750"
-                },
-                "b": {
-                    "network": "NOBLE",
-                    "ch": "channel-1"
-                }
-            },
-            {
-                "a": {
-                    "network": "OSMOSIS",
-                    "ch": "channel-298"
-                },
-                "b": {
-                    "network": "CUDOS",
-                    "ch": "channel-1"
-                }
-            },
-            {
-                "a": {
-                    "network": "NOLUS",
-                    "ch": "channel-3839"
-                },
-                "b": {
-                    "network": "NEUTRON",
-                    "ch": "channel-44"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-1"
-                },
-                "b": {
-                    "network": "COSMOS_HUB",
-                    "ch": "channel-569"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-8"
-                },
-                "b": {
-                    "network": "STRIDE",
-                    "ch": "channel-123"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-48"
-                },
-                "b": {
-                    "network": "DYDX",
-                    "ch": "channel-11"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-2"
-                },
-                "b": {
-                    "network": "AXELAR",
-                    "ch": "channel-78"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-35"
-                },
-                "b": {
-                    "network": "CELESTIA",
-                    "ch": "channel-8"
-                }
-            },
-            {
-                "a": {
-                    "network": "NEUTRON",
-                    "ch": "channel-49"
-                },
-                "b": {
-                    "network": "PERSISTENCE",
-                    "ch": "channel-136"
-                }
+            "AXL": {
+              "native": {
+                "name": "Axelar",
+                "symbol": "uaxl",
+                "ticker": "AXL",
+                "decimal_digits": "6"
+              }
             }
-        ]
+          }
+        },
+        "COSMOS_HUB": {
+          "currencies": {
+            "ATOM": {
+              "native": {
+                "name": "Cosmos Hub ATOM",
+                "symbol": "uatom",
+                "ticker": "ATOM",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "STRIDE": {
+          "currencies": {
+            "ST_ATOM": {
+              "native": {
+                "name": "Staked ATOM",
+                "symbol": "stuatom",
+                "ticker": "stATOM",
+                "decimal_digits": "6"
+              }
+            },
+            "ST_OSMO": {
+              "native": {
+                "name": "Staked OSMO",
+                "symbol": "stuosmo",
+                "ticker": "stOSMO",
+                "decimal_digits": "6"
+              }
+            },
+            "ST_TIA": {
+              "native": {
+                "name": "Staked TIA",
+                "symbol": "stutia",
+                "ticker": "stTIA",
+                "decimal_digits": "6"
+              }
+            },
+            "STRD": {
+              "native": {
+                "name": "Stride STRD",
+                "symbol": "ustrd",
+                "ticker": "STRD",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "AKASH": {
+          "currencies": {
+            "AKT": {
+              "native": {
+                "name": "Akash",
+                "symbol": "uakt",
+                "ticker": "AKT",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "JUNO": {
+          "currencies": {
+            "JUNO": {
+              "native": {
+                "name": "Juno",
+                "symbol": "ujuno",
+                "ticker": "JUNO",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "EVMOS": {
+          "currencies": {
+            "EVMOS": {
+              "native": {
+                "name": "Evmos",
+                "symbol": "aevmos",
+                "ticker": "EVMOS",
+                "decimal_digits": "18"
+              }
+            }
+          }
+        },
+        "PERSISTENCE": {
+          "currencies": {
+            "STK_ATOM": {
+              "native": {
+                "name": "PSTAKE Liquid-Staked ATOM",
+                "symbol": "stk/uatom",
+                "ticker": "stkATOM",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "SECRET": {
+          "currencies": {
+            "SCRT": {
+              "native": {
+                "name": "Secret Network SCRT",
+                "symbol": "uscrt",
+                "ticker": "SCRT",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "CRYPTO_ORG": {
+          "currencies": {
+            "CRO": {
+              "native": {
+                "name": "Crypto.org CRO",
+                "symbol": "basecro",
+                "ticker": "CRO",
+                "decimal_digits": "8"
+              }
+            }
+          }
+        },
+        "CELESTIA": {
+          "currencies": {
+            "TIA": {
+              "native": {
+                "name": "Celestia TIA",
+                "symbol": "utia",
+                "ticker": "TIA",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "STARGAZE": {
+          "currencies": {
+            "STARS": {
+              "native": {
+                "name": "Stargaze STARS",
+                "symbol": "ustars",
+                "ticker": "STARS",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "QUICKSILVER": {
+          "currencies": {
+            "Q_ATOM": {
+              "native": {
+                "name": "Quicksilver qATOM",
+                "symbol": "uqatom",
+                "ticker": "qATOM",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "NEUTRON": {
+          "currencies": {
+            "NTRN": {
+              "native": {
+                "name": "Neutron",
+                "symbol": "untrn",
+                "ticker": "NTRN",
+                "decimal_digits": "6"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-ntrn.svg"
+            },
+            "USDC_AXELAR": {
+              "ibc": {
+                "network": "AXELAR",
+                "currency": "USDC"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
+            },
+            "USDC_NOBLE": {
+              "ibc": {
+                "network": "NOBLE",
+                "currency": "USDC_NOBLE"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
+            },
+            "ATOM": {
+              "ibc": {
+                "network": "COSMOS_HUB",
+                "currency": "ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-atom.svg"
+            },
+            "ST_ATOM": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "ST_ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-statom.svg"
+            },
+            "DYDX": {
+              "ibc": {
+                "network": "DYDX",
+                "currency": "DYDX"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-dydx.svg"
+            },
+            "NLS": {
+              "ibc": {
+                "network": "NOLUS",
+                "currency": "NLS"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-nls.svg"
+            },
+            "TIA": {
+              "ibc": {
+                "network": "CELESTIA",
+                "currency": "TIA"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-tia.svg"
+            },
+            "ST_TIA": {
+              "ibc": {
+                "network": "STRIDE",
+                "currency": "ST_TIA"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-sttia.svg"
+            },
+            "STK_ATOM": {
+              "ibc": {
+                "network": "PERSISTENCE",
+                "currency": "STK_ATOM"
+              },
+              "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-stkatom.svg"
+            }
+          },
+          "amm_pools": [
+            {
+              "id": "",
+              "token_0": "NTRN",
+              "token_1": "USDC_AXELAR"
+            },
+            {
+              "id": "",
+              "token_0": "ATOM",
+              "token_1": "NTRN"
+            },
+            {
+              "id": "",
+              "token_0": "ATOM",
+              "token_1": "ST_ATOM"
+            },
+            {
+              "id": "",
+              "token_0": "NTRN",
+              "token_1": "NLS"
+            },
+            {
+              "id": "",
+              "token_0": "DYDX",
+              "token_1": "USDC_AXELAR"
+            },
+            {
+              "id": "",
+              "token_0": "NTRN",
+              "token_1": "TIA"
+            },
+            {
+              "id": "",
+              "token_0": "ST_TIA",
+              "token_1": "TIA"
+            },
+            {
+              "id": "",
+              "token_0": "STK_ATOM",
+              "token_1": "ATOM"
+            }
+          ]
+        },
+        "DYDX": {
+          "currencies": {
+            "DYDX": {
+              "native": {
+                "name": "dYdX",
+                "symbol": "adydx",
+                "ticker": "DYDX",
+                "decimal_digits": "18"
+              }
+            }
+          }
+        },
+        "JACKAL": {
+          "currencies": {
+            "JKL": {
+              "native": {
+                "name": "Jackal JKL",
+                "symbol": "ujkl",
+                "ticker": "JKL",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "DYMENSION": {
+          "currencies": {
+            "DYM": {
+              "native": {
+                "name": "Dymension DYM",
+                "symbol": "adym",
+                "ticker": "DYM",
+                "decimal_digits": "18"
+              }
+            }
+          }
+        },
+        "INJECTIVE": {
+          "currencies": {
+            "INJ": {
+              "native": {
+                "name": "Injective INJ",
+                "symbol": "inj",
+                "ticker": "INJ",
+                "decimal_digits": "18"
+              }
+            }
+          }
+        },
+        "NOBLE": {
+          "currencies": {
+            "USDC_NOBLE": {
+              "native": {
+                "name": "Noble USDC",
+                "symbol": "uusdc",
+                "ticker": "USDC",
+                "decimal_digits": "6"
+              }
+            }
+          }
+        },
+        "COMPOSABLE": {
+          "currencies": {
+            "PICA": {
+              "native": {
+                "name": "Composable PICA",
+                "symbol": "ppica",
+                "ticker": "PICA",
+                "decimal_digits": "12"
+              }
+            }
+          }
+        },
+        "CUDOS": {
+          "currencies": {
+            "CUDOS": {
+              "native": {
+                "name": "Cudos CUDOS",
+                "symbol": "acudos",
+                "ticker": "CUDOS",
+                "decimal_digits": "18"
+              }
+            }
+          }
+        }
+      },
+      "channels": [
+        {
+          "a": {
+            "network": "NOLUS",
+            "ch": "channel-0"
+          },
+          "b": {
+            "network": "OSMOSIS",
+            "ch": "channel-783"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-208"
+          },
+          "b": {
+            "network": "AXELAR",
+            "ch": "channel-3"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-0"
+          },
+          "b": {
+            "network": "COSMOS_HUB",
+            "ch": "channel-141"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-326"
+          },
+          "b": {
+            "network": "STRIDE",
+            "ch": "channel-5"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-1"
+          },
+          "b": {
+            "network": "AKASH",
+            "ch": "channel-9"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-42"
+          },
+          "b": {
+            "network": "JUNO",
+            "ch": "channel-0"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-204"
+          },
+          "b": {
+            "network": "EVMOS",
+            "ch": "channel-0"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-4"
+          },
+          "b": {
+            "network": "PERSISTENCE",
+            "ch": "channel-6"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-88"
+          },
+          "b": {
+            "network": "SECRET",
+            "ch": "channel-1"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-5"
+          },
+          "b": {
+            "network": "CRYPTO_ORG",
+            "ch": "channel-10"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-6994"
+          },
+          "b": {
+            "network": "CELESTIA",
+            "ch": "channel-2"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-75"
+          },
+          "b": {
+            "network": "STARGAZE",
+            "ch": "channel-0"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-522"
+          },
+          "b": {
+            "network": "QUICKSILVER",
+            "ch": "channel-2"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-326"
+          },
+          "b": {
+            "network": "STRIDE",
+            "ch": "channel-5"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-19774"
+          },
+          "b": {
+            "network": "DYMENSION",
+            "ch": "channel-2"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-412"
+          },
+          "b": {
+            "network": "JACKAL",
+            "ch": "channel-0"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-122"
+          },
+          "b": {
+            "network": "INJECTIVE",
+            "ch": "channel-8"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-1279"
+          },
+          "b": {
+            "network": "COMPOSABLE",
+            "ch": "channel-3"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-750"
+          },
+          "b": {
+            "network": "NOBLE",
+            "ch": "channel-1"
+          }
+        },
+        {
+          "a": {
+            "network": "OSMOSIS",
+            "ch": "channel-298"
+          },
+          "b": {
+            "network": "CUDOS",
+            "ch": "channel-1"
+          }
+        },
+        {
+          "a": {
+            "network": "NOLUS",
+            "ch": "channel-3839"
+          },
+          "b": {
+            "network": "NEUTRON",
+            "ch": "channel-44"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-1"
+          },
+          "b": {
+            "network": "COSMOS_HUB",
+            "ch": "channel-569"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-8"
+          },
+          "b": {
+            "network": "STRIDE",
+            "ch": "channel-123"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-48"
+          },
+          "b": {
+            "network": "DYDX",
+            "ch": "channel-11"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-2"
+          },
+          "b": {
+            "network": "AXELAR",
+            "ch": "channel-78"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-35"
+          },
+          "b": {
+            "network": "CELESTIA",
+            "ch": "channel-8"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-49"
+          },
+          "b": {
+            "network": "PERSISTENCE",
+            "ch": "channel-136"
+          }
+        },
+        {
+          "a": {
+            "network": "NEUTRON",
+            "ch": "channel-30"
+          },
+          "b": {
+            "network": "NOBLE",
+            "ch": "channel-18"
+          }
+        }
+      ]
     },
     "protocols": {
-        "OSMOSIS-OSMOSIS-USDC_AXELAR": {
-            "DexNetwork": "OSMOSIS",
-            "Lpn": {
-                "dex_currency": "USDC_AXELAR"
-            },
-            "Lease": {
-                "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1135",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "ST_ATOM": {
-                    "dex_currency": "ST_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1136",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "OSMO": {
-                    "dex_currency": "OSMO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "ST_OSMO": {
-                    "dex_currency": "ST_OSMO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "833",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "WBTC": {
-                    "dex_currency": "WBTC",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1090",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "WETH": {
-                    "dex_currency": "WETH",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1134",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "AKT": {
-                    "dex_currency": "AKT",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1093",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "AXL": {
-                    "dex_currency": "AXL",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "812",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "JUNO": {
-                    "dex_currency": "JUNO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "497",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "EVMOS": {
-                    "dex_currency": "EVMOS",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "722",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "SCRT": {
-                    "dex_currency": "SCRT",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "584",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "CRO": {
-                    "dex_currency": "CRO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "9",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "TIA": {
-                    "dex_currency": "TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "STARS": {
-                    "dex_currency": "STARS",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1096",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "Q_ATOM": {
-                    "dex_currency": "Q_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "944",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "STRD": {
-                    "dex_currency": "STRD",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1098",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "MILK_TIA": {
-                    "dex_currency": "MILK_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                            "pool_id": "1335",
-                            "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "ST_TIA": {
-                    "dex_currency": "ST_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                            "pool_id": "1428",
-                            "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "JKL": {
-                    "dex_currency": "JKL",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "832",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                     ]
-                },
-                "DYM": {
-                    "dex_currency": "DYM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1450",
-                                "pool_token": "USDC_NOBLE"
-                            },
-                            {
-                                "pool_id": "1223",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "INJ": {
-                    "dex_currency": "INJ",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1319",
-                                "pool_token": "USDC_NOBLE"
-                            },
-                            {
-                                "pool_id": "1223",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                    ]
-                },
-                "LVN": {
-                    "dex_currency": "LVN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1325",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                     ]
-                },
-                "PICA": {
-                    "dex_currency": "PICA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1057",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1133",
-                                "pool_token": "USDC"
-                            }
-                        ]
-                     ]
-                }
-            },
-            "Native": {
-                "id": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1041",
-                            "pool_token": "USDC"
-                        }
-                    ]
-                ]
-            }
+      "OSMOSIS-OSMOSIS-USDC_AXELAR": {
+        "DexNetwork": "OSMOSIS",
+        "Lpn": {
+          "dex_currency": "USDC_AXELAR"
         },
-        "OSMOSIS-OSMOSIS-USDC_NOBLE": {
-            "DexNetwork": "OSMOSIS",
-            "Lpn": {
-                "dex_currency": "USDC_NOBLE"
-            },
-            "Lease": {
-                "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1251",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
+        "Lease": {
+          "ATOM": {
+            "dex_currency": "ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1135",
+                  "pool_token": "OSMO"
                 },
-                "ST_ATOM": {
-                    "dex_currency": "ST_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1283",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1251",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "OSMO": {
-                    "dex_currency": "OSMO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "ST_OSMO": {
-                    "dex_currency": "ST_OSMO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "833",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "WBTC": {
-                    "dex_currency": "WBTC",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1090",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "WETH": {
-                    "dex_currency": "WETH",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1134",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "AKT": {
-                    "dex_currency": "AKT",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1093",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "AXL": {
-                    "dex_currency": "AXL",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "812",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "JUNO": {
-                    "dex_currency": "JUNO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1097",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "EVMOS": {
-                    "dex_currency": "EVMOS",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "722",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "SCRT": {
-                    "dex_currency": "SCRT",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1095",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "CRO": {
-                    "dex_currency": "CRO",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "9",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "TIA": {
-                    "dex_currency": "TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "STARS": {
-                    "dex_currency": "STARS",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1096",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "Q_ATOM": {
-                    "dex_currency": "Q_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "944",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "1251",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "STRD": {
-                    "dex_currency": "STRD",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1098",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "MILK_TIA": {
-                    "dex_currency": "MILK_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                            "pool_id": "1335",
-                            "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "ST_TIA": {
-                    "dex_currency": "ST_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                            "pool_id": "1428",
-                            "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "1248",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "JKL": {
-                    "dex_currency": "JKL",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "832",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                     ]
-                },
-                "DYM": {
-                    "dex_currency": "DYM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1450",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "INJ": {
-                    "dex_currency": "INJ",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1319",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "LVN": {
-                    "dex_currency": "LVN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1325",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                     ]
-                },
-                "PICA": {
-                    "dex_currency": "PICA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "1057",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                     ]
-                },
-                "CUDOS": {
-                    "dex_currency": "CUDOS",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "796",
-                                "pool_token": "OSMO"
-                            },
-                            {
-                                "pool_id": "1263",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                     ]
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
                 }
-            },
-            "Native": {
-                "id": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "1041",
-                            "pool_token": "USDC"
-                        },
-                        {
-                            "pool_id": "1223",
-                            "pool_token": "USDC_NOBLE"
-                        }
-                    ]
-                ]
-            }
+              ]
+            ]
+          },
+          "ST_ATOM": {
+            "dex_currency": "ST_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1136",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "1",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "OSMO": {
+            "dex_currency": "OSMO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "ST_OSMO": {
+            "dex_currency": "ST_OSMO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "833",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "WBTC": {
+            "dex_currency": "WBTC",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1090",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "WETH": {
+            "dex_currency": "WETH",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1134",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "AKT": {
+            "dex_currency": "AKT",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1093",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "AXL": {
+            "dex_currency": "AXL",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "812",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "JUNO": {
+            "dex_currency": "JUNO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "497",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "EVMOS": {
+            "dex_currency": "EVMOS",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "722",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "SCRT": {
+            "dex_currency": "SCRT",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "584",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "CRO": {
+            "dex_currency": "CRO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "9",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "TIA": {
+            "dex_currency": "TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "STARS": {
+            "dex_currency": "STARS",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1096",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "Q_ATOM": {
+            "dex_currency": "Q_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "944",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "1",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "STRD": {
+            "dex_currency": "STRD",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1098",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "MILK_TIA": {
+            "dex_currency": "MILK_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1335",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "ST_TIA": {
+            "dex_currency": "ST_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1428",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "JKL": {
+            "dex_currency": "JKL",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "832",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "DYM": {
+            "dex_currency": "DYM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1450",
+                  "pool_token": "USDC_NOBLE"
+                },
+                {
+                  "pool_id": "1223",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "INJ": {
+            "dex_currency": "INJ",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1319",
+                  "pool_token": "USDC_NOBLE"
+                },
+                {
+                  "pool_id": "1223",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "LVN": {
+            "dex_currency": "LVN",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1325",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          },
+          "PICA": {
+            "dex_currency": "PICA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1057",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1133",
+                  "pool_token": "USDC"
+                }
+              ]
+            ]
+          }
         },
-        "NEUTRON-ASTROPORT-USDC_AXELAR": {
-            "DexNetwork": "NEUTRON",
-            "Lpn": {
-                "dex_currency": "USDC_AXELAR"
-            },
-            "Lease": {
-                "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "ST_ATOM": {
-                    "dex_currency": "ST_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "NTRN": {
-                    "dex_currency": "NTRN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "TIA": {
-                    "dex_currency": "TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "ST_TIA": {
-                    "dex_currency": "ST_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
-                "STK_ATOM": {
-                    "dex_currency": "STK_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                }
-            },
-            "Native": {
-                "dex_currency": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "",
-                            "pool_token": "NTRN"
-                        },
-                        {
-                            "pool_id": "",
-                            "pool_token": "USDC_AXELAR"
-                        }
-                    ]
-                ]
-            }
-        },
-        "NEUTRON-ASTROPORT-USDC_NOBLE": {
-            "DexNetwork": "NEUTRON",
-            "Lpn": {
-                "dex_currency": "USDC_NOBLE"
-            },
-            "Lease": {
-                "ATOM": {
-                    "dex_currency": "ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "ST_ATOM": {
-                    "dex_currency": "ST_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "NTRN": {
-                    "dex_currency": "NTRN",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "DYDX": {
-                    "dex_currency": "DYDX",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "TIA": {
-                    "dex_currency": "TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "ST_TIA": {
-                    "dex_currency": "ST_TIA",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "TIA"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                },
-                "STK_ATOM": {
-                    "dex_currency": "STK_ATOM",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "ATOM"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "NTRN"
-                            },
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_NOBLE"
-                            }
-                        ]
-                    ]
-                }
-            },
-            "Native": {
-                "dex_currency": "NLS",
-                "swap_routes": [
-                    [
-                        {
-                            "pool_id": "",
-                            "pool_token": "NTRN"
-                        },
-                        {
-                            "pool_id": "",
-                            "pool_token": "USDC_NOBLE"
-                        }
-                    ]
-                ]
-            }
+        "Native": {
+          "id": "NLS",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "1041",
+                "pool_token": "USDC"
+              }
+            ]
+          ]
         }
+      },
+      "OSMOSIS-OSMOSIS-USDC_NOBLE": {
+        "DexNetwork": "OSMOSIS",
+        "Lpn": {
+          "dex_currency": "USDC_NOBLE"
+        },
+        "Lease": {
+          "ATOM": {
+            "dex_currency": "ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1251",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "ST_ATOM": {
+            "dex_currency": "ST_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1283",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "1251",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "OSMO": {
+            "dex_currency": "OSMO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "ST_OSMO": {
+            "dex_currency": "ST_OSMO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "833",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "WBTC": {
+            "dex_currency": "WBTC",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1090",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "WETH": {
+            "dex_currency": "WETH",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1134",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "AKT": {
+            "dex_currency": "AKT",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1093",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "AXL": {
+            "dex_currency": "AXL",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "812",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "JUNO": {
+            "dex_currency": "JUNO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1097",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "EVMOS": {
+            "dex_currency": "EVMOS",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "722",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "SCRT": {
+            "dex_currency": "SCRT",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1095",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "CRO": {
+            "dex_currency": "CRO",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "9",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "TIA": {
+            "dex_currency": "TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "STARS": {
+            "dex_currency": "STARS",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1096",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "Q_ATOM": {
+            "dex_currency": "Q_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "944",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "1251",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "STRD": {
+            "dex_currency": "STRD",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1098",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "MILK_TIA": {
+            "dex_currency": "MILK_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1335",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "ST_TIA": {
+            "dex_currency": "ST_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1428",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "1248",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "JKL": {
+            "dex_currency": "JKL",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "832",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "DYM": {
+            "dex_currency": "DYM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1450",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "INJ": {
+            "dex_currency": "INJ",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1319",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "LVN": {
+            "dex_currency": "LVN",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1325",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "PICA": {
+            "dex_currency": "PICA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "1057",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "CUDOS": {
+            "dex_currency": "CUDOS",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "796",
+                  "pool_token": "OSMO"
+                },
+                {
+                  "pool_id": "1263",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          }
+        },
+        "Native": {
+          "id": "NLS",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "1041",
+                "pool_token": "USDC"
+              },
+              {
+                "pool_id": "1223",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        }
+      },
+      "NEUTRON-ASTROPORT-USDC_AXELAR": {
+        "DexNetwork": "NEUTRON",
+        "Lpn": {
+          "dex_currency": "USDC_AXELAR"
+        },
+        "Lease": {
+          "ATOM": {
+            "dex_currency": "ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          },
+          "ST_ATOM": {
+            "dex_currency": "ST_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          },
+          "NTRN": {
+            "dex_currency": "NTRN",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          },
+          "TIA": {
+            "dex_currency": "TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          },
+          "ST_TIA": {
+            "dex_currency": "ST_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          },
+          "STK_ATOM": {
+            "dex_currency": "STK_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_AXELAR"
+                }
+              ]
+            ]
+          }
+        },
+        "Native": {
+          "dex_currency": "NLS",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "",
+                "pool_token": "NTRN"
+              },
+              {
+                "pool_id": "",
+                "pool_token": "USDC_AXELAR"
+              }
+            ]
+          ]
+        }
+      },
+      "NEUTRON-ASTROPORT-USDC_NOBLE": {
+        "DexNetwork": "NEUTRON",
+        "Lpn": {
+          "dex_currency": "USDC_NOBLE"
+        },
+        "Lease": {
+          "ATOM": {
+            "dex_currency": "ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "ST_ATOM": {
+            "dex_currency": "ST_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "NTRN": {
+            "dex_currency": "NTRN",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "DYDX": {
+            "dex_currency": "DYDX",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "TIA": {
+            "dex_currency": "TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "ST_TIA": {
+            "dex_currency": "ST_TIA",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "TIA"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          },
+          "STK_ATOM": {
+            "dex_currency": "STK_ATOM",
+            "swap_routes": [
+              [
+                {
+                  "pool_id": "",
+                  "pool_token": "ATOM"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "NTRN"
+                },
+                {
+                  "pool_id": "",
+                  "pool_token": "USDC_NOBLE"
+                }
+              ]
+            ]
+          }
+        },
+        "Native": {
+          "dex_currency": "NLS",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "",
+                "pool_token": "NTRN"
+              },
+              {
+                "pool_id": "",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        }
+      }
     },
     "definitions": [
-        "This is the descriptor of the network topology, currencies and their usage at the Nolus AMM protocol.",
-        "",
-        "The network topology is represented as a collection of networks and the ICS-20 transfer channels that connect them.",
-        "Some networks may have DEX services available. Their description contain the pools of interest for the Nolus AMM protocol.",
-        "",
-        "On a given network, each currency is identified by its 'ticker'. A currency with ticker NLS on a network NOLUS is required.",
-        "A currency is either native or ibc on a network. In the latter case it points to the 'burning' currency residing at a network",
-        "that is at one hop distance. In the former case it is described with name, symbol and number of decimal digits.",
-        "",
-        "The 'name' is a human-readable description of the currency",
-        "",
-        "The 'symbol' is the base denomination of the currency at its native chain.",
-        "",
-        "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
-        "For example, '6' for OSMO means 10^6 units of its base denomination uosmo are equal to 1 OSMO",
-        "",
-        "The 'icon' is an optional currency attribute that provides a visual representation of the currency at that network and the others",
-        "where the currency might be sent over ibc. In other workds, if there is no icon attribute of an ibc originating currency then ",
-        "the icon is derived from the network and currency it points to. This might be applied multiple times traversing the ibc path ",
-        "toward its native network.",
-        "",
-        "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
-        "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
-        "network 'K' reachable through a sequence of channels with names 'ch[0]', 'ch[1]' ... 'ch[k]' at their minting side.",
-        "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19).",
-        "",
-        "The usage of the currencies at the Nolus AMM protocol is described with the 'lease' JSON object",
-        "Each currency is classified as either Lpn, Lease or Native. Lpn contains the Lpp currencies. Lease currencies are the ones ",
-        "customers may open lease in. Native defines the native currency for the Nolus AMM protocol.",
-        "Leases may be paid with any of the provided currencies.",
-        "",
-        "Each of the currencies should provide in the 'swap_routes' array a separate swapping route to each of the Lpn currencies.",
-        "That holds true for the Lpn currencies, for example, if there are three Lpn items then each of them should provide two paths, ",
-        "each ending to some of the other currency",
-        "Routes should refer to pools at the closest DEX common for the currency and its Lpn. Nolus AMM uses the swapping routes ",
-        "to obtain prices and order swap transactions.",
-        "Please note, that some pools may not be limited to operate only on two currencies, therefore DEX APIs and",
-        "Nolus AMM swapping routes always specify the target currency within the pool."
+      "This is the descriptor of the network topology, currencies and their usage at the Nolus AMM protocol.",
+      "",
+      "The network topology is represented as a collection of networks and the ICS-20 transfer channels that connect them.",
+      "Some networks may have DEX services available. Their description contain the pools of interest for the Nolus AMM protocol.",
+      "",
+      "On a given network, each currency is identified by its 'ticker'. A currency with ticker NLS on a network NOLUS is required.",
+      "A currency is either native or ibc on a network. In the latter case it points to the 'burning' currency residing at a network",
+      "that is at one hop distance. In the former case it is described with name, symbol and number of decimal digits.",
+      "",
+      "The 'name' is a human-readable description of the currency",
+      "",
+      "The 'symbol' is the base denomination of the currency at its native chain.",
+      "",
+      "The 'decimal_digits' value represents the number of decimal digits this denomination has.",
+      "For example, '6' for OSMO means 10^6 units of its base denomination uosmo are equal to 1 OSMO",
+      "",
+      "The 'icon' is an optional currency attribute that provides a visual representation of the currency at that network and the others",
+      "where the currency might be sent over ibc. In other workds, if there is no icon attribute of an ibc originating currency then ",
+      "the icon is derived from the network and currency it points to. This might be applied multiple times traversing the ibc path ",
+      "toward its native network.",
+      "",
+      "The currency symbol at a given network is either equal to the currency 'symbol' if it is a native for that network, or ",
+      "'ibc/' + sha256('transfer' + '/' + ch[0] + '/' + ... + 'transfer' + '/' + ch[k] + '/' + symbol) if it is a native on ",
+      "network 'K' reachable through a sequence of channels with names 'ch[0]', 'ch[1]' ... 'ch[k]' at their minting side.",
+      "More info is available [here](https://github.com/cosmos/ibc-go/blob/c86d27fc280cfb342a9e4689b381e5823441b694/modules/apps/transfer/types/trace.go#L19).",
+      "",
+      "The usage of the currencies at the Nolus AMM protocol is described with the 'lease' JSON object",
+      "Each currency is classified as either Lpn, Lease or Native. Lpn contains the Lpp currencies. Lease currencies are the ones ",
+      "customers may open lease in. Native defines the native currency for the Nolus AMM protocol.",
+      "Leases may be paid with any of the provided currencies.",
+      "",
+      "Each of the currencies should provide in the 'swap_routes' array a separate swapping route to each of the Lpn currencies.",
+      "That holds true for the Lpn currencies, for example, if there are three Lpn items then each of them should provide two paths, ",
+      "each ending to some of the other currency",
+      "Routes should refer to pools at the closest DEX common for the currency and its Lpn. Nolus AMM uses the swapping routes ",
+      "to obtain prices and order swap transactions.",
+      "Please note, that some pools may not be limited to operate only on two currencies, therefore DEX APIs and",
+      "Nolus AMM swapping routes always specify the target currency within the pool."
     ]
-}
+  }
+  
