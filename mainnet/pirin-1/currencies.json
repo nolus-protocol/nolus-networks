@@ -1808,17 +1808,6 @@
                         ]
                     ]
                 },
-                "DYDX": {
-                    "dex_currency": "DYDX",
-                    "swap_routes": [
-                        [
-                            {
-                                "pool_id": "",
-                                "pool_token": "USDC_AXELAR"
-                            }
-                        ]
-                    ]
-                },
                 "TIA": {
                     "dex_currency": "TIA",
                     "swap_routes": [
@@ -1884,6 +1873,138 @@
                         {
                             "pool_id": "",
                             "pool_token": "USDC_AXELAR"
+                        }
+                    ]
+                ]
+            }
+        },
+        "NEUTRON-ASTROPORT-USDC_NOBLE": {
+            "DexNetwork": "NEUTRON",
+            "Lpn": {
+                "dex_currency": "USDC_NOBLE"
+            },
+            "Lease": {
+                "ATOM": {
+                    "dex_currency": "ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "ST_ATOM": {
+                    "dex_currency": "ST_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "ATOM"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "NTRN": {
+                    "dex_currency": "NTRN",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "DYDX": {
+                    "dex_currency": "DYDX",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "TIA": {
+                    "dex_currency": "TIA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "ST_TIA": {
+                    "dex_currency": "ST_TIA",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "TIA"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                },
+                "STK_ATOM": {
+                    "dex_currency": "STK_ATOM",
+                    "swap_routes": [
+                        [
+                            {
+                                "pool_id": "",
+                                "pool_token": "ATOM"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "NTRN"
+                            },
+                            {
+                                "pool_id": "",
+                                "pool_token": "USDC_NOBLE"
+                            }
+                        ]
+                    ]
+                }
+            },
+            "Native": {
+                "dex_currency": "NLS",
+                "swap_routes": [
+                    [
+                        {
+                            "pool_id": "",
+                            "pool_token": "NTRN"
+                        },
+                        {
+                            "pool_id": "",
+                            "pool_token": "USDC_NOBLE"
                         }
                     ]
                 ]
