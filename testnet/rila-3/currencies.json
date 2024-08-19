@@ -278,6 +278,23 @@
                 }
             }
         },
+        "OSMOSIS-OSMOSIS-USDC_AXELAR": {
+            "DexNetwork": "OSMOSIS",
+            "Lpn": {
+                "dex_currency": "USDC"
+            },
+            "Lease": {
+                "ATOM": {
+                    "dex_currency": "ATOM"
+                },
+                "OSMO": {
+                    "dex_currency": "OSMO"
+                }
+            },
+            "Native": {
+                "dex_currency": "NLS"
+            }
+        },
         "NEUTRON-ASTROPORT-USDC_AXL": {
             "DexNetwork": "NEUTRON",
             "Lpn": {
