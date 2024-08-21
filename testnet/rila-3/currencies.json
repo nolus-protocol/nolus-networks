@@ -267,17 +267,6 @@
         ]
     },
     "protocols": {
-        "OSMOSIS-OSMOSIS-OSMO": {
-            "DexNetwork": "OSMOSIS",
-            "Lpn": {
-                "dex_currency": "OSMO"
-            },
-            "Lease": {
-                "USDC_AXELAR": {
-                    "dex_currency": "USDC_AXELAR"
-                }
-            }
-        },
         "OSMOSIS-OSMOSIS-USDC_AXELAR": {
             "DexNetwork": "OSMOSIS",
             "Lpn": {
