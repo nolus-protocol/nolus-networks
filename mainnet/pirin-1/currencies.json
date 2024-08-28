@@ -551,7 +551,7 @@
             "native": {
               "name": "Nuetron dAtom",
               "symbol": "factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom",
-              "ticker": "D_ATOM",
+              "ticker": "dATOM",
               "decimal_digits": "6"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-datom.svg"
