@@ -2021,7 +2021,7 @@
         },
         "D_ATOM": {
           "dex_currency": "D_ATOM",
-          "swap_routes": []        
+          "swap_routes": []
         }
       },
       "Native": {
@@ -2038,6 +2038,17 @@
             }
           ]
         ]
+      }
+    },
+    "OSMOSIS-OSMOSIS-ST_ATOM": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "ST_ATOM"
+      },
+      "Lease": {
+        "USDC_AXELAR": {
+          "dex_currency": "USDC_NOBLE"
+        }
       }
     }
   },
