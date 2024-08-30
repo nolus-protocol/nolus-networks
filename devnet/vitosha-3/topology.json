@@ -57,28 +57,33 @@
                     "icon": "https://nolus.io/currencies/osmosis-juno.svg"
                 }
             },
-            "amm_pools": [
-                {
-                    "id": "12",
-                    "token_0": "ATOM",
-                    "token_1": "OSMO"
-                },
-                {
-                    "id": "5",
-                    "token_0": "OSMO",
-                    "token_1": "USDC_AXELAR"
-                },
-                {
-                    "id": "229",
-                    "token_0": "NLS",
-                    "token_1": "USDC_AXELAR"
-                },
-                {
-                    "id": "18",
-                    "token_0": "AKT",
-                    "token_1": "OSMO"
+            "dexes": {
+                "osmosis": {
+                    "type": "osmosis",
+                    "amm_pools": [
+                        {
+                            "id": "12",
+                            "token_0": "ATOM",
+                            "token_1": "OSMO"
+                        },
+                        {
+                            "id": "5",
+                            "token_0": "OSMO",
+                            "token_1": "USDC_AXELAR"
+                        },
+                        {
+                            "id": "229",
+                            "token_0": "NLS",
+                            "token_1": "USDC_AXELAR"
+                        },
+                        {
+                            "id": "18",
+                            "token_0": "AKT",
+                            "token_1": "OSMO"
+                        }
+                    ]
                 }
-            ]
+            }
         },
         "AXELAR": {
             "currencies": {
@@ -156,23 +161,28 @@
                     "icon": "https://nolus.io/currencies/neutron-nls.svg"
                 }
             },
-            "amm_pools": [
-                {
-                    "id": "",
-                    "token_0": "NTRN",
-                    "token_1": "USDC_AXELAR"
-                },
-                {
-                    "id": "",
-                    "token_0": "ATOM",
-                    "token_1": "USDC_AXELAR"
-                },
-                {
-                    "id": "",
-                    "token_0": "NTRN",
-                    "token_1": "NLS"
+            "dexes": {
+                "astroport": {
+                    "type": "astroport_test",
+                    "amm_pools": [
+                        {
+                            "id": "",
+                            "token_0": "NTRN",
+                            "token_1": "USDC_AXELAR"
+                        },
+                        {
+                            "id": "",
+                            "token_0": "ATOM",
+                            "token_1": "USDC_AXELAR"
+                        },
+                        {
+                            "id": "",
+                            "token_0": "NTRN",
+                            "token_1": "NLS"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     },
     "channels": [
@@ -261,7 +271,8 @@
         "This is the descriptor of the network topology and currencies of interest for the Nolus AMM protocol.",
         "",
         "The network topology is represented as a collection of networks and the ICS-20 transfer channels that connect them.",
-        "Some networks may have DEX services available. Their description contain the pools of interest for the Nolus AMM protocol.",
+        "Some networks may have DEX services available. Each DEX is uniquely named and should have a type supported by Nolus.",
+        "The supported types are `osmosis`, `astroport_test`, and `astroport_main`.",
         "",
         "On a given network, each currency is identified by its 'ticker'. A currency with ticker NLS on a network NOLUS is required.",
         "The Nolus network description should not contain other currencies. They are defined in the 'protocols' object.",
