@@ -209,6 +209,24 @@
               "currency": "CUDOS"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cudos.svg"
+          },
+          "ALL_BTC": {
+            "native": {
+              "name": "Osmosis allBTC",
+              "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
+              "ticker": "allBTC",
+              "decimal_digits": "8"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allbtc.svg"
+          },
+          "ALL_SOL": {
+            "native": {
+              "name": "Osmosis allSOL",
+              "symbol": "factory/osmo1n3n75av8awcnw4jl62n3l48e6e4sxqmaf97w5ua6ddu4s475q5qq9udvx4/alloyed/allSOL",
+              "ticker": "allSOL",
+              "decimal_digits": "9"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allsol.svg"
           }
         },
         "amm_pools": [
@@ -341,6 +359,16 @@
             "id": "796",
             "token_0": "CUDOS",
             "token_1": "OSMO"
+          },
+          {
+            "id": "1943",
+            "token_0": "ALL_BTC",
+            "token_1": "USDC_NOBLE"
+          },
+          {
+            "id": "2054",
+            "token_0": "ALL_SOL",
+            "token_1": "ALL_BTC"
           }
         ]
       },
@@ -1761,6 +1789,32 @@
               },
               {
                 "pool_id": "1263",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        },
+        "ALL_BTC": {
+          "dex_currency": "ALL_BTC",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "1943",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        },
+        "ALL_SOL": {
+          "dex_currency": "ALL_SOL",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "2054",
+                "pool_token": "ALL_BTC"
+              },
+              {
+                "pool_id": "1943",
                 "pool_token": "USDC_NOBLE"
               }
             ]
