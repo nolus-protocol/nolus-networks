@@ -214,7 +214,7 @@
             "native": {
               "name": "Osmosis allBTC",
               "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
-              "ticker": "allBTC",
+              "ticker": "BTC",
               "decimal_digits": "8"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allbtc.svg"
@@ -223,7 +223,7 @@
             "native": {
               "name": "Osmosis allSOL",
               "symbol": "factory/osmo1n3n75av8awcnw4jl62n3l48e6e4sxqmaf97w5ua6ddu4s475q5qq9udvx4/alloyed/allSOL",
-              "ticker": "allSOL",
+              "ticker": "SOL",
               "decimal_digits": "9"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allsol.svg"
