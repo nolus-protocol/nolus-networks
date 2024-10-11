@@ -2104,6 +2104,39 @@
           "dex_currency": "USDC_NOBLE"
         }
       }
+    },
+    "OSMOSIS-OSMOSIS-ALL_BTC": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "ALL_BTC"
+      },
+      "Lease": {
+        "USDC_AXELAR": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
+    },
+    "OSMOSIS-OSMOSIS-ALL_SOL": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "ALL_SOL"
+      },
+      "Lease": {
+        "USDC_AXELAR": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
+    },
+    "OSMOSIS-OSMOSIS-AKT": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "AKT"
+      },
+      "Lease": {
+        "USDC_AXELAR": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
     }
   },
   "definitions": [
