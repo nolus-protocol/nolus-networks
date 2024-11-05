@@ -1,0 +1,100 @@
+defaults:
+  run:
+    shell: "sh"
+
+on:
+  workflow_dispatch: 
+    inputs:
+      network-group:
+        description: "Network's group"
+        type: "choice"
+        options:
+          - "dev"
+          - "main"
+          - "test"
+        required: true
+      network:
+        description: "Network's name"
+        type: "string"
+        required: true
+      protocol:
+        description: "Protocol"
+        type: "string"
+        required: true
+      release:
+        description: "Smart contracts release"
+        type: "string"
+        required: true
+      profile:
+        description: "Build profile"
+        type: "choice"
+        options:
+          - "production-net"
+          - "test-net"
+        required: true
+
+jobs: 
+  build-protocol:
+    name: "Build protocol"
+    runs-on: "ubuntu-latest"
+    env:
+      topology_json: |-
+        ${{ inputs.network-group }}net/${{ inputs.network }}/topology.json
+      protocol_json: |-
+        ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/${{  inputs.protocol}}.json
+    steps:
+      - uses: "actions/checkout@v4"
+        with:
+          sparse-checkout: |-
+            ${{ env.topology_json }}
+            ${{ env.protocol_json }}
+      - run: |-
+          set -eu
+
+          "mkdir" "./build-configuration/"
+
+          "cp" \
+            "${topology_json:?}" \
+            "./build-configuration/topology.json"
+
+          "cp" \
+            "${protocol_json:?}" \
+            "./build-configuration/protocol.json"
+      - env:
+          url: |-
+            https://github.com/${{ github.repository_owner }}/nolus-money-market/releases/download/${{ inputs.release }}/protocol-builder.tar.gz
+        run: |-
+          set -eu
+
+          "wget" \
+            --output-document="protocol-builder.tar.gz" \
+            "${url:?}"
+      - run: |-
+          "gunzip" "protocol-builder.tar.gz"
+      - run: |-
+          "docker" \
+            "image" \
+            "load" \
+            --input "protocol-builder.tar"
+      - run: |-
+          "mkdir" "./artifacts/"
+      - env:
+          profile: |-
+            ${{ inputs.profile }}
+        run: |-
+          set -eu
+
+          "docker" \
+            "container" \
+            "run" \
+            --tty \
+            --volume "./artifacts/:/artifacts/:rw" \
+            --volume "./build-configuration/:/build-configuration/:ro" \
+            "protocol-builder" \
+            "${profile:?}"
+      - uses: "actions/upload-artifact@v4"
+        with:
+          if-no-files-found: "error"
+          name: "protocol-artifacts"
+          path: |-
+            ./artifacts/*
