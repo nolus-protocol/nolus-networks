@@ -1,0 +1,758 @@
+{
+    "host_network": {
+        "name": "NOLUS",
+        "currency": {
+            "id": "NLS",
+            "native": {
+                "name": "NLS",
+                "symbol": "unls",
+                "decimal_digits": 6
+            }
+        }
+    },
+    "networks": {
+        "AKASH": {
+            "currencies": {
+                "AKT": {
+                    "native": {
+                        "name": "AKT",
+                        "symbol": "uakt",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "AXELAR": {
+            "currencies": {
+                "AXL": {
+                    "native": {
+                        "name": "AXL",
+                        "symbol": "uaxl",
+                        "decimal_digits": 6
+                    }
+                },
+                "USDC": {
+                    "native": {
+                        "name": "Axelar USDC",
+                        "symbol": "uusdc",
+                        "decimal_digits": 6
+                    }
+                },
+                "WBTC": {
+                    "native": {
+                        "name": "Wrapped BTC",
+                        "symbol": "wbtc-satoshi",
+                        "decimal_digits": 8
+                    }
+                },
+                "WETH": {
+                    "native": {
+                        "name": "Wrapped ETH",
+                        "symbol": "weth-wei",
+                        "decimal_digits": 18
+                    }
+                }
+            }
+        },
+        "CELESTIA": {
+            "currencies": {
+                "TIA": {
+                    "native": {
+                        "name": "TIA",
+                        "symbol": "utia",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "COSMOS_HUB": {
+            "currencies": {
+                "ATOM": {
+                    "native": {
+                        "name": "ATOM",
+                        "symbol": "uatom",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "CRONOS_POS": {
+            "currencies": {
+                "CRO": {
+                    "native": {
+                        "name": "CRO",
+                        "symbol": "basecro",
+                        "decimal_digits": 8
+                    }
+                }
+            }
+        },
+        "DYDX": {
+            "currencies": {
+                "DYDX": {
+                    "native": {
+                        "name": "DYDX",
+                        "symbol": "adydx",
+                        "decimal_digits": 18
+                    }
+                }
+            }
+        },
+        "DYMENSION": {
+            "currencies": {
+                "DYM": {
+                    "native": {
+                        "name": "DYM",
+                        "symbol": "adym",
+                        "decimal_digits": 18
+                    }
+                }
+            }
+        },
+        "INJECTIVE": {
+            "currencies": {
+                "INJ": {
+                    "native": {
+                        "name": "INJ",
+                        "symbol": "inj",
+                        "decimal_digits": 18
+                    }
+                }
+            }
+        },
+        "JACKAL": {
+            "currencies": {
+                "JKL": {
+                    "native": {
+                        "name": "JKL",
+                        "symbol": "ujkl",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "JUNO": {
+            "currencies": {
+                "JUNO": {
+                    "native": {
+                        "name": "JUNO",
+                        "symbol": "ujuno",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "NEUTRON": {
+            "currencies": {
+                "ATOM": {
+                    "ibc": {
+                        "network": "COSMOS_HUB",
+                        "currency": "ATOM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-atom.svg"
+                },
+                "D_ATOM": {
+                    "native": {
+                        "name": "dAtom",
+                        "symbol": "factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-datom.svg"
+                },
+                "DYDX": {
+                    "ibc": {
+                        "network": "DYDX",
+                        "currency": "DYDX"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-dydx.svg"
+                },
+                "NLS": {
+                    "ibc": {
+                        "network": "NOLUS",
+                        "currency": "NLS"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-nls.svg"
+                },
+                "NTRN": {
+                    "native": {
+                        "name": "Neutron",
+                        "symbol": "untrn",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-ntrn.svg"
+                },
+                "TIA": {
+                    "ibc": {
+                        "network": "CELESTIA",
+                        "currency": "TIA"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-tia.svg"
+                },
+                "ST_ATOM": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "ST_ATOM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-statom.svg"
+                },
+                "ST_TIA": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "ST_TIA"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-sttia.svg"
+                },
+                "USDC_AXELAR": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "USDC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
+                },
+                "USDC_NOBLE": {
+                    "ibc": {
+                        "network": "NOBLE",
+                        "currency": "USDC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
+                },
+                "WST_ETH": {
+                    "native": {
+                        "name": "wstETH",
+                        "symbol": "factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH",
+                        "decimal_digits": 18
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-wsteth.svg"
+                }
+            },
+            "dexes": {
+                "astroport/usdc_axelar": {
+                    "type": "astroport_main",
+                    "swap_pairs": {
+                        "ATOM": [
+                            "ST_ATOM"
+                        ],
+                        "NTRN": [
+                            "ATOM",
+                            "NLS",
+                            "TIA"
+                        ],
+                        "TIA": [
+                            "ST_TIA"
+                        ],
+                        "USDC_AXELAR": [
+                            "NTRN",
+                            "USDC_NOBLE"
+                        ],
+                        "USDC_NOBLE": [
+                            "DYDX"
+                        ]
+                    }
+                },
+                "astroport/usdc_noble": {
+                    "type": "astroport_main",
+                    "swap_pairs": {
+                        "ATOM": [
+                            "ST_ATOM"
+                        ],
+                        "NTRN": [
+                            "ATOM",
+                            "NLS",
+                            "TIA",
+                            "WST_ETH"
+                        ],
+                        "TIA": [
+                            "ST_TIA"
+                        ],
+                        "USDC_NOBLE": [
+                            "D_ATOM",
+                            "DYDX",
+                            "NTRN"
+                        ]
+                    }
+                }
+            }
+        },
+        "NOBLE": {
+            "currencies": {
+                "USDC": {
+                    "native": {
+                        "name": "Noble USDC",
+                        "symbol": "uusdc",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "OSMOSIS": {
+            "currencies": {
+                "AKT": {
+                    "ibc": {
+                        "network": "AKASH",
+                        "currency": "AKT"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-akt.svg"
+                },
+                "ALL_BTC": {
+                    "native": {
+                        "name": "Alloyed BTC",
+                        "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allbtc.svg"
+                },
+                "ALL_ETH": {
+                    "native": {
+                        "name": "Alloyed ETH",
+                        "symbol": "factory/osmo1k6c8jln7ejuqwtqmay3yvzrg3kueaczl96pk067ldg8u835w0yhsw27twm/alloyed/allETH",
+                        "decimal_digits": 18
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-alleth.svg"
+                },
+                "ALL_SOL": {
+                    "native": {
+                        "name": "Alloyed SOL",
+                        "symbol": "factory/osmo1n3n75av8awcnw4jl62n3l48e6e4sxqmaf97w5ua6ddu4s475q5qq9udvx4/alloyed/allSOL",
+                        "decimal_digits": 9
+                    }
+                },
+                "ATOM": {
+                    "ibc": {
+                        "network": "COSMOS_HUB",
+                        "currency": "ATOM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-atom.svg"
+                },
+                "AXL": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "AXL"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-axl.svg"
+                },
+                "CRO": {
+                    "ibc": {
+                        "network": "CRONOS_POS",
+                        "currency": "CRO"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-cro.svg"
+                },
+                "DYM": {
+                    "ibc": {
+                        "network": "DYMENSION",
+                        "currency": "DYM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-dym.svg"
+                },
+                "INJ": {
+                    "ibc": {
+                        "network": "INJECTIVE",
+                        "currency": "INJ"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-inj.svg"
+                },
+                "JKL": {
+                    "ibc": {
+                        "network": "JACKAL",
+                        "currency": "JKL"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-jkl.svg"
+                },
+                "JUNO": {
+                    "ibc": {
+                        "network": "JUNO",
+                        "currency": "JUNO"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-juno.svg"
+                },
+                "MILK_TIA": {
+                    "native": {
+                        "name": "Milk TIA",
+                        "symbol": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-milktia.svg"
+                },
+                "NLS": {
+                    "ibc": {
+                        "network": "NOLUS",
+                        "currency": "NLS"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nls.svg"
+                },
+                "OSMO": {
+                    "native": {
+                        "name": "Osmosis OSMO",
+                        "symbol": "uosmo",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
+                },
+                "PICA": {
+                    "ibc": {
+                        "network": "PICASSO",
+                        "currency": "PICA"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-pica.svg"
+                },
+                "Q_ATOM": {
+                    "ibc": {
+                        "network": "QUICKSILVER",
+                        "currency": "Q_ATOM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-qatom.svg"
+                },
+                "SCRT": {
+                    "ibc": {
+                        "network": "SECRET",
+                        "currency": "SCRT"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-scrt.svg"
+                },
+                "STARS": {
+                    "ibc": {
+                        "network": "STARGAZE",
+                        "currency": "STARS"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stars.svg"
+                },
+                "ST_ATOM": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "ST_ATOM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-statom.svg"
+                },
+                "ST_OSMO": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "ST_OSMO"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stosmo.svg"
+                },
+                "ST_TIA": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "ST_TIA"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-sttia.svg"
+                },
+                "TIA": {
+                    "ibc": {
+                        "network": "CELESTIA",
+                        "currency": "TIA"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-tia.svg"
+                },
+                "USDC": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "USDC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+                },
+                "USDC_AXELAR": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "USDC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+                },
+                "USDC_NOBLE": {
+                    "ibc": {
+                        "network": "NOBLE",
+                        "currency": "USDC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+                },
+                "WBTC": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "WBTC"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-wbtc.svg"
+                },
+                "WETH": {
+                    "ibc": {
+                        "network": "AXELAR",
+                        "currency": "WETH"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-weth.svg"
+                }
+            },
+            "dexes": {
+                "osmosis/akt": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "AKT": [
+                            "OSMO"
+                        ],
+                        "ALL_BTC": [
+                            "ALL_SOL"
+                        ],
+                        "ATOM": [
+                            "ST_ATOM",
+                            "USDC_NOBLE"
+                        ],
+                        "OSMO": [
+                            "ATOM",
+                            "AXL",
+                            "ST_OSMO",
+                            "WETH"
+                        ],
+                        "USDC_NOBLE": [
+                            "ALL_BTC",
+                            "ALL_ETH",
+                            "INJ",
+                            "NLS"
+                        ]
+                    }
+                },
+                "osmosis/all_btc": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "ALL_BTC": [
+                            "ALL_SOL",
+                            "USDC_NOBLE"
+                        ],
+                        "ATOM": [
+                            "OSMO",
+                            "ST_ATOM"
+                        ],
+                        "OSMO": [
+                            "AKT",
+                            "AXL",
+                            "ST_OSMO",
+                            "WETH"
+                        ],
+                        "USDC_NOBLE": [
+                            "ALL_ETH",
+                            "ATOM",
+                            "INJ",
+                            "NLS"
+                        ]
+                    }
+                },
+                "osmosis/all_sol": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "ATOM": [
+                            "OSMO",
+                            "ST_ATOM"
+                        ],
+                        "ALL_BTC": [
+                            "USDC_NOBLE"
+                        ],
+                        "ALL_SOL": [
+                            "ALL_BTC"
+                        ],
+                        "OSMO": [
+                            "AKT",
+                            "AXL",
+                            "ST_OSMO",
+                            "WETH"
+                        ],
+                        "USDC_NOBLE": [
+                            "ALL_ETH",
+                            "ATOM",
+                            "INJ",
+                            "NLS"
+                        ]
+                    }
+                },
+                "osmosis/st_atom": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "ATOM": [
+                            "OSMO",
+                            "USDC_NOBLE"
+                        ],
+                        "OSMO": [
+                            "AKT",
+                            "AXL",
+                            "ST_OSMO"
+                        ],
+                        "ST_ATOM": [
+                            "ATOM"
+                        ],
+                        "USDC_NOBLE": [
+                            "NLS"
+                        ]
+                    }
+                },
+                "osmosis/usdc_axelar": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "ATOM": [
+                            "ST_ATOM",
+                            "Q_ATOM"
+                        ],
+                        "OSMO": [
+                            "AKT",
+                            "ATOM",
+                            "AXL",
+                            "CRO",
+                            "DYM",
+                            "JKL",
+                            "JUNO",
+                            "PICA",
+                            "SCRT",
+                            "STARS",
+                            "ST_OSMO",
+                            "TIA",
+                            "WBTC",
+                            "WETH"
+                        ],
+                        "TIA": [
+                            "MILK_TIA"
+                        ],
+                        "USDC": [
+                            "OSMO",
+                            "USDC_NOBLE"
+                        ],
+                        "USDC_NOBLE": [
+                            "INJ",
+                            "NLS"
+                        ]
+                    }
+                },
+                "osmosis/usdc_noble": {
+                    "type": "osmosis",
+                    "swap_pairs": {
+                        "ALL_BTC": [
+                            "ALL_SOL"
+                        ],
+                        "ATOM": [
+                            "OSMO",
+                            "ST_ATOM"
+                        ],
+                        "OSMO": [
+                            "AKT",
+                            "AXL",
+                            "CRO",
+                            "JKL",
+                            "SCRT",
+                            "ST_OSMO",
+                            "TIA",
+                            "WBTC",
+                            "WETH"
+                        ],
+                        "TIA": [
+                            "MILK_TIA",
+                            "ST_TIA"
+                        ],
+                        "USDC_NOBLE": [
+                            "ALL_BTC",
+                            "ALL_ETH",
+                            "ATOM",
+                            "INJ",
+                            "NLS"
+                        ]
+                    }
+                }
+            }
+        },
+        "PICASSO": {
+            "currencies": {
+                "PICA": {
+                    "native": {
+                        "name": "PICA",
+                        "symbol": "ppica",
+                        "decimal_digits": 12
+                    }
+                }
+            }
+        },
+        "QUICKSILVER": {
+            "currencies": {
+                "Q_ATOM": {
+                    "native": {
+                        "name": "qATOM",
+                        "symbol": "uqatom",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "SECRET": {
+            "currencies": {
+                "SCRT": {
+                    "native": {
+                        "name": "SCRT",
+                        "symbol": "uscrt",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "STARGAZE": {
+            "currencies": {
+                "STARS": {
+                    "native": {
+                        "name": "STARS",
+                        "symbol": "ustars",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
+        "STRIDE": {
+            "currencies": {
+                "ST_ATOM": {
+                    "native": {
+                        "name": "Staked ATOM",
+                        "symbol": "stuatom",
+                        "decimal_digits": 6
+                    }
+                },
+                "ST_OSMO": {
+                    "native": {
+                        "name": "Staked OSMO",
+                        "symbol": "stuosmo",
+                        "decimal_digits": 6
+                    }
+                },
+                "ST_TIA": {
+                    "native": {
+                        "name": "Staked TIA",
+                        "symbol": "stutia",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        }
+    },
+    "channels": {
+        "NEUTRON": {
+            "AXELAR": "channel-2",
+            "CELESTIA": "channel-35",
+            "COSMOS_HUB": "channel-1",
+            "DYDX": "channel-48",
+            "NOBLE": "channel-30",
+            "NOLUS": "channel-44",
+            "STRIDE": "channel-8"
+        },
+        "NOLUS": {
+            "NEUTRON": "channel-3839",
+            "OSMOSIS": "channel-0"
+        },
+        "OSMOSIS": {
+            "AKASH": "channel-1",
+            "AXELAR": "channel-208",
+            "CELESTIA": "channel-6994",
+            "COSMOS_HUB": "channel-0",
+            "CRONOS_POS": "channel-5",
+            "DYMENSION": "channel-19774",
+            "INJECTIVE": "channel-122",
+            "JACKAL": "channel-412",
+            "JUNO": "channel-42",
+            "NOBLE": "channel-750",
+            "NOLUS": "channel-783",
+            "PICASSO": "channel-1279",
+            "QUICKSILVER": "channel-522",
+            "SECRET": "channel-88",
+            "STARGAZE": "channel-75",
+            "STRIDE": "channel-326"
+        }
+    }
+}

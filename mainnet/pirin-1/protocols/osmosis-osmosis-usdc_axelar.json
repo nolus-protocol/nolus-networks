@@ -1,0 +1,30 @@
+{
+    "dex": "osmosis/usdc_axelar",
+    "dex_network": "OSMOSIS",
+    "lpn_ticker": "USDC",
+    "stable_currency_ticker": "USDC",
+    "lease_currencies_tickers": [
+        "AKT",
+        "ATOM",
+        "AXL",
+        "CRO",
+        "DYM",
+        "INJ",
+        "JKL",
+        "JUNO",
+        "MILK_TIA",
+        "OSMO",
+        "PICA",
+        "Q_ATOM",
+        "SCRT",
+        "STARS",
+        "ST_ATOM",
+        "ST_OSMO",
+        "TIA",
+        "WBTC",
+        "WETH"
+    ],
+    "payment_only_currencies_tickers": [
+        "USDC_NOBLE"
+    ]
+}
