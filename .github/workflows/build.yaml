@@ -41,7 +41,7 @@ jobs:
       topology_json: |-
         ${{ inputs.network-group }}net/${{ inputs.network }}/topology.json
       protocol_json: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/${{  inputs.protocol}}.json
+        ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/${{ inputs.protocol }}.json
     steps:
       - uses: "actions/checkout@v4"
         with:
