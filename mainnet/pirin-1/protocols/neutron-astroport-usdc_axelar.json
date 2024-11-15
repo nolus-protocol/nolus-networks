@@ -1,0 +1,37 @@
+{
+    "dex": "astroport",
+    "dex_network": "NEUTRON",
+    "lpn_ticker": "USDC_AXELAR",
+    "stable_currency_ticker": "USDC_AXELAR",
+    "lease_currencies_tickers": [
+        "ATOM",
+        "DYDX",
+        "NTRN",
+        "ST_ATOM",
+        "ST_TIA",
+        "TIA"
+    ],
+    "payment_only_currencies_tickers": [
+        "USDC_NOBLE"
+    ],
+    "swap_pairs": {
+        "ATOM": [
+            "ST_ATOM"
+        ],
+        "NTRN": [
+            "ATOM",
+            "NLS",
+            "TIA"
+        ],
+        "TIA": [
+            "ST_TIA"
+        ],
+        "USDC_AXELAR": [
+            "NTRN",
+            "USDC_NOBLE"
+        ],
+        "USDC_NOBLE": [
+            "DYDX"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "dex": "astroport",
+    "dex_network": "NEUTRON",
+    "lpn_ticker": "USDC_AXELAR",
+    "stable_currency_ticker": "USDC_AXELAR",
+    "lease_currencies_tickers": [
+        "ATOM",
+        "NTRN"
+    ],
+    "payment_only_currencies_tickers": [],
+    "swap_pairs": {
+        "USDC_AXELAR": [
+            "ATOM",
+            "NTRN",
+            "NLS"
+        ]
+    }
+}
