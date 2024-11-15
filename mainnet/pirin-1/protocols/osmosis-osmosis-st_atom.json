@@ -1,5 +1,5 @@
 {
-    "dex": "osmosis/st_atom",
+    "dex": "osmosis",
     "dex_network": "OSMOSIS",
     "lpn_ticker": "ST_ATOM",
     "stable_currency_ticker": "USDC_NOBLE",
@@ -15,5 +15,22 @@
         "AKT",
         "INJ",
         "AXL"
-    ]
+    ],
+    "swap_pairs": {
+        "ATOM": [
+            "OSMO",
+            "USDC_NOBLE"
+        ],
+        "OSMO": [
+            "AKT",
+            "AXL",
+            "ST_OSMO"
+        ],
+        "ST_ATOM": [
+            "ATOM"
+        ],
+        "USDC_NOBLE": [
+            "NLS"
+        ]
+    }
 }

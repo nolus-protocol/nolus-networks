@@ -1,5 +1,5 @@
 {
-    "dex": "osmosis/all_btc",
+    "dex": "osmosis",
     "dex_network": "OSMOSIS",
     "lpn_ticker": "ALL_BTC",
     "stable_currency_ticker": "USDC_NOBLE",
@@ -17,5 +17,27 @@
         "AXL",
         "ALL_SOL",
         "ALL_ETH"
-    ]
+    ],
+    "swap_pairs": {
+        "ALL_BTC": [
+            "ALL_SOL",
+            "USDC_NOBLE"
+        ],
+        "ATOM": [
+            "OSMO",
+            "ST_ATOM"
+        ],
+        "OSMO": [
+            "AKT",
+            "AXL",
+            "ST_OSMO",
+            "WETH"
+        ],
+        "USDC_NOBLE": [
+            "ALL_ETH",
+            "ATOM",
+            "INJ",
+            "NLS"
+        ]
+    }
 }

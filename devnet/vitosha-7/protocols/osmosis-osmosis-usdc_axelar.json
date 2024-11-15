@@ -1,5 +1,5 @@
 {
-    "dex": "osmosis/usdc_axelar",
+    "dex": "osmosis",
     "dex_network": "OSMOSIS",
     "lpn_ticker": "USDC",
     "stable_currency_ticker": "USDC",
@@ -11,5 +11,13 @@
         "WBTC",
         "WETH"
     ],
-    "payment_only_currencies_tickers": []
+    "payment_only_currencies_tickers": [],
+    "swap_pairs": {
+        "OSMO": [
+            "ATOM"
+        ],
+        "USDC": [
+            "OSMO"
+        ]
+    }
 }

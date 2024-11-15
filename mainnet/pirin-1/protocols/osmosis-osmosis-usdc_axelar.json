@@ -1,5 +1,5 @@
 {
-    "dex": "osmosis/usdc_axelar",
+    "dex": "osmosis",
     "dex_network": "OSMOSIS",
     "lpn_ticker": "USDC",
     "stable_currency_ticker": "USDC",
@@ -26,5 +26,38 @@
     ],
     "payment_only_currencies_tickers": [
         "USDC_NOBLE"
-    ]
+    ],
+    "swap_pairs": {
+        "ATOM": [
+            "ST_ATOM",
+            "Q_ATOM"
+        ],
+        "OSMO": [
+            "AKT",
+            "ATOM",
+            "AXL",
+            "CRO",
+            "DYM",
+            "JKL",
+            "JUNO",
+            "PICA",
+            "SCRT",
+            "STARS",
+            "ST_OSMO",
+            "TIA",
+            "WBTC",
+            "WETH"
+        ],
+        "TIA": [
+            "MILK_TIA"
+        ],
+        "USDC": [
+            "OSMO",
+            "USDC_NOBLE"
+        ],
+        "USDC_NOBLE": [
+            "INJ",
+            "NLS"
+        ]
+    }
 }
