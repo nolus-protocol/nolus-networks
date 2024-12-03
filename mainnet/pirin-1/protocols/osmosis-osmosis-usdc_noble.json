@@ -14,6 +14,7 @@
         "INJ",
         "JKL",
         "MILK_TIA",
+        "OM",
         "OSMO",
         "SCRT",
         "ST_ATOM",
@@ -28,7 +29,8 @@
     ],
     "swap_pairs": {
         "ALL_BTC": [
-            "ALL_SOL"
+            "ALL_SOL",
+            "OM"
         ],
         "ATOM": [
             "OSMO",
@@ -50,11 +52,13 @@
             "ST_TIA"
         ],
         "USDC_NOBLE": [
+            "AKT",
             "ALL_BTC",
             "ALL_ETH",
             "ATOM",
             "INJ",
-            "NLS"
+            "NLS",
+            "OM"
         ]
     }
 }
