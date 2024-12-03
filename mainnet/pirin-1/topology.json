@@ -142,6 +142,17 @@
                 }
             }
         },
+        "MANTRA": {
+            "currencies": {
+                "OM": {
+                    "native": {
+                        "name": "OM",
+                        "symbol": "uom",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
         "NEUTRON": {
             "currencies": {
                 "ATOM": {
@@ -337,6 +348,13 @@
                         "currency": "NLS"
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nls.svg"
+                },
+                "OM": {
+                    "ibc": {
+                        "network": "MANTRA",
+                        "currency": "OM"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-om.svg"
                 },
                 "OSMO": {
                     "native": {
@@ -538,6 +556,7 @@
             "INJECTIVE": "channel-122",
             "JACKAL": "channel-412",
             "JUNO": "channel-42",
+            "MANTRA": "channel-85077",
             "NOBLE": "channel-750",
             "NOLUS": "channel-783",
             "PICASSO": "channel-1279",
