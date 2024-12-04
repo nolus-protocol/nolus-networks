@@ -21,23 +21,22 @@
     "swap_pairs": {
         "ATOM": [
             "OSMO",
-            "ST_ATOM"
-        ],
-        "ALL_BTC": [
+            "ST_ATOM",
             "USDC_NOBLE"
         ],
-        "ALL_SOL": [
-            "ALL_BTC"
+        "ALL_BTC": [
+            "ALL_SOL"
         ],
         "OSMO": [
             "AXL",
             "ST_OSMO",
-            "WETH"
+            "WETH",
+            "ATOM"
         ],
         "USDC_NOBLE": [
             "AKT",
+            "ALL_BTC",
             "ALL_ETH",
-            "ATOM",
             "INJ",
             "NLS"
         ]
