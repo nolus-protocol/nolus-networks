@@ -7,14 +7,14 @@
         "USDC_NOBLE"
     ],
     "payment_only_currencies_tickers": [
+        "AKT",
         "ATOM",
+        "AXL",
+        "INJ",
         "OSMO",
         "ST_OSMO",
-        "WETH",
         "WBTC",
-        "AKT",
-        "INJ",
-        "AXL"
+        "WETH"
     ],
     "swap_pairs": {
         "ATOM": [
