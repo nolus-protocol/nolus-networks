@@ -27,10 +27,10 @@
             "USDC_NOBLE"
         ],
         "OSMO": [
+            "ATOM",
             "AXL",
             "ST_OSMO",
-            "WETH",
-            "ATOM"
+            "WETH"
         ],
         "USDC_NOBLE": [
             "AKT",
