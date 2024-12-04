@@ -20,7 +20,6 @@
     ],
     "swap_pairs": {
         "ATOM": [
-            "OSMO",
             "ST_ATOM",
             "USDC_NOBLE"
         ],
