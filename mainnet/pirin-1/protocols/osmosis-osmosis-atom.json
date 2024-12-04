@@ -25,10 +25,7 @@
             "USDC_NOBLE"
         ],
         "ALL_BTC": [
-            "USDC_NOBLE"
-        ],
-        "ALL_SOL": [
-            "ALL_BTC"
+            "ALL_SOL"
         ],
         "OSMO": [
             "AXL",
@@ -37,6 +34,7 @@
         ],
         "USDC_NOBLE": [
             "AKT",
+            "ALL_BTC",
             "ALL_ETH",
             "INJ",
             "NLS"
