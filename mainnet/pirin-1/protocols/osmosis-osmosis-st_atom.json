@@ -10,11 +10,8 @@
         "AKT",
         "ATOM",
         "AXL",
-        "INJ",
         "OSMO",
-        "ST_OSMO",
-        "WBTC",
-        "WETH"
+        "ST_OSMO"
     ],
     "swap_pairs": {
         "ATOM": [
