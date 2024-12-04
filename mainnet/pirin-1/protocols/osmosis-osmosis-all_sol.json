@@ -19,15 +19,15 @@
         "WETH"
     ],
     "swap_pairs": {
-        "ATOM": [
-            "OSMO",
-            "ST_ATOM"
-        ],
         "ALL_BTC": [
             "USDC_NOBLE"
         ],
         "ALL_SOL": [
             "ALL_BTC"
+        ],
+        "ATOM": [
+            "OSMO",
+            "ST_ATOM"
         ],
         "OSMO": [
             "AKT",
