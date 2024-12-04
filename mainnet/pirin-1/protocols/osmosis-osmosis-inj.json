@@ -1,0 +1,47 @@
+{
+    "dex": "osmosis",
+    "dex_network": "OSMOSIS",
+    "lpn_ticker": "INJ",
+    "stable_currency_ticker": "USDC_NOBLE",
+    "lease_currencies_tickers": [
+        "USDC_NOBLE"
+    ],
+    "payment_only_currencies_tickers": [
+        "ALL_SOL",
+        "ST_ATOM",
+        "ATOM",
+        "ST_OSMO",
+        "WETH",
+        "AKT",
+        "OSMO",
+        "AXL",
+        "ALL_BTC",
+        "ALL_ETH"
+    ],
+    "swap_pairs": {
+        "INJ": [
+            "USDC_NOBLE"
+        ],
+        "ATOM": [
+            "OSMO",
+            "ST_ATOM"
+        ],
+        "ALL_BTC": [
+            "USDC_NOBLE"
+        ],
+        "ALL_SOL": [
+            "ALL_BTC"
+        ],
+        "OSMO": [
+            "AXL",
+            "ST_OSMO",
+            "WETH"
+        ],
+        "USDC_NOBLE": [
+            "AKT",
+            "ALL_ETH",
+            "ATOM",
+            "NLS"
+        ]
+    }
+}
