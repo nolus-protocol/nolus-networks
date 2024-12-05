@@ -23,7 +23,8 @@
             "USDC_NOBLE"
         ],
         "ALL_SOL": [
-            "ALL_BTC"
+            "ALL_BTC",
+            "USDC_NOBLE"
         ],
         "ATOM": [
             "OSMO",
