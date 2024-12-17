@@ -406,6 +406,13 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-stosmo.svg"
                 },
+                "STRD": {
+                    "ibc": {
+                        "network": "STRIDE",
+                        "currency": "STRD"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-strd.svg"
+                },
                 "ST_TIA": {
                     "ibc": {
                         "network": "STRIDE",
@@ -519,6 +526,13 @@
                     "native": {
                         "name": "Staked OSMO",
                         "symbol": "stuosmo",
+                        "decimal_digits": 6
+                    }
+                },
+                "STRD": {
+                    "native": {
+                        "name": "STRD",
+                        "symbol": "ustrd",
                         "decimal_digits": 6
                     }
                 },

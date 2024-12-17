@@ -20,6 +20,7 @@
         "STARS",
         "ST_ATOM",
         "ST_OSMO",
+        "STRD",
         "TIA",
         "WBTC",
         "WETH"
@@ -44,6 +45,7 @@
             "SCRT",
             "STARS",
             "ST_OSMO",
+            "STRD",
             "TIA",
             "WBTC",
             "WETH"
