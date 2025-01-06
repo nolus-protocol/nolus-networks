@@ -35,6 +35,9 @@ on:
           - "test-net"
         required: true
 
+run-name: |-
+  ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.release }}
+
 jobs: 
   build-protocol:
     name: "Build protocol"
