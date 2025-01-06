@@ -5,7 +5,7 @@ defaults:
     shell: "sh"
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
     inputs:
       network-group:
         description: "Network's group"
@@ -35,7 +35,7 @@ env:
 run-name: |-
   ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.release }}
 
-jobs: 
+jobs:
   report-arguments:
     name: "Report workflow arguments"
     runs-on: "ubuntu-latest"
