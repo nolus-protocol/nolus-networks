@@ -27,13 +27,10 @@ on:
         description: "Smart contracts release"
         type: "string"
         required: true
-      profile:
-        description: "Build profile"
-        type: "choice"
-        options:
-          - "production-net"
-          - "test-net"
-        required: true
+
+env:
+  profile: |-
+    ${{ ((inputs.network-group == 'dev' || inputs.network-group == 'test') && 'test-net') || (inputs.network-group == 'main' && 'production-net') || 'N/A' }}
 
 run-name: |-
   ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.release }}
@@ -83,10 +80,7 @@ jobs:
             --input "protocol-builder.tar"
       - run: |-
           "mkdir" "./artifacts/"
-      - env:
-          profile: |-
-            ${{ inputs.profile }}
-        run: |-
+      - run: |-
           set -eu
 
           "docker" \
