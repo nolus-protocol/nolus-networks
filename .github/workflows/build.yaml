@@ -36,8 +36,36 @@ run-name: |-
   ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.release }}
 
 jobs: 
+  report-arguments:
+    name: "Report workflow arguments"
+    runs-on: "ubuntu-latest"
+    env:
+      network_group: |-
+        ${{ inputs.network-group }}
+      network: |-
+        ${{ inputs.network }}
+      protocol: |-
+        ${{ inputs.protocol }}
+      release: |-
+        ${{ inputs.release }}
+    steps:
+      - run: |-
+          set -eu
+
+          "echo" \
+            "\
+          Argument          | Value
+          ------------------|------
+          Network Group     | ${network_group:?}
+          Network Name      | ${network:?}
+          Protocol Name     | ${protocol:?}
+          Contracts Release | ${release:?}
+          Build Profile     | ${profile:?}" \
+            >>"${GITHUB_STEP_SUMMARY:?}"
   build-protocol:
     name: "Build protocol"
+    needs:
+      - "report-arguments"
     runs-on: "ubuntu-latest"
     env:
       topology_json: |-
