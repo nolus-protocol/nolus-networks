@@ -114,6 +114,7 @@ jobs:
           "docker" \
             "container" \
             "run" \
+            --env "CHECK_DEPENDENCIES_UPDATED=false" \
             --tty \
             --volume "./artifacts/:/artifacts/:rw" \
             --volume "./build-configuration/:/build-configuration/:ro" \
