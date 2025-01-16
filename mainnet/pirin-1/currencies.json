@@ -227,6 +227,13 @@
               "decimal_digits": "9"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allsol.svg"
+          },
+          "OM": {
+            "ibc": {
+              "network": "MANTRA",
+              "currency": "OM"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-om.svg"
           }
         },
         "amm_pools": [
@@ -369,6 +376,11 @@
             "id": "2054",
             "token_0": "ALL_SOL",
             "token_1": "ALL_BTC"
+          },
+          {
+            "id": "2262",
+            "token_0": "OM",
+            "token_1": "USDC"
           }
         ]
       },
@@ -774,6 +786,18 @@
             }
           }
         }
+      },
+      "MANTRA": {
+        "currencies": {
+          "JKL": {
+            "native": {
+              "name": "Mantra OM",
+              "symbol": "uom",
+              "ticker": "OM",
+              "decimal_digits": "6"
+            }
+          }
+        }
       }
     },
     "channels": [
@@ -975,6 +999,16 @@
         "b": {
           "network": "CUDOS",
           "ch": "channel-1"
+        }
+      },
+      {
+        "a": {
+          "network": "OSMOSIS",
+          "ch": "channel-85077"
+        },
+        "b": {
+          "network": "MANTRA",
+          "ch": "channel-0"
         }
       },
       {
@@ -1815,6 +1849,17 @@
               },
               {
                 "pool_id": "1943",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        },
+        "OM": {
+          "dex_currency": "OM",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "2262",
                 "pool_token": "USDC_NOBLE"
               }
             ]
