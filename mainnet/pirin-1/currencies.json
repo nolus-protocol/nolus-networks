@@ -31,7 +31,7 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
           },
-          "SxT_OSMO": {
+          "ST_OSMO": {
             "ibc": {
               "network": "STRIDE",
               "currency": "ST_OSMO"
