@@ -108,13 +108,23 @@ jobs:
             --input "protocol-builder.tar"
       - run: |-
           "mkdir" "./artifacts/"
-      - run: |-
+      - env:
+          network: |-
+            ${{ inputs.network }}
+          protocol: |-
+            ${{ inputs.protocol }}
+        run: |-
           set -eu
+
+          revision="$("git" "rev-parse" "HEAD")"
 
           "docker" \
             "container" \
             "run" \
             --env "CHECK_DEPENDENCIES_UPDATED=false" \
+            --env "PROTOCOL_NETWORK=${network:?}" \
+            --env "PROTOCOL_NAME=${protocol:?}" \
+            --env "PROTOCOL_RELEASE_ID=${revision:?}" \
             --tty \
             --volume "./artifacts/:/artifacts/:rw" \
             --volume "./build-configuration/:/build-configuration/:ro" \
