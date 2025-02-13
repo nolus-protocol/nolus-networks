@@ -24,14 +24,14 @@
           },
           "OSMO": {
             "native": {
-              "name": "Osmosis OSMO",
+              "name": "Osmosis",
               "symbol": "uosmo",
               "ticker": "OSMO",
               "decimal_digits": "6"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-osmo.svg"
           },
-          "ST_OSMO": {
+          "SxT_OSMO": {
             "ibc": {
               "network": "STRIDE",
               "currency": "ST_OSMO"
@@ -145,7 +145,7 @@
           },
           "MILK_TIA": {
             "native": {
-              "name": "Osmosis milkTIA",
+              "name": "Milk Staked TIA",
               "symbol": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
               "ticker": "milkTIA",
               "decimal_digits": "6"
@@ -189,7 +189,7 @@
           },
           "LVN": {
             "native": {
-              "name": "Osmosis LVN",
+              "name": "Levana",
               "symbol": "factory/osmo1mlng7pz4pnyxtpq0akfwall37czyk9lukaucsrn30ameplhhshtqdvfm5c/ulvn",
               "ticker": "LVN",
               "decimal_digits": "6"
@@ -212,7 +212,7 @@
           },
           "ALL_BTC": {
             "native": {
-              "name": "Osmosis allBTC",
+              "name": "Alloyed Bitcoin",
               "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
               "ticker": "BTC",
               "decimal_digits": "8"
@@ -221,7 +221,7 @@
           },
           "ALL_SOL": {
             "native": {
-              "name": "Osmosis allSOL",
+              "name": "Alloyed Solana",
               "symbol": "factory/osmo1n3n75av8awcnw4jl62n3l48e6e4sxqmaf97w5ua6ddu4s475q5qq9udvx4/alloyed/allSOL",
               "ticker": "SOL",
               "decimal_digits": "9"
@@ -388,7 +388,7 @@
         "currencies": {
           "USDC": {
             "native": {
-              "name": "Usdc",
+              "name": "Axelar Wrapped USDC",
               "symbol": "uusdc",
               "ticker": "USDC",
               "decimal_digits": "6"
@@ -396,7 +396,7 @@
           },
           "WETH": {
             "native": {
-              "name": "Wrapped Ethereum",
+              "name": "Axelar Wrapped Ethereum",
               "symbol": "weth-wei",
               "ticker": "WETH",
               "decimal_digits": "18"
@@ -404,7 +404,7 @@
           },
           "WBTC": {
             "native": {
-              "name": "Wrapped Bitcoin",
+              "name": "Axelar Wrapped Bitcoin",
               "symbol": "wbtc-satoshi",
               "ticker": "WBTC",
               "decimal_digits": "8"
@@ -424,7 +424,7 @@
         "currencies": {
           "ATOM": {
             "native": {
-              "name": "Cosmos Hub ATOM",
+              "name": "Cosmos Hub",
               "symbol": "uatom",
               "ticker": "ATOM",
               "decimal_digits": "6"
@@ -436,7 +436,7 @@
         "currencies": {
           "ST_ATOM": {
             "native": {
-              "name": "Staked ATOM",
+              "name": "Stride Staked ATOM",
               "symbol": "stuatom",
               "ticker": "stATOM",
               "decimal_digits": "6"
@@ -444,7 +444,7 @@
           },
           "ST_OSMO": {
             "native": {
-              "name": "Staked OSMO",
+              "name": "Stride Staked OSMO",
               "symbol": "stuosmo",
               "ticker": "stOSMO",
               "decimal_digits": "6"
@@ -452,7 +452,7 @@
           },
           "ST_TIA": {
             "native": {
-              "name": "Staked TIA",
+              "name": "Stride Staked TIA",
               "symbol": "stutia",
               "ticker": "stTIA",
               "decimal_digits": "6"
@@ -460,7 +460,7 @@
           },
           "STRD": {
             "native": {
-              "name": "Stride STRD",
+              "name": "Stride",
               "symbol": "ustrd",
               "ticker": "STRD",
               "decimal_digits": "6"
@@ -508,7 +508,7 @@
         "currencies": {
           "STK_ATOM": {
             "native": {
-              "name": "PSTAKE Liquid-Staked ATOM",
+              "name": "Pstake Staked ATOM",
               "symbol": "stk/uatom",
               "ticker": "stkATOM",
               "decimal_digits": "6"
@@ -520,7 +520,7 @@
         "currencies": {
           "SCRT": {
             "native": {
-              "name": "Secret Network SCRT",
+              "name": "Secret Network",
               "symbol": "uscrt",
               "ticker": "SCRT",
               "decimal_digits": "6"
@@ -532,7 +532,7 @@
         "currencies": {
           "CRO": {
             "native": {
-              "name": "Crypto.org CRO",
+              "name": "Cronos",
               "symbol": "basecro",
               "ticker": "CRO",
               "decimal_digits": "8"
@@ -544,7 +544,7 @@
         "currencies": {
           "TIA": {
             "native": {
-              "name": "Celestia TIA",
+              "name": "Celestia",
               "symbol": "utia",
               "ticker": "TIA",
               "decimal_digits": "6"
@@ -556,7 +556,7 @@
         "currencies": {
           "STARS": {
             "native": {
-              "name": "Stargaze STARS",
+              "name": "Stargaze",
               "symbol": "ustars",
               "ticker": "STARS",
               "decimal_digits": "6"
@@ -568,7 +568,7 @@
         "currencies": {
           "Q_ATOM": {
             "native": {
-              "name": "Quicksilver qATOM",
+              "name": "Quicksilver Staked ATOM",
               "symbol": "uqatom",
               "ticker": "qATOM",
               "decimal_digits": "6"
@@ -589,7 +589,7 @@
           },
           "D_ATOM": {
             "native": {
-              "name": "Nuetron dAtom",
+              "name": "Drop Staked Atom",
               "symbol": "factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom",
               "ticker": "dATOM",
               "decimal_digits": "6"
@@ -707,7 +707,7 @@
         "currencies": {
           "DYDX": {
             "native": {
-              "name": "dYdX",
+              "name": "dYdX Protocol",
               "symbol": "adydx",
               "ticker": "DYDX",
               "decimal_digits": "18"
@@ -719,7 +719,7 @@
         "currencies": {
           "JKL": {
             "native": {
-              "name": "Jackal JKL",
+              "name": "Jackal",
               "symbol": "ujkl",
               "ticker": "JKL",
               "decimal_digits": "6"
@@ -731,7 +731,7 @@
         "currencies": {
           "DYM": {
             "native": {
-              "name": "Dymension DYM",
+              "name": "Dymension",
               "symbol": "adym",
               "ticker": "DYM",
               "decimal_digits": "18"
@@ -743,7 +743,7 @@
         "currencies": {
           "INJ": {
             "native": {
-              "name": "Injective INJ",
+              "name": "Injective",
               "symbol": "inj",
               "ticker": "INJ",
               "decimal_digits": "18"
@@ -755,7 +755,7 @@
         "currencies": {
           "USDC_NOBLE": {
             "native": {
-              "name": "Noble USDC",
+              "name": "Noble",
               "symbol": "uusdc",
               "ticker": "USDC",
               "decimal_digits": "6"
@@ -767,7 +767,7 @@
         "currencies": {
           "PICA": {
             "native": {
-              "name": "Composable PICA",
+              "name": "Composable",
               "symbol": "ppica",
               "ticker": "PICA",
               "decimal_digits": "12"
@@ -779,7 +779,7 @@
         "currencies": {
           "CUDOS": {
             "native": {
-              "name": "Cudos CUDOS",
+              "name": "Cudos",
               "symbol": "acudos",
               "ticker": "CUDOS",
               "decimal_digits": "18"
@@ -791,7 +791,7 @@
         "currencies": {
           "OM": {
             "native": {
-              "name": "Mantra OM",
+              "name": "Mantra",
               "symbol": "uom",
               "ticker": "OM",
               "decimal_digits": "6"
