@@ -59,7 +59,8 @@
             "ATOM",
             "INJ",
             "NLS",
-            "OM"
+            "OM",
+            "OSMO"
         ]
     }
 }
