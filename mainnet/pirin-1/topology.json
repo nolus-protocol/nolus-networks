@@ -266,7 +266,7 @@
                     "native": {
                         "name": "Alloyed BTC",
                         "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
-                        "decimal_digits": 8
+                        "decimal_digits": 6
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-allbtc.svg"
                 },

@@ -30,6 +30,7 @@
             "ATOM",
             "AXL",
             "ST_OSMO",
+            "USDC_NOBLE",
             "WETH"
         ],
         "USDC_NOBLE": [
