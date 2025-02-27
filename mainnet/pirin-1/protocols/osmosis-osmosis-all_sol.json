@@ -37,6 +37,7 @@
             "WETH"
         ],
         "USDC_NOBLE": [
+            "ALL_BTC",
             "ALL_ETH",
             "ATOM",
             "INJ",
