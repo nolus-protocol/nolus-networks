@@ -2145,7 +2145,7 @@
         "dex_currency": "ST_ATOM"
       },
       "Lease": {
-        "USDC_AXELAR": {
+        "USDC_NOBLE": {
           "dex_currency": "USDC_NOBLE"
         }
       }
@@ -2156,7 +2156,7 @@
         "dex_currency": "ALL_BTC"
       },
       "Lease": {
-        "USDC_AXELAR": {
+        "USDC_NOBLE": {
           "dex_currency": "USDC_NOBLE"
         }
       }
@@ -2167,7 +2167,18 @@
         "dex_currency": "ALL_SOL"
       },
       "Lease": {
-        "USDC_AXELAR": {
+        "USDC_NOBLE": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
+    },
+    "OSMOSIS-OSMOSIS-ATOM": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "ATOM"
+      },
+      "Lease": {
+        "USDC_NOBLE": {
           "dex_currency": "USDC_NOBLE"
         }
       }
@@ -2178,7 +2189,7 @@
         "dex_currency": "AKT"
       },
       "Lease": {
-        "USDC_AXELAR": {
+        "USDC_NOBLE": {
           "dex_currency": "USDC_NOBLE"
         }
       }
