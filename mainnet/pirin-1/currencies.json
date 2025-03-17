@@ -2172,6 +2172,17 @@
         }
       }
     },
+    "OSMOSIS-OSMOSIS-ATOM": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "ATOM"
+      },
+      "Lease": {
+        "USDC_AXELAR": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
+    },
     "OSMOSIS-OSMOSIS-AKT": {
       "DexNetwork": "OSMOSIS",
       "Lpn": {
