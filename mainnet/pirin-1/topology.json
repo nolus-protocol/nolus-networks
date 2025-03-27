@@ -242,6 +242,17 @@
                 }
             }
         },
+        "NILLION": {
+            "currencies": {
+                "NIL": {
+                    "native": {
+                        "name": "NIL",
+                        "symbol": "unil",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
         "NOBLE": {
             "currencies": {
                 "USDC": {
@@ -341,6 +352,13 @@
                         "decimal_digits": 6
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-milktia.svg"
+                },
+                "NIL": {
+                    "ibc": {
+                        "network": "NILLION",
+                        "currency": "NIL"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-nil.svg"
                 },
                 "NLS": {
                     "ibc": {
@@ -461,6 +479,13 @@
                         "currency": "WETH"
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-weth.svg"
+                },
+                "XION": {
+                    "ibc": {
+                        "network": "XION",
+                        "currency": "XION"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-xion.svg"
                 }
             },
             "dexes": {
@@ -544,6 +569,17 @@
                     }
                 }
             }
+        },
+        "XION": {
+            "currencies": {
+                "XION": {
+                    "native": {
+                        "name": "XION",
+                        "symbol": "uxion",
+                        "decimal_digits": 6
+                    }
+                }
+            }
         }
     },
     "channels": {
@@ -571,13 +607,15 @@
             "JACKAL": "channel-412",
             "JUNO": "channel-42",
             "MANTRA": "channel-85077",
+            "NILLION": "channel-98416",
             "NOBLE": "channel-750",
             "NOLUS": "channel-783",
             "PICASSO": "channel-1279",
             "QUICKSILVER": "channel-522",
             "SECRET": "channel-88",
             "STARGAZE": "channel-75",
-            "STRIDE": "channel-326"
+            "STRIDE": "channel-326",
+            "XION": "channel-89321"
         }
     }
 }

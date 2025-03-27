@@ -14,6 +14,7 @@
         "INJ",
         "JKL",
         "MILK_TIA",
+        "NIL",
         "OM",
         "OSMO",
         "SCRT",
@@ -22,7 +23,8 @@
         "ST_TIA",
         "TIA",
         "WBTC",
-        "WETH"
+        "WETH",
+        "XION"
     ],
     "payment_only_currencies_tickers": [
         "USDC_AXELAR"
@@ -58,9 +60,12 @@
             "ALL_SOL",
             "ATOM",
             "INJ",
+            "NIL",
             "NLS",
             "OM",
-            "OSMO"
+            "OSMO",
+            "TIA",
+            "XION"
         ]
     }
 }
