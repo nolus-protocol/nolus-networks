@@ -57,7 +57,7 @@
               "network": "AXELAR",
               "currency": "USDC"
             },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdc.svg"
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-usdcaxl.svg"
           },
           "WETH_AXELAR": {
             "ibc": {
@@ -601,7 +601,7 @@
               "network": "AXELAR",
               "currency": "USDC"
             },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdc.svg"
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-usdcaxl.svg"
           },
           "USDC_NOBLE": {
             "ibc": {
