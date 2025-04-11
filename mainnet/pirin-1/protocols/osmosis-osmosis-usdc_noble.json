@@ -10,6 +10,7 @@
         "ALL_SOL",
         "ATOM",
         "AXL",
+        "BABY",
         "CRO",
         "INJ",
         "JKL",
@@ -32,6 +33,7 @@
     "swap_pairs": {
         "ALL_BTC": [
             "ALL_SOL",
+            "BABY",
             "OM"
         ],
         "ATOM": [
@@ -59,6 +61,7 @@
             "ALL_ETH",
             "ALL_SOL",
             "ATOM",
+            "BABY",
             "INJ",
             "NIL",
             "NLS",

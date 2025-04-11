@@ -54,6 +54,17 @@
                 }
             }
         },
+        "BABYLON": {
+            "currencies": {
+                "BABY": {
+                    "native": {
+                        "name": "BABY",
+                        "symbol": "ubbn",
+                        "decimal_digits": 6
+                    }
+                }
+            }
+        },
         "CELESTIA": {
             "currencies": {
                 "TIA": {
@@ -309,6 +320,13 @@
                         "currency": "AXL"
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-axl.svg"
+                },
+                "BABY": {
+                    "ibc": {
+                        "network": "BABYLON",
+                        "currency": "BABY"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-baby.svg"
                 },
                 "CRO": {
                     "ibc": {
@@ -599,6 +617,7 @@
         "OSMOSIS": {
             "AKASH": "channel-1",
             "AXELAR": "channel-208",
+            "BABYLON": "channel-101635",
             "CELESTIA": "channel-6994",
             "COSMOS_HUB": "channel-0",
             "CRONOS_POS": "channel-5",
