@@ -6,6 +6,7 @@
     "lease_currencies_tickers": [
         "ATOM",
         "D_ATOM",
+        "D_NTRN",
         "DYDX",
         "NTRN",
         "ST_ATOM",
@@ -18,8 +19,12 @@
         "ATOM": [
             "ST_ATOM"
         ],
+        "D_NTRN": [
+            "NTRN"
+        ],
         "NTRN": [
             "ATOM",
+            "D_NTRN",
             "NLS",
             "TIA",
             "WST_ETH"
@@ -29,6 +34,7 @@
         ],
         "USDC_NOBLE": [
             "D_ATOM",
+            "D_NTRN",
             "DYDX",
             "NTRN"
         ]
