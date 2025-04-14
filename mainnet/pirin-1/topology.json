@@ -181,6 +181,14 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-datom.svg"
                 },
+                "D_NTRN": {
+                    "native": {
+                        "name": "dNtrn",
+                        "symbol": "factory/neutron1frc0p5czd9uaaymdkug2njz7dc7j65jxukp9apmt9260a8egujkspms2t2/udntrn",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-dntrn.svg"
+                },
                 "DYDX": {
                     "ibc": {
                         "network": "DYDX",
