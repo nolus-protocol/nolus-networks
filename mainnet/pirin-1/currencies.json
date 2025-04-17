@@ -212,7 +212,7 @@
           },
           "ALL_BTC": {
             "native": {
-              "name": "Alloyed Bitcoin",
+              "name": "Alloyed BTC",
               "symbol": "factory/osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3/alloyed/allBTC",
               "ticker": "BTC",
               "decimal_digits": "8"
@@ -221,7 +221,7 @@
           },
           "ALL_SOL": {
             "native": {
-              "name": "Alloyed Solana",
+              "name": "Alloyed SOL",
               "symbol": "factory/osmo1n3n75av8awcnw4jl62n3l48e6e4sxqmaf97w5ua6ddu4s475q5qq9udvx4/alloyed/allSOL",
               "ticker": "SOL",
               "decimal_digits": "9"
@@ -248,6 +248,22 @@
               "currency": "XION"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-xion.svg"
+          },
+          "ALL_ETH": {
+            "native": {
+              "name": "Alloyed ETH",
+              "symbol": "factory/osmo1k6c8jln7ejuqwtqmay3yvzrg3kueaczl96pk067ldg8u835w0yhsw27twm/alloyed/allETH",
+              "ticker": "ETH",
+              "decimal_digits": "18"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-alleth.svg"
+          },
+          "BABY": {
+            "ibc": {
+              "network": "BABYLON",
+              "currency": "BABY"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/osmosis-baby.svg"
           }
         },
         "amm_pools": [
@@ -387,9 +403,9 @@
             "token_1": "USDC_NOBLE"
           },
           {
-            "id": "2054",
+            "id": "1960",
             "token_0": "ALL_SOL",
-            "token_1": "ALL_BTC"
+            "token_1": "USDC"
           },
           {
             "id": "2262",
@@ -415,6 +431,16 @@
             "id": "2444",
             "token_0": "XION",
             "token_1": "USDC"
+          },
+          {
+            "id": "1948",
+            "token_0": "ALL_ETH",
+            "token_1": "USDC"
+          },
+          {
+            "id": "2907",
+            "token_0": "BABY",
+            "token_1": "USDC"
           }
         ]
       },
@@ -430,7 +456,7 @@
           },
           "WETH": {
             "native": {
-              "name": "Axelar Wrapped Ethereum",
+              "name": "Axelar Wrapped ETH",
               "symbol": "weth-wei",
               "ticker": "WETH",
               "decimal_digits": "18"
@@ -438,7 +464,7 @@
           },
           "WBTC": {
             "native": {
-              "name": "Axelar Wrapped Bitcoin",
+              "name": "Axelar Wrapped BTC",
               "symbol": "wbtc-satoshi",
               "ticker": "WBTC",
               "decimal_digits": "8"
@@ -623,7 +649,7 @@
           },
           "D_ATOM": {
             "native": {
-              "name": "Drop Staked Atom",
+              "name": "Drop Staked ATOM",
               "symbol": "factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom",
               "ticker": "dATOM",
               "decimal_digits": "6"
@@ -692,6 +718,15 @@
               "currency": "STK_ATOM"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-stkatom.svg"
+          },
+          "D_NTRN": {
+            "native": {
+              "name": "Drop Staked NTRN",
+              "symbol": "factory/neutron1frc0p5czd9uaaymdkug2njz7dc7j65jxukp9apmt9260a8egujkspms2t2/udntrn",
+              "ticker": "dNTRN",
+              "decimal_digits": "6"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/neutron-dntrn.svg"
           }
         },
         "amm_pools": [
@@ -852,6 +887,18 @@
               "name": "Xion",
               "symbol": "uxion",
               "ticker": "XION",
+              "decimal_digits": "6"
+            }
+          }
+        }
+      },
+      "BABYLON": {
+        "currencies": {
+          "BABY": {
+            "native": {
+              "name": "Babylon",
+              "symbol": "ubbn",
+              "ticker": "BABY",
               "decimal_digits": "6"
             }
           }
@@ -1087,6 +1134,16 @@
         "b": {
           "network": "XION",
           "ch": "channel-1"
+        }
+      },
+      {
+        "a": {
+          "network": "OSMOSIS",
+          "ch": "channel-101635"
+        },
+        "b": {
+          "network": "BABYLON",
+          "ch": "channel-3"
         }
       },
       {
@@ -2004,6 +2061,28 @@
               }
             ]
           ]
+        },
+        "ALL_ETH": {
+          "dex_currency": "ALL_ETH",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "1948",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
+        },
+        "BABY": {
+          "dex_currency": "BABY",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "2907",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
         }
       },
       "Native": {
@@ -2260,7 +2339,23 @@
         },
         "D_ATOM": {
           "dex_currency": "D_ATOM",
-          "swap_routes": []
+          "swap_routes": [
+            {
+              "pool_id": "",
+              "pool_token": "USDC_NOBLE"
+            }
+          ]
+        },
+        "D_NTRN": {
+          "dex_currency": "D_NTRN",
+          "swap_routes": [
+            [
+              {
+                "pool_id": "",
+                "pool_token": "USDC_NOBLE"
+              }
+            ]
+          ]
         }
       },
       "Native": {
