@@ -188,7 +188,7 @@
             "NOLUS": "channel-1035"
         },
         "NOLUS": {
-            "NEUTRON": "channel-3",
+            "NEUTRON": "channel-0",
             "OSMOSIS": "channel-0"
         },
         "OSMOSIS": {
