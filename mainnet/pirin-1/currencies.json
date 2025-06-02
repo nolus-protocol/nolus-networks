@@ -405,42 +405,47 @@
           {
             "id": "1960",
             "token_0": "ALL_SOL",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "2262",
             "token_0": "OM",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "1301",
             "token_0": "AKT",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "1947",
             "token_0": "TIA",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "2854",
             "token_0": "NIL",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "2444",
             "token_0": "XION",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "1948",
             "token_0": "ALL_ETH",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
           },
           {
             "id": "2907",
             "token_0": "BABY",
-            "token_1": "USDC"
+            "token_1": "USDC_NOBLE"
+          },
+          {
+            "id": "1464",
+            "token_0": "OSMO",
+            "token_1": "USDC_NOBLE"
           }
         ]
       },
@@ -2422,6 +2427,17 @@
       "DexNetwork": "OSMOSIS",
       "Lpn": {
         "dex_currency": "AKT"
+      },
+      "Lease": {
+        "USDC_NOBLE": {
+          "dex_currency": "USDC_NOBLE"
+        }
+      }
+    },
+    "OSMOSIS-OSMOSIS-OSMO": {
+      "DexNetwork": "OSMOSIS",
+      "Lpn": {
+        "dex_currency": "OSMO"
       },
       "Lease": {
         "USDC_NOBLE": {
