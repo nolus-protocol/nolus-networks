@@ -16,7 +16,6 @@
         "JKL",
         "MILK_TIA",
         "NIL",
-        "OM",
         "OSMO",
         "SCRT",
         "ST_ATOM",
@@ -32,9 +31,9 @@
     ],
     "swap_pairs": {
         "ALL_BTC": [
+            "ALL_ETH",
             "ALL_SOL",
-            "BABY",
-            "OM"
+            "BABY"
         ],
         "ATOM": [
             "OSMO",
@@ -65,7 +64,6 @@
             "INJ",
             "NIL",
             "NLS",
-            "OM",
             "OSMO",
             "TIA",
             "XION"
