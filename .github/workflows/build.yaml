@@ -68,70 +68,46 @@ jobs:
       - "report-arguments"
     runs-on: "ubuntu-latest"
     env:
-      topology_dir: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/
       topology_json: |-
         ${{ inputs.network-group }}net/${{ inputs.network }}/topology.json
-      protocols_dir: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/
       protocol_json: |-
         ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/${{ inputs.protocol }}.json
     steps:
-      - uses: "actions/checkout@v5"
+      - uses: "actions/checkout@v4"
         with:
           sparse-checkout: |-
-            ./
-            ci/
-            ${{ env.topology_dir }}
-            ${{ env.protocols_dir }}
-      - uses: "nolus-protocol/actions/setup-docker@v1"
-      - id: "fetch-and-decompress"
-        uses: "nolus-protocol/actions/build-image@v1"
-        with:
-          context: "./ci"
-          file: "./ci/Containerfile"
-          target: "fetch-and-decompress"
-      - env:
-          image_tag: |-
-            ${{ steps.fetch-and-decompress.outputs.tag }}
-          owner: |-
-            ${{ github.repository_owner }}
-          release: |-
-            ${{ inputs.release }}
-          repository: "nolus-money-market"
-        run: |-
-          set -eu
-
-          "docker" \
-            "container" \
-            "run" \
-            --rm \
-            --tty \
-            --volume ".:/bind:rw" \
-            "${image_tag:?}" \
-            "--owner" "${owner:?}" \
-            "--repository" "${repository:?}" \
-            "--release" "${release:?}" \
-            "--file" "build-protocol.tar.gz"
-      - run: |-
-          "docker" \
-            "image" \
-            "load" \
-            --input "./build-protocol.tar"
+            ${{ env.topology_json }}
+            ${{ env.protocol_json }}
       - run: |-
           set -eu
-
-          "mkdir" "./artifacts/"
 
           "mkdir" "./build-configuration/"
 
           "cp" \
-            "${protocol_json:?}" \
-            "./build-configuration/protocol.json"
-
-          "cp" \
             "${topology_json:?}" \
             "./build-configuration/topology.json"
+
+          "cp" \
+            "${protocol_json:?}" \
+            "./build-configuration/protocol.json"
+      - env:
+          url: |-
+            https://github.com/${{ github.repository_owner }}/nolus-money-market/releases/download/${{ inputs.release }}/protocol-builder.tar.gz
+        run: |-
+          set -eu
+
+          "wget" \
+            --output-document="protocol-builder.tar.gz" \
+            "${url:?}"
+      - run: |-
+          "gunzip" "protocol-builder.tar.gz"
+      - run: |-
+          "docker" \
+            "image" \
+            "load" \
+            --input "protocol-builder.tar"
+      - run: |-
+          "mkdir" "./artifacts/"
       - env:
           network: |-
             ${{ inputs.network }}
@@ -140,15 +116,19 @@ jobs:
         run: |-
           set -eu
 
+          revision="$("git" "rev-parse" "HEAD")"
+
           "docker" \
             "container" \
             "run" \
+            --env "CHECK_DEPENDENCIES_UPDATED=false" \
             --env "PROTOCOL_NETWORK=${network:?}" \
             --env "PROTOCOL_NAME=${protocol:?}" \
-            --rm \
-            --volume "./artifacts:/artifacts/:rw" \
-            --volume "./build-configuration:/src/build-configuration/:ro" \
-            "localhost/local/build-protocol" \
+            --env "PROTOCOL_RELEASE_ID=${revision:?}" \
+            --tty \
+            --volume "./artifacts/:/artifacts/:rw" \
+            --volume "./build-configuration/:/build-configuration/:ro" \
+            "protocol-builder" \
             "${profile:?}"
       - uses: "actions/upload-artifact@v4"
         with:
