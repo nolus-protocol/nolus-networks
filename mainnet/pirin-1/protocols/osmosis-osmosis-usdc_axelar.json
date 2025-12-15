@@ -26,9 +26,13 @@
         "WETH"
     ],
     "payment_only_currencies_tickers": [
+        "ALL_BTC",
         "USDC_NOBLE"
     ],
     "swap_pairs": {
+        "ALL_BTC": [
+            "WBTC"
+        ],
         "ATOM": [
             "ST_ATOM",
             "Q_ATOM"
@@ -58,6 +62,7 @@
             "USDC_NOBLE"
         ],
         "USDC_NOBLE": [
+            "ALL_BTC",
             "INJ",
             "NLS"
         ]
