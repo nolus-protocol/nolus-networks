@@ -185,10 +185,10 @@
         "NEUTRON": {
             "AXELAR": "channel-8",
             "COSMOS_HUB": "channel-1",
-            "NOLUS": "channel-1035"
+            "NOLUS": "channel-2058"
         },
         "NOLUS": {
-            "NEUTRON": "channel-3",
+            "NEUTRON": "channel-1",
             "OSMOSIS": "channel-0"
         },
         "OSMOSIS": {
@@ -196,7 +196,7 @@
             "AXELAR": "channel-3",
             "COSMOS_HUB": "channel-12",
             "JUNO": "channel-1",
-            "NOLUS": "channel-8244"
+            "NOLUS": "channel-10958"
         }
     }
 }
