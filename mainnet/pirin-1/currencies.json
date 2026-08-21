@@ -955,6 +955,13 @@
               "decimal_digits": "6"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-usdc.svg"
+          },
+          "NLS": {
+            "ibc": {
+              "network": "NOLUS",
+              "currency": "NLS"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nls.svg"
           }
         },
         "amm_pools": []
