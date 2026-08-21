@@ -920,69 +920,6 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-sol.svg"
           },
-          "JUP": {
-            "native": {
-              "name": "Jupiter",
-              "symbol": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-              "ticker": "JUP",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jup.svg"
-          },
-          "JLP": {
-            "native": {
-              "name": "Jupiter LP",
-              "symbol": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
-              "ticker": "JLP",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jlp.svg"
-          },
-          "MET": {
-            "native": {
-              "name": "Meteora",
-              "symbol": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
-              "ticker": "MET",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-met.svg"
-          },
-          "PENGU": {
-            "native": {
-              "name": "Pudgy Penguins",
-              "symbol": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
-              "ticker": "PENGU",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-pengu.svg"
-          },
-          "TRUMP": {
-            "native": {
-              "name": "Official Trump",
-              "symbol": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-              "ticker": "TRUMP",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-trump.svg"
-          },
-          "PUMP": {
-            "native": {
-              "name": "Pump.fun",
-              "symbol": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
-              "ticker": "PUMP",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-pump.svg"
-          },
-          "JTO": {
-            "native": {
-              "name": "Jito",
-              "symbol": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
-              "ticker": "JTO",
-              "decimal_digits": "9"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jto.svg"
-          },
           "CB_BTC": {
             "native": {
               "name": "Coinbase Wrapped BTC",
@@ -991,15 +928,6 @@
               "decimal_digits": "8"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
-          },
-          "JITO_SOL": {
-            "native": {
-              "name": "Jito Staked SOL",
-              "symbol": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
-              "ticker": "JITO_SOL",
-              "decimal_digits": "9"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jitosol.svg"
           },
           "W_ETH": {
             "native": {
@@ -1010,15 +938,6 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-weth.svg"
           },
-          "XAUT0": {
-            "native": {
-              "name": "Tether Gold",
-              "symbol": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-              "ticker": "XAUT0",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-xaut0.svg"
-          },
           "HYPE": {
             "native": {
               "name": "Hyperliquid",
@@ -1027,150 +946,6 @@
               "decimal_digits": "9"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-hype.svg"
-          },
-          "ZEC": {
-            "native": {
-              "name": "Zcash",
-              "symbol": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
-              "ticker": "ZEC",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-zec.svg"
-          },
-          "RAY": {
-            "native": {
-              "name": "Raydium",
-              "symbol": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
-              "ticker": "RAY",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ray.svg"
-          },
-          "ORCA": {
-            "native": {
-              "name": "Orca",
-              "symbol": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
-              "ticker": "ORCA",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-orca.svg"
-          },
-          "BP": {
-            "native": {
-              "name": "Backpack",
-              "symbol": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
-              "ticker": "BP",
-              "decimal_digits": "9"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-bp.svg"
-          },
-          "MU": {
-            "native": {
-              "name": "Micron",
-              "symbol": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
-              "ticker": "MU",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-mu.svg"
-          },
-          "SPCX": {
-            "native": {
-              "name": "SpaceX (Tokenized Stock)",
-              "symbol": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
-              "ticker": "SPCX",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-spcx.svg"
-          },
-          "SKHY": {
-            "native": {
-              "name": "SKHY",
-              "symbol": "SKHYhSjuRWHgikq8eRKbtBbpABgJSkd7ytQV14i9EQ3",
-              "ticker": "SKHY",
-              "decimal_digits": "6"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-skhy.svg"
-          },
-          "SPYX": {
-            "native": {
-              "name": "SPDR S&P 500 ETF Trust (xStock)",
-              "symbol": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
-              "ticker": "SPYX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-spyx.svg"
-          },
-          "QQQX": {
-            "native": {
-              "name": "Invesco QQQ Trust (xStock)",
-              "symbol": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
-              "ticker": "QQQX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-qqqx.svg"
-          },
-          "NVDAX": {
-            "native": {
-              "name": "NVIDIA (xStock)",
-              "symbol": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
-              "ticker": "NVDAX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nvdax.svg"
-          },
-          "CRCLX": {
-            "native": {
-              "name": "Circle (xStock)",
-              "symbol": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
-              "ticker": "CRCLX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-crclx.svg"
-          },
-          "TSLAX": {
-            "native": {
-              "name": "Tesla (xStock)",
-              "symbol": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
-              "ticker": "TSLAX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-tslax.svg"
-          },
-          "COINX": {
-            "native": {
-              "name": "Coinbase (xStock)",
-              "symbol": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
-              "ticker": "COINX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-coinx.svg"
-          },
-          "MSTRX": {
-            "native": {
-              "name": "Strategy (xStock)",
-              "symbol": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
-              "ticker": "MSTRX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-mstrx.svg"
-          },
-          "GOOGLX": {
-            "native": {
-              "name": "Alphabet (xStock)",
-              "symbol": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
-              "ticker": "GOOGLX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-googlx.svg"
-          },
-          "AAPLX": {
-            "native": {
-              "name": "Apple (xStock)",
-              "symbol": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
-              "ticker": "AAPLX",
-              "decimal_digits": "8"
-            },
-            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-aaplx.svg"
           },
           "USDC": {
             "native": {
@@ -2739,89 +2514,14 @@
         "SOL": {
           "dex_currency": "SOL"
         },
-        "JUP": {
-          "dex_currency": "JUP"
-        },
-        "JLP": {
-          "dex_currency": "JLP"
-        },
-        "MET": {
-          "dex_currency": "MET"
-        },
-        "PENGU": {
-          "dex_currency": "PENGU"
-        },
-        "TRUMP": {
-          "dex_currency": "TRUMP"
-        },
-        "PUMP": {
-          "dex_currency": "PUMP"
-        },
-        "JTO": {
-          "dex_currency": "JTO"
-        },
         "CB_BTC": {
           "dex_currency": "CB_BTC"
-        },
-        "JITO_SOL": {
-          "dex_currency": "JITO_SOL"
         },
         "W_ETH": {
           "dex_currency": "W_ETH"
         },
-        "XAUT0": {
-          "dex_currency": "XAUT0"
-        },
         "HYPE": {
           "dex_currency": "HYPE"
-        },
-        "ZEC": {
-          "dex_currency": "ZEC"
-        },
-        "RAY": {
-          "dex_currency": "RAY"
-        },
-        "ORCA": {
-          "dex_currency": "ORCA"
-        },
-        "BP": {
-          "dex_currency": "BP"
-        },
-        "MU": {
-          "dex_currency": "MU"
-        },
-        "SPCX": {
-          "dex_currency": "SPCX"
-        },
-        "SKHY": {
-          "dex_currency": "SKHY"
-        },
-        "SPYX": {
-          "dex_currency": "SPYX"
-        },
-        "QQQX": {
-          "dex_currency": "QQQX"
-        },
-        "NVDAX": {
-          "dex_currency": "NVDAX"
-        },
-        "CRCLX": {
-          "dex_currency": "CRCLX"
-        },
-        "TSLAX": {
-          "dex_currency": "TSLAX"
-        },
-        "COINX": {
-          "dex_currency": "COINX"
-        },
-        "MSTRX": {
-          "dex_currency": "MSTRX"
-        },
-        "GOOGLX": {
-          "dex_currency": "GOOGLX"
-        },
-        "AAPLX": {
-          "dex_currency": "AAPLX"
         }
       },
       "Native": {
