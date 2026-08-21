@@ -553,6 +553,57 @@
                 }
             }
         },
+        "SOLANA": {
+            "currencies": {
+                "SOL": {
+                    "native": {
+                        "name": "SOL",
+                        "symbol": "So11111111111111111111111111111111111111112",
+                        "decimal_digits": 9
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-sol.svg"
+                },
+                "CB_BTC": {
+                    "native": {
+                        "name": "CB_BTC",
+                        "symbol": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
+                },
+                "WETH": {
+                    "native": {
+                        "name": "WETH",
+                        "symbol": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-weth.svg"
+                },
+                "HYPE": {
+                    "native": {
+                        "name": "HYPE",
+                        "symbol": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+                        "decimal_digits": 9
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-hype.svg"
+                },
+                "USDC": {
+                    "native": {
+                        "name": "USDC",
+                        "symbol": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-usdc.svg"
+                },
+                "NLS": {
+                    "ibc": {
+                        "network": "NOLUS",
+                        "currency": "NLS"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nls.svg"
+                }
+            }
+        },
         "STARGAZE": {
             "currencies": {
                 "STARS": {
@@ -620,7 +671,8 @@
         },
         "NOLUS": {
             "NEUTRON": "channel-3839",
-            "OSMOSIS": "channel-0"
+            "OSMOSIS": "channel-0",
+            "SOLANA": "channel-61957"
         },
         "OSMOSIS": {
             "AKASH": "channel-1",
@@ -643,6 +695,9 @@
             "STARGAZE": "channel-75",
             "STRIDE": "channel-326",
             "XION": "channel-89321"
+        },
+        "SOLANA": {
+            "NOLUS": "channel-0"
         }
     }
 }

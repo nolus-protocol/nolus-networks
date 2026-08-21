@@ -908,6 +908,63 @@
             }
           }
         }
+      },
+      "SOLANA": {
+        "currencies": {
+          "SOL": {
+            "native": {
+              "name": "Solana",
+              "symbol": "So11111111111111111111111111111111111111112",
+              "ticker": "SOL",
+              "decimal_digits": "9"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-sol.svg"
+          },
+          "CB_BTC": {
+            "native": {
+              "name": "Coinbase Wrapped BTC",
+              "symbol": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+              "ticker": "CB_BTC",
+              "decimal_digits": "8"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
+          },
+          "WETH": {
+            "native": {
+              "name": "Wrapped Ether",
+              "symbol": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+              "ticker": "WETH",
+              "decimal_digits": "8"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-weth.svg"
+          },
+          "HYPE": {
+            "native": {
+              "name": "Hyperliquid",
+              "symbol": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+              "ticker": "HYPE",
+              "decimal_digits": "9"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-hype.svg"
+          },
+          "USDC": {
+            "native": {
+              "name": "Circle USDC",
+              "symbol": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "ticker": "USDC",
+              "decimal_digits": "6"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-usdc.svg"
+          },
+          "NLS": {
+            "ibc": {
+              "network": "NOLUS",
+              "currency": "NLS"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nls.svg"
+          }
+        },
+        "amm_pools": []
       }
     },
     "channels": [
@@ -1229,6 +1286,16 @@
         "b": {
           "network": "NOBLE",
           "ch": "channel-18"
+        }
+      },
+      {
+        "a": {
+          "network": "NOLUS",
+          "ch": "channel-61957"
+        },
+        "b": {
+          "network": "SOLANA",
+          "ch": "channel-0"
         }
       }
     ]
@@ -2443,6 +2510,29 @@
         "USDC_NOBLE": {
           "dex_currency": "USDC_NOBLE"
         }
+      }
+    },
+    "SOLANA-METIS-USDC": {
+      "DexNetwork": "SOLANA",
+      "Lpn": {
+        "dex_currency": "USDC"
+      },
+      "Lease": {
+        "SOL": {
+          "dex_currency": "SOL"
+        },
+        "CB_BTC": {
+          "dex_currency": "CB_BTC"
+        },
+        "WETH": {
+          "dex_currency": "WETH"
+        },
+        "HYPE": {
+          "dex_currency": "HYPE"
+        }
+      },
+      "Native": {
+        "dex_currency": "NLS"
       }
     }
   },
