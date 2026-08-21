@@ -929,11 +929,11 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
           },
-          "W_ETH": {
+          "WETH": {
             "native": {
               "name": "Wrapped Ether",
               "symbol": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
-              "ticker": "W_ETH",
+              "ticker": "WETH",
               "decimal_digits": "8"
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-weth.svg"
@@ -2517,8 +2517,8 @@
         "CB_BTC": {
           "dex_currency": "CB_BTC"
         },
-        "W_ETH": {
-          "dex_currency": "W_ETH"
+        "WETH": {
+          "dex_currency": "WETH"
         },
         "HYPE": {
           "dex_currency": "HYPE"
