@@ -1,0 +1,22 @@
+{
+    "dex": "metis",
+    "dex_network": "SOLANA",
+    "lpn_ticker": "USDC",
+    "stable_currency_ticker": "USDC",
+    "lease_currencies_tickers": [
+        "CB_BTC",
+        "HYPE",
+        "SOL",
+        "WETH"
+    ],
+    "payment_only_currencies_tickers": [],
+    "swap_pairs": {
+        "USDC": [
+            "CB_BTC",
+            "HYPE",
+            "SOL",
+            "WETH",
+            "NLS"
+        ]
+    }
+}
