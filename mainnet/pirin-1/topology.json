@@ -672,7 +672,7 @@
         "NOLUS": {
             "NEUTRON": "channel-3839",
             "OSMOSIS": "channel-0",
-            "SOLANA": "channel-XX"
+            "SOLANA": "channel-61957"
         },
         "OSMOSIS": {
             "AKASH": "channel-1",
@@ -697,7 +697,7 @@
             "XION": "channel-89321"
         },
         "SOLANA": {
-            "NOLUS": "channel-XX"
+            "NOLUS": "channel-0"
         }
     }
 }

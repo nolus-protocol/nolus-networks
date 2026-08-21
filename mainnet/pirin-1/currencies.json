@@ -1284,11 +1284,11 @@
       {
         "a": {
           "network": "NOLUS",
-          "ch": "channel-XX"
+          "ch": "channel-61957"
         },
         "b": {
           "network": "SOLANA",
-          "ch": "channel-XX"
+          "ch": "channel-0"
         }
       }
     ]
