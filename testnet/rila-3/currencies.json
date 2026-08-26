@@ -181,6 +181,45 @@
                         "token_1": "NLS"
                     }
                 ]
+            },
+            "SOLANA": {
+                "currencies": {
+                    "SOL": {
+                        "native": {
+                            "name": "Solana",
+                            "symbol": "So11111111111111111111111111111111111111112",
+                            "ticker": "SOL",
+                            "decimal_digits": "9"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-sol.svg"
+                    },
+                    "CB_BTC": {
+                        "native": {
+                            "name": "Coinbase Wrapped BTC",
+                            "symbol": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                            "ticker": "CB_BTC",
+                            "decimal_digits": "8"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
+                    },
+                    "USDC": {
+                        "native": {
+                            "name": "Circle USDC",
+                            "symbol": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                            "ticker": "USDC",
+                            "decimal_digits": "6"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-usdc.svg"
+                    },
+                    "NLS": {
+                        "ibc": {
+                            "network": "NOLUS",
+                            "currency": "NLS"
+                        },
+                        "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nls.svg"
+                    }
+                },
+                "amm_pools": []
             }
         },
         "channels": [
@@ -263,6 +302,16 @@
                     "network": "COSMOS_HUB",
                     "ch": "channel-16"
                 }
+            },
+            {
+                "a": {
+                    "network": "NOLUS",
+                    "ch": "channel-658"
+                },
+                "b": {
+                    "network": "SOLANA",
+                    "ch": "channel-0"
+                }
             }
         ]
     },
@@ -295,6 +344,23 @@
                 },
                 "NTRN": {
                     "dex_currency": "NTRN"
+                }
+            },
+            "Native": {
+                "dex_currency": "NLS"
+            }
+        },
+        "SOLANA-METIS-USDC": {
+            "DexNetwork": "SOLANA",
+            "Lpn": {
+                "dex_currency": "USDC"
+            },
+            "Lease": {
+                "SOL": {
+                    "dex_currency": "SOL"
+                },
+                "CB_BTC": {
+                    "dex_currency": "CB_BTC"
                 }
             },
             "Native": {
