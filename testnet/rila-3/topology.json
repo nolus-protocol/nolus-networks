@@ -197,6 +197,41 @@
                     "type": "osmosis"
                 }
             }
+        },
+        "SOLANA": {
+            "currencies": {
+                "SOL": {
+                    "native": {
+                        "name": "SOL",
+                        "symbol": "So11111111111111111111111111111111111111112",
+                        "decimal_digits": 9
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-sol.svg"
+                },
+                "CB_BTC": {
+                    "native": {
+                        "name": "CB_BTC",
+                        "symbol": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-cbbtc.svg"
+                },
+                "USDC": {
+                    "native": {
+                        "name": "USDC",
+                        "symbol": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-usdc.svg"
+                },
+                "NLS": {
+                    "ibc": {
+                        "network": "NOLUS",
+                        "currency": "NLS"
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nls.svg"
+                }
+            }
         }
     },
     "channels": {
@@ -207,7 +242,8 @@
         },
         "NOLUS": {
             "NEUTRON": "channel-1",
-            "OSMOSIS": "channel-0"
+            "OSMOSIS": "channel-0",
+            "SOLANA": "channel-658"
         },
         "OSMOSIS": {
             "AKASH": "channel-73",
@@ -216,6 +252,9 @@
             "JUNO": "channel-1",
             "NOBLE": "channel-4280",
             "NOLUS": "channel-8272"
+        },
+        "SOLANA": {
+            "NOLUS": "channel-0"
         }
     }
 }
