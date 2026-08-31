@@ -6,15 +6,12 @@
     "lease_currencies_tickers": [
         "USDC"
     ],
-    "payment_only_currencies_tickers": [
-        "CB_BTC"
-    ],
+    "payment_only_currencies_tickers": [],
     "swap_pairs": {
         "SOL": [
             "USDC"
         ],
         "USDC": [
-            "CB_BTC",
             "NLS"
         ]
     }
