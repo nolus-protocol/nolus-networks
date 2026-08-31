@@ -10,9 +10,6 @@
     "swap_pairs": {
         "SOL": [
             "USDC"
-        ],
-        "USDC": [
-            "NLS"
         ]
     }
 }
