@@ -2534,6 +2534,17 @@
       "Native": {
         "dex_currency": "NLS"
       }
+    },
+    "SOLANA-METIS-SOL": {
+      "DexNetwork": "SOLANA",
+      "Lpn": {
+        "dex_currency": "SOL"
+      },
+      "Lease": {
+        "USDC": {
+          "dex_currency": "USDC"
+        }
+      }
     }
   },
   "definitions": [
