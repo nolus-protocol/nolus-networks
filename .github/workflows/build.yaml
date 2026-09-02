@@ -81,19 +81,12 @@ jobs:
         with:
           sparse-checkout: |-
             ./
-            ci/
             ${{ env.topology_dir }}
             ${{ env.protocols_dir }}
       - uses: "nolus-protocol/actions/setup-docker@v1"
-      - id: "fetch-and-decompress"
-        uses: "nolus-protocol/actions/build-image@v1"
-        with:
-          context: "./ci"
-          file: "./ci/Containerfile"
-          target: "fetch-and-decompress"
       - env:
-          image_tag: |-
-            ${{ steps.fetch-and-decompress.outputs.tag }}
+          GH_TOKEN: |-
+            ${{ secrets.MONEY_MARKET_READ_TOKEN }}
           owner: |-
             ${{ github.repository_owner }}
           release: |-
@@ -102,17 +95,14 @@ jobs:
         run: |-
           set -eu
 
-          "docker" \
-            "container" \
-            "run" \
-            --rm \
-            --tty \
-            --volume ".:/bind:rw" \
-            "${image_tag:?}" \
-            "--owner" "${owner:?}" \
-            "--repository" "${repository:?}" \
-            "--release" "${release:?}" \
-            "--file" "build-protocol.tar.gz"
+          "gh" \
+            "release" \
+            "download" \
+            "${release:?}" \
+            --repo "${owner:?}/${repository:?}" \
+            --pattern "build-protocol.tar.gz"
+
+          "gunzip" "./build-protocol.tar.gz"
       - run: |-
           "docker" \
             "image" \
