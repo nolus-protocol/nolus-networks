@@ -199,6 +199,7 @@
             }
         },
         "SOLANA": {
+            "solray_program_id": "FqTKBXhdsKZvYb3SjCs3hsh6XTo7XSroyfjzqMbnGNve",
             "currencies": {
                 "SOL": {
                     "native": {
