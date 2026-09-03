@@ -27,6 +27,16 @@ on:
         description: "Smart contracts release"
         type: "string"
         required: true
+      protocol-identity-network:
+        description: "Network stamped into the protocol package identity; defaults to the network input. Set only to match an already deployed protocol whose identity differs."
+        type: "string"
+        required: false
+        default: ""
+      protocol-identity-name:
+        description: "Name stamped into the protocol package identity; defaults to the protocol input. Set only to match an already deployed protocol whose identity differs."
+        type: "string"
+        required: false
+        default: ""
 
 env:
   profile: |-
@@ -124,9 +134,9 @@ jobs:
             "./build-configuration/topology.json"
       - env:
           network: |-
-            ${{ inputs.network }}
+            ${{ inputs.protocol-identity-network || inputs.network }}
           protocol: |-
-            ${{ inputs.protocol }}
+            ${{ inputs.protocol-identity-name || inputs.protocol }}
         run: |-
           set -eu
 
