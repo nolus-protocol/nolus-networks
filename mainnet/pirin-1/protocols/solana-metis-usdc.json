@@ -6,16 +6,22 @@
     "lease_currencies_tickers": [
         "CB_BTC",
         "HYPE",
+        "JLP",
+        "PUMP",
         "SOL",
-        "WETH"
+        "WETH",
+        "ZEC"
     ],
     "payment_only_currencies_tickers": [],
     "swap_pairs": {
         "USDC": [
             "CB_BTC",
             "HYPE",
+            "JLP",
+            "PUMP",
             "SOL",
             "WETH",
+            "ZEC",
             "NLS"
         ]
     }

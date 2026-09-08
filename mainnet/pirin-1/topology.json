@@ -588,6 +588,30 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-hype.svg"
                 },
+                "JLP": {
+                    "native": {
+                        "name": "JLP",
+                        "symbol": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jlp.svg"
+                },
+                "PUMP": {
+                    "native": {
+                        "name": "PUMP",
+                        "symbol": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-pump.svg"
+                },
+                "ZEC": {
+                    "native": {
+                        "name": "ZEC",
+                        "symbol": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-zec.svg"
+                },
                 "USDC": {
                     "native": {
                         "name": "USDC",
