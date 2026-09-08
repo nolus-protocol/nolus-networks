@@ -956,6 +956,15 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jlp.svg"
           },
+          "PUMP": {
+            "native": {
+              "name": "Pump.fun",
+              "symbol": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+              "ticker": "PUMP",
+              "decimal_digits": "6"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-pump.svg"
+          },
           "ZEC": {
             "native": {
               "name": "Zcash",
@@ -2550,6 +2559,9 @@
         },
         "JLP": {
           "dex_currency": "JLP"
+        },
+        "PUMP": {
+          "dex_currency": "PUMP"
         },
         "ZEC": {
           "dex_currency": "ZEC"
