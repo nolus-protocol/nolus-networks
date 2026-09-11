@@ -2581,6 +2581,17 @@
           "dex_currency": "USDC"
         }
       }
+    },
+    "SOLANA-METIS-CB_BTC": {
+      "DexNetwork": "SOLANA",
+      "Lpn": {
+        "dex_currency": "CB_BTC"
+      },
+      "Lease": {
+        "USDC": {
+          "dex_currency": "USDC"
+        }
+      }
     }
   },
   "definitions": [
