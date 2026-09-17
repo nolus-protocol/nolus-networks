@@ -2592,6 +2592,17 @@
           "dex_currency": "USDC"
         }
       }
+    },
+    "SOLANA-METIS-WETH": {
+      "DexNetwork": "SOLANA",
+      "Lpn": {
+        "dex_currency": "WETH"
+      },
+      "Lease": {
+        "USDC": {
+          "dex_currency": "USDC"
+        }
+      }
     }
   },
   "definitions": [
