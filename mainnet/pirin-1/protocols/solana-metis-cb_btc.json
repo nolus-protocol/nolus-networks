@@ -10,6 +10,9 @@
     "swap_pairs": {
         "CB_BTC": [
             "USDC"
+        ],
+        "USDC": [
+            "NLS"
         ]
     }
 }
