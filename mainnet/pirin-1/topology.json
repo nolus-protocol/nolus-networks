@@ -604,6 +604,30 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-pump.svg"
                 },
+                "JUP": {
+                    "native": {
+                        "name": "JUP",
+                        "symbol": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-jup.svg"
+                },
+                "NVDAX": {
+                    "native": {
+                        "name": "NVDAX",
+                        "symbol": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-nvdax.svg"
+                },
+                "RAY": {
+                    "native": {
+                        "name": "RAY",
+                        "symbol": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ray.svg"
+                },
                 "ZEC": {
                     "native": {
                         "name": "ZEC",
