@@ -4,14 +4,30 @@
     "lpn_ticker": "USDC",
     "stable_currency_ticker": "USDC",
     "lease_currencies_tickers": [
+        "CB_BTC",
+        "HYPE",
+        "JLP",
+        "JUP",
+        "NVDAX",
+        "PUMP",
+        "RAY",
         "SOL",
-        "CB_BTC"
+        "WETH",
+        "ZEC"
     ],
     "payment_only_currencies_tickers": [],
     "swap_pairs": {
         "USDC": [
-            "SOL",
             "CB_BTC",
+            "HYPE",
+            "JLP",
+            "JUP",
+            "NVDAX",
+            "PUMP",
+            "RAY",
+            "SOL",
+            "WETH",
+            "ZEC",
             "NLS"
         ]
     }
