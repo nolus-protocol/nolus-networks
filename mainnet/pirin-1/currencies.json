@@ -992,6 +992,51 @@
             },
             "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ray.svg"
           },
+          "BP": {
+            "native": {
+              "name": "Backpack",
+              "symbol": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+              "ticker": "BP",
+              "decimal_digits": "9"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-bp.svg"
+          },
+          "GLDX": {
+            "native": {
+              "name": "Gold xStock",
+              "symbol": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+              "ticker": "GLDX",
+              "decimal_digits": "8"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-gldx.svg"
+          },
+          "MU": {
+            "native": {
+              "name": "Micron Technology (Backpack Securities)",
+              "symbol": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
+              "ticker": "MU",
+              "decimal_digits": "6"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-mu.svg"
+          },
+          "SPCX": {
+            "native": {
+              "name": "SpaceX (Backpack Securities)",
+              "symbol": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+              "ticker": "SPCX",
+              "decimal_digits": "6"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-spcx.svg"
+          },
+          "WNEAR": {
+            "native": {
+              "name": "Wrapped NEAR",
+              "symbol": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+              "ticker": "WNEAR",
+              "decimal_digits": "9"
+            },
+            "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-wnear.svg"
+          },
           "ZEC": {
             "native": {
               "name": "Zcash",
@@ -2598,6 +2643,21 @@
         },
         "RAY": {
           "dex_currency": "RAY"
+        },
+        "BP": {
+          "dex_currency": "BP"
+        },
+        "GLDX": {
+          "dex_currency": "GLDX"
+        },
+        "MU": {
+          "dex_currency": "MU"
+        },
+        "SPCX": {
+          "dex_currency": "SPCX"
+        },
+        "WNEAR": {
+          "dex_currency": "WNEAR"
         },
         "ZEC": {
           "dex_currency": "ZEC"

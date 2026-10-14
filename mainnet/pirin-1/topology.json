@@ -628,6 +628,46 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ray.svg"
                 },
+                "BP": {
+                    "native": {
+                        "name": "BP",
+                        "symbol": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                        "decimal_digits": 9
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-bp.svg"
+                },
+                "GLDX": {
+                    "native": {
+                        "name": "GLDX",
+                        "symbol": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-gldx.svg"
+                },
+                "MU": {
+                    "native": {
+                        "name": "MU",
+                        "symbol": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-mu.svg"
+                },
+                "SPCX": {
+                    "native": {
+                        "name": "SPCX",
+                        "symbol": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-spcx.svg"
+                },
+                "WNEAR": {
+                    "native": {
+                        "name": "WNEAR",
+                        "symbol": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+                        "decimal_digits": 9
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-wnear.svg"
+                },
                 "ZEC": {
                     "native": {
                         "name": "ZEC",
