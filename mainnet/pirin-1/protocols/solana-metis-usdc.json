@@ -4,8 +4,11 @@
     "lpn_ticker": "USDC",
     "stable_currency_ticker": "USDC",
     "lease_currencies_tickers": [
+        "AAPLX",
+        "AKT",
         "BP",
         "CB_BTC",
+        "CRCLX",
         "GLDX",
         "HYPE",
         "JLP",
@@ -16,6 +19,8 @@
         "RAY",
         "SOL",
         "SPCX",
+        "SPYX",
+        "TSLAX",
         "WETH",
         "WNEAR",
         "ZEC"
@@ -23,8 +28,11 @@
     "payment_only_currencies_tickers": [],
     "swap_pairs": {
         "USDC": [
+            "AAPLX",
+            "AKT",
             "BP",
             "CB_BTC",
+            "CRCLX",
             "GLDX",
             "HYPE",
             "JLP",
@@ -35,6 +43,8 @@
             "RAY",
             "SOL",
             "SPCX",
+            "SPYX",
+            "TSLAX",
             "WETH",
             "WNEAR",
             "ZEC",
