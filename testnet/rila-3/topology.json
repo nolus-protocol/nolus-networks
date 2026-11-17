@@ -335,6 +335,46 @@
                         "decimal_digits": 9
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-wnear.svg"
+                },
+                "SPYX": {
+                    "native": {
+                        "name": "SPYX",
+                        "symbol": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-spyx.svg"
+                },
+                "TSLAX": {
+                    "native": {
+                        "name": "TSLAX",
+                        "symbol": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-tslax.svg"
+                },
+                "CRCLX": {
+                    "native": {
+                        "name": "CRCLX",
+                        "symbol": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-crclx.svg"
+                },
+                "AAPLX": {
+                    "native": {
+                        "name": "AAPLX",
+                        "symbol": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+                        "decimal_digits": 8
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-aaplx.svg"
+                },
+                "AKT": {
+                    "native": {
+                        "name": "AKT",
+                        "symbol": "5d3fjPDdkYbtYcAMR9PC2TANaEyhzuyP8JxTEwqjVgBZ",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-akt.svg"
                 }
             }
         }
