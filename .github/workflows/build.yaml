@@ -1,4 +1,6 @@
 name: "Build protocol"
+run-name: |-
+  ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.ref }}
 
 defaults:
   run:
@@ -23,137 +25,72 @@ on:
         description: "Protocol"
         type: "string"
         required: true
-      release:
-        description: "Smart contracts release"
+      ref:
+        description: "Smart contracts reference against which to build."
         type: "string"
         required: true
-      protocol-identity-network:
-        description: "Network stamped into the protocol package identity; defaults to the network input. Set only to match an already deployed protocol whose identity differs."
-        type: "string"
-        required: false
-        default: ""
-      protocol-identity-name:
-        description: "Name stamped into the protocol package identity; defaults to the protocol input. Set only to match an already deployed protocol whose identity differs."
-        type: "string"
-        required: false
-        default: ""
-
-env:
-  profile: |-
-    ${{ ((inputs.network-group == 'dev' || inputs.network-group == 'test') && 'test-net') || (inputs.network-group == 'main' && 'production-net') || 'N/A' }}
-
-run-name: |-
-  ${{ inputs.network-group }} / ${{ inputs.network }} / ${{ inputs.protocol }} / ${{ inputs.release }}
 
 jobs:
-  report-arguments:
-    name: "Report workflow arguments"
-    runs-on: "ubuntu-latest"
+  build:
     env:
-      network_group: |-
-        ${{ inputs.network-group }}
-      network: |-
+      build_variant: |-
+        ${{ ((inputs.network-group == 'dev' || inputs.network-group == 'test') && '-debug-assert') || '' }}
+      host_network: |-
         ${{ inputs.network }}
-      protocol: |-
+      protocol_name: |-
         ${{ inputs.protocol }}
-      release: |-
-        ${{ inputs.release }}
-    steps:
-      - run: |-
-          set -eu
-
-          "echo" \
-            "\
-          Argument          | Value
-          ------------------|------
-          Network Group     | ${network_group:?}
-          Network Name      | ${network:?}
-          Protocol Name     | ${protocol:?}
-          Contracts Release | ${release:?}
-          Build Profile     | ${profile:?}" \
-            >>"${GITHUB_STEP_SUMMARY:?}"
-  build-protocol:
-    name: "Build protocol"
-    needs:
-      - "report-arguments"
-    runs-on: "ubuntu-latest"
-    env:
-      topology_dir: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/
-      topology_json: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/topology.json
       protocols_dir: |-
         ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/
-      protocol_json: |-
-        ${{ inputs.network-group }}net/${{ inputs.network }}/protocols/${{ inputs.protocol }}.json
+      topology_dir: |-
+        ${{ inputs.network-group }}net/${{ inputs.network }}/
+    name: "Nix flake-based build"
+    runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v5"
+      - uses: "actions/checkout@v7"
         with:
           sparse-checkout: |-
             ./
-            ${{ env.topology_dir }}
             ${{ env.protocols_dir }}
-      - uses: "nolus-protocol/actions/setup-docker@v1"
-      - env:
-          GH_TOKEN: |-
-            ${{ secrets.MONEY_MARKET_READ_TOKEN }}
-          owner: |-
-            ${{ github.repository_owner }}
-          release: |-
-            ${{ inputs.release }}
-          repository: "nolus-money-market"
+            ${{ env.topology_dir }}
+      - uses: "actions/checkout@v7"
+        with:
+          path: "contracts"
+          ref: |-
+            ${{ inputs.ref }}
+          repository: "nolus-protocol/nolus-money-market"
+          token: ${{ secrets.MONEY_MARKET_READ_TOKEN }}
+      - name: "Setup Nix"
+        uses: "cachix/install-nix-action@v31"
+      - name: "Generate protocol information file"
         run: |-
           set -eu
 
-          "gh" \
-            "release" \
-            "download" \
-            "${release:?}" \
-            --repo "${owner:?}/${repository:?}" \
-            --pattern "build-protocol.tar.gz"
-
-          "gunzip" "./build-protocol.tar.gz"
-      - run: |-
-          "docker" \
-            "image" \
-            "load" \
-            --input "./build-protocol.tar"
-      - run: |-
-          set -eu
-
-          "mkdir" "./artifacts/"
-
-          "mkdir" "./build-configuration/"
-
-          "cp" \
-            "${protocol_json:?}" \
-            "./build-configuration/protocol.json"
-
-          "cp" \
-            "${topology_json:?}" \
-            "./build-configuration/topology.json"
-      - env:
-          network: |-
-            ${{ inputs.protocol-identity-network || inputs.network }}
-          protocol: |-
-            ${{ inputs.protocol-identity-name || inputs.protocol }}
+          exec nix run \
+            --inputs-from './contracts' \
+            'nixpkgs#jaq' \
+            -- \
+            --arg 'hostNetwork' "$host_network" \
+            --arg 'protocolName' "$protocol_name" \
+            -c \
+            -n \
+            '{ hostNetwork: $hostNetwork, protocolName: $protocolName }' \
+            >'protocol-info.json'
+      - name: "Build derivation"
         run: |-
           set -eu
 
-          "docker" \
-            "container" \
-            "run" \
-            --env "PROTOCOL_NETWORK=${network:?}" \
-            --env "PROTOCOL_NAME=${protocol:?}" \
-            --rm \
-            --volume "./artifacts:/artifacts/:rw" \
-            --volume "./build-configuration:/src/build-configuration/:ro" \
-            "localhost/local/build-protocol" \
-            "${profile:?}"
-      - uses: "actions/upload-artifact@v4"
+          exec nix build \
+            --no-link \
+            --override-input 'protocol-definition' "path:${protocols_dir}/${protocol_name}.json" \
+            --override-input 'protocol-information' "path:protocol-info.json" \
+            --override-input 'topology-definition' "path:${topology_dir}/topology.json" \
+            --out-link 'packaged' \
+            --print-out-paths \
+            "./contracts#protocol$build_variant-packaged"
+      - uses: "actions/upload-artifact@v7"
         with:
           if-no-files-found: "error"
           name: |-
-            ${{ inputs.network-group }}--${{ inputs.network }}--${{ inputs.protocol }}--${{ inputs.release }}
+            ${{ inputs.network-group }}--${{ inputs.network }}--${{ inputs.protocol }}
           path: |-
-            ./artifacts/*
+            packaged/*
