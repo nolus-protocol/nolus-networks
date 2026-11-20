@@ -6,6 +6,7 @@
     "lease_currencies_tickers": [
         "AAPLX",
         "AKT",
+        "ANT",
         "BP",
         "CB_BTC",
         "CRCLX",
@@ -30,6 +31,7 @@
         "USDC": [
             "AAPLX",
             "AKT",
+            "ANT",
             "BP",
             "CB_BTC",
             "CRCLX",

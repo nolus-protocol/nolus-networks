@@ -336,6 +336,14 @@
                     },
                     "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-wnear.svg"
                 },
+                "ANT": {
+                    "native": {
+                        "name": "ANT",
+                        "symbol": "ANTBTZQ1EUuTxUs3tfeampxdqTWPHmwyJmcWj4xoAyNe",
+                        "decimal_digits": 6
+                    },
+                    "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ant.svg"
+                },
                 "SPYX": {
                     "native": {
                         "name": "SPYX",

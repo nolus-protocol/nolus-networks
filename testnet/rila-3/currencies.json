@@ -310,6 +310,15 @@
                       },
                       "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-wnear.svg"
                     },
+                    "ANT": {
+                      "native": {
+                        "name": "Anthropic (Backpack Securities)",
+                        "symbol": "ANTBTZQ1EUuTxUs3tfeampxdqTWPHmwyJmcWj4xoAyNe",
+                        "ticker": "ANT",
+                        "decimal_digits": "6"
+                      },
+                      "icon": "https://raw.githubusercontent.com/nolus-protocol/webapp/main/src/config/currencies/icons/solana-ant.svg"
+                    },
                     "SPYX": {
                       "native": {
                         "name": "SP500 xStock",
@@ -559,6 +568,9 @@
                 },
                 "WNEAR": {
                   "dex_currency": "WNEAR"
+                },
+                "ANT": {
+                  "dex_currency": "ANT"
                 },
                 "SPYX": {
                   "dex_currency": "SPYX"
